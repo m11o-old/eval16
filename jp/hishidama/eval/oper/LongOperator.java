@@ -5,22 +5,22 @@ import jp.hishidama.eval.exp.AbstractExpression;
 import jp.hishidama.util.NumberUtil;
 
 /**
- * Long‰‰ZÀsƒNƒ‰ƒX.
+ * Longæ¼”ç®—å®Ÿè¡Œã‚¯ãƒ©ã‚¹
  * <p>
- * longŒ^‚Å‰‰Z‚ğs‚¤‰‰ZƒNƒ‰ƒXB
+ * longå‹ã§æ¼”ç®—ã‚’è¡Œã†æ¼”ç®—ã‚¯ãƒ©ã‚¹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since eval16
  */
 public class LongOperator implements Operator {
 
-	/** ^‹U’lF^. */
+	/** çœŸå½å€¤ï¼šçœŸ */
 	public static final int TRUE = 1;
 
-	/** ^‹U’lF‹U. */
+	/** çœŸå½å€¤ï¼šå½ */
 	public static final int FALSE = 0;
 
 	protected long n(Object obj) {

@@ -5,22 +5,22 @@ import jp.hishidama.eval.exp.AbstractExpression;
 import jp.hishidama.util.NumberUtil;
 
 /**
- * Double‰‰ZÀsƒNƒ‰ƒX.
+ * Doubleæ¼”ç®—å®Ÿè¡Œã‚¯ãƒ©ã‚¹
  * <p>
- * doubleŒ^‚Å‰‰Z‚ğs‚¤‰‰ZƒNƒ‰ƒXB
+ * doubleå‹ã§æ¼”ç®—ã‚’è¡Œã†æ¼”ç®—ã‚¯ãƒ©ã‚¹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since eval16
  */
 public class DoubleOperator implements Operator {
 
-	/** ^‹U’lF^. */
+	/** çœŸå½å€¤ï¼šçœŸ */
 	public static final int TRUE = 1;
 
-	/** ^‹U’lF‹U. */
+	/** çœŸå½å€¤ï¼šå½ */
 	public static final int FALSE = 0;
 
 	protected double n(Object obj) {

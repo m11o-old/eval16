@@ -7,248 +7,248 @@ import jp.hishidama.eval.exp.NumberExpression;
 import jp.hishidama.eval.exp.StringExpression;
 
 /**
- * ‰‰ZÀsƒCƒ“ƒ^[ƒtƒF[ƒX.
+ * æ¼”ç®—å®Ÿè¡Œã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹
  * <p>
- * eval()‚É‚¨‚¢‚ÄAÀÛ‚Ì‰‰Z‚ğÀs‚·‚éƒNƒ‰ƒX‚Ìˆ×‚ÌƒCƒ“ƒ^[ƒtƒF[ƒXB
+ * eval()ã«ãŠã„ã¦ã€å®Ÿéš›ã®æ¼”ç®—ã‚’å®Ÿè¡Œã™ã‚‹ã‚¯ãƒ©ã‚¹ã®ç‚ºã®ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹
  * </p>
  *
  * @see jp.hishidama.eval.Expression#setOperator(Operator)
  * @see jp.hishidama.eval.Expression#eval()
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2007.02.15
  * @version eval16
  */
 public interface Operator {
 	/**
-	 * —İæ‰‰Z.
+	 * ç´¯ä¹—æ¼”ç®—
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 * @since 2007.02.16
 	 */
 	public Object power(Object x, Object y);
 
 	/**
-	 * ³•„†‰‰Z.
+	 * æ­£ç¬¦å·æ¼”ç®—
 	 *
 	 * @param x
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object signPlus(Object x);
 
 	/**
-	 * •‰•„†‰‰Z.
+	 * è² ç¬¦å·æ¼”ç®—
 	 *
 	 * @param x
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object signMinus(Object x);
 
 	/**
-	 * ‰ÁZ.
+	 * åŠ ç®—
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object plus(Object x, Object y);
 
 	/**
-	 * Œ¸Z.
+	 * æ¸›ç®—
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object minus(Object x, Object y);
 
 	/**
-	 * æZ.
+	 * ä¹—ç®—
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object mult(Object x, Object y);
 
 	/**
-	 * œZ.
+	 * é™¤ç®—
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object div(Object x, Object y);
 
 	/**
-	 * —]Z.
+	 * ä½™ç®—
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object mod(Object x, Object y);
 
 	/**
-	 * ƒrƒbƒg”Û’è.
+	 * ãƒ“ãƒƒãƒˆå¦å®š
 	 *
 	 * @param x
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object bitNot(Object x);
 
 	/**
-	 * ¶ƒVƒtƒg.
+	 * å·¦ã‚·ãƒ•ãƒˆ
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object shiftLeft(Object x, Object y);
 
 	/**
-	 * ‰EƒVƒtƒg.
+	 * å³ã‚·ãƒ•ãƒˆ
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object shiftRight(Object x, Object y);
 
 	/**
-	 * ˜_—‰EƒVƒtƒg.
+	 * è«–ç†å³ã‚·ãƒ•ãƒˆ
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object shiftRightLogical(Object x, Object y);
 
 	/**
-	 * ƒrƒbƒg˜_—Ï.
+	 * ãƒ“ãƒƒãƒˆè«–ç†ç©
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object bitAnd(Object x, Object y);
 
 	/**
-	 * ƒrƒbƒg˜_—˜a.
+	 * ãƒ“ãƒƒãƒˆè«–ç†å’Œ
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object bitOr(Object x, Object y);
 
 	/**
-	 * ƒrƒbƒg”r‘¼“I˜_—˜a.
+	 * ãƒ“ãƒƒãƒˆæ’ä»–çš„è«–ç†å’Œ
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object bitXor(Object x, Object y);
 
 	/**
-	 * ”Û’è.
+	 * å¦å®š
 	 *
 	 * @param x
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object not(Object x);
 
 	/**
-	 * “™†.
+	 * ç­‰å·
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object equal(Object x, Object y);
 
 	/**
-	 * •s“™†.
+	 * ä¸ç­‰å·
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object notEqual(Object x, Object y);
 
 	/**
-	 * ‚æ‚è¬.
+	 * ã‚ˆã‚Šå°
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object lessThan(Object x, Object y);
 
 	/**
-	 * ˆÈ‰º.
+	 * ä»¥ä¸‹
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object lessEqual(Object x, Object y);
 
 	/**
-	 * ‚æ‚è‘å.
+	 * ã‚ˆã‚Šå¤§
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object greaterThan(Object x, Object y);
 
 	/**
-	 * ˆÈã.
+	 * ä»¥ä¸Š
 	 *
 	 * @param x
 	 * @param y
-	 * @return ’l
+	 * @return å€¤
 	 */
 	public Object greaterEqual(Object x, Object y);
 
 	/**
-	 * ^‹U’l.
+	 * çœŸå½å€¤
 	 * <p>
-	 * ƒIƒuƒWƒFƒNƒg‚ğ^‹U’l‚É•ÏŠ·‚·‚éB
+	 * ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’çœŸå½å€¤ã«å¤‰æ›ã™ã‚‹
 	 * </p>
 	 *
 	 * @param x
-	 * @return ^‹U’l
+	 * @return çœŸå½å€¤
 	 */
 	public boolean bool(Object x);
 
 	/**
-	 * ƒCƒ“ƒNƒŠƒƒ“ƒgEƒfƒNƒŠƒƒ“ƒg
+	 * ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆãƒ»ãƒ‡ã‚¯ãƒªãƒ¡ãƒ³ãƒˆ
 	 *
 	 * @param x
 	 * @param inc
-	 *            ƒCƒ“ƒNƒŠƒƒ“ƒg‚Ì‚Æ‚«+1AƒfƒNƒŠƒƒ“ƒg‚Ì‚Æ‚«-1
-	 * @return ’l
+	 *            ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã®ã¨ã+1ã€ãƒ‡ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã®ã¨ã-1
+	 * @return å€¤
 	 */
 	public Object inc(Object x, int inc);
 
 	/**
-	 * •¶š‚Ö•ÏŠ·.
+	 * æ–‡å­—ã¸å¤‰æ›
 	 * <p>
-	 * ƒVƒ“ƒOƒ‹ƒNƒH[ƒe[ƒVƒ‡ƒ“‚ÅˆÍ‚Ü‚ê‚½•¶š—ñ‚ğ’l‚É•ÏŠ·‚·‚éB<br>
-	 * ƒGƒXƒP[ƒv•¶š‚ğ‰ğß‚µ‚½‚¢ê‡“™‚Í“–ƒƒ\ƒbƒh‚Å•ÏŠ·‚·‚éB
+	 * ã‚·ãƒ³ã‚°ãƒ«ã‚¯ã‚©ãƒ¼ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ã§å›²ã¾ã‚ŒãŸæ–‡å­—åˆ—ã‚’å€¤ã«å¤‰æ›ã™ã‚‹<br>
+	 * ã‚¨ã‚¹ã‚±ãƒ¼ãƒ—æ–‡å­—ã‚’è§£é‡ˆã—ãŸã„å ´åˆç­‰ã¯å½“ãƒ¡ã‚½ãƒƒãƒ‰ã§å¤‰æ›ã™ã‚‹
 	 * </p>
 	 *
 	 * @param word
-	 *            ’l
+	 *            å€¤
 	 * @param exp
 	 *            Expression
-	 * @return ’l
+	 * @return ï¿½l
 	 * @see CharExpression
 	 * @since eval16
 	 */
@@ -256,18 +256,18 @@ public interface Operator {
 			throws EvalException;
 
 	/**
-	 * •¶š—ñ‚Ö•ÏŠ·.
+	 * æ–‡å­—åˆ—ã¸å¤‰æ›
 	 * <p>
-	 * ƒ_ƒuƒ‹ƒNƒH[ƒe[ƒVƒ‡ƒ“‚ÅˆÍ‚Ü‚ê‚½•¶š—ñ‚ğ’l‚É•ÏŠ·‚·‚éB<br>
-	 * Šî–{“I‚É‚ÍAˆø”‚Ìword‚ğ‚»‚Ì‚Ü‚Ü•Ô‚·‚±‚Æ‚É‚È‚é‚¾‚ë‚¤B<br>
-	 * ƒGƒXƒP[ƒv•¶š‚ğ‰ğß‚µ‚½‚¢ê‡“™‚Í“–ƒƒ\ƒbƒh‚Å•ÏŠ·‚·‚éB
+	 * ãƒ€ãƒ–ãƒ«ã‚¯ã‚©ãƒ¼ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ã§å›²ã¾ã‚ŒãŸæ–‡å­—åˆ—ã‚’å€¤ã«å¤‰æ›ã™ã‚‹<br>
+	 * åŸºæœ¬çš„ã«ã¯ã€å¼•æ•°ã®wordã‚’ãã®ã¾ã¾è¿”ã™ã“ã¨ã«ãªã‚‹ã ã‚ã†<br>
+	 * ã‚¨ã‚¹ã‚±ãƒ¼ãƒ—æ–‡å­—ã‚’è§£é‡ˆã—ãŸã„å ´åˆç­‰ã¯å½“ãƒ¡ã‚½ãƒƒãƒ‰ã§å¤‰æ›ã™ã‚‹
 	 * </p>
 	 *
 	 * @param word
-	 *            ’l
+	 *            å€¤
 	 * @param exp
 	 *            Expression
-	 * @return ’l
+	 * @return å€¤
 	 * @see StringExpression
 	 * @since eval16
 	 */
@@ -275,17 +275,17 @@ public interface Operator {
 			throws EvalException;
 
 	/**
-	 * ”’l‚Ö•ÏŠ·.
+	 * æ•°å€¤ã¸å¤‰æ›
 	 * <p>
-	 * ”š‚Ì‚İ‚Å\¬‚³‚ê‚½•¶š—ñ‚ğ’l‚É•ÏŠ·‚·‚éB<br>
-	 * —á‚¦‚Îu123v‚Æ‚¢‚¤•¶š—ñ‚ğIntegerŒ^‚Ì123‚É•ÏŠ·‚µ‚Ä•Ô‚·B
+	 * æ•°å­—ã®ã¿ã§æ§‹æˆã•ã‚ŒãŸæ–‡å­—åˆ—ã‚’å€¤ã«å¤‰æ›ã™ã‚‹<br>
+	 * ä¾‹ãˆã°ã€Œ123ã€ã¨ã„ã†æ–‡å­—åˆ—ã‚’Integerå‹ã®123ã«å¤‰æ›ã—ã¦è¿”ã™
 	 * </p>
 	 *
 	 * @param word
-	 *            ’l
+	 *            å€¤
 	 * @param exp
 	 *            Expression
-	 * @return ’l
+	 * @return å€¤
 	 * @see NumberExpression
 	 * @since eval16
 	 */
@@ -293,16 +293,16 @@ public interface Operator {
 			throws EvalException;
 
 	/**
-	 * •Ï”‚©‚çæ“¾‚µ‚½’l‚ğ•ÏŠ·.
+	 * å¤‰æ•°ã‹ã‚‰å–å¾—ã—ãŸå€¤ã‚’å¤‰æ›
 	 * <p>
-	 * •Ï”‚©‚çæ“¾‚µ‚½’l‚É‘Î‚µ‚ÄAŒ^‚É‰‚¶‚Ä“Æ©‚Ì•ÏŠ·‚ğs‚¢‚½‚¢ê‡‚É“–ƒƒ\ƒbƒh‚Å•ÏŠ·‚·‚éB
+	 * å¤‰æ•°ã‹ã‚‰å–å¾—ã—ãŸå€¤ã«å¯¾ã—ã¦ã€å‹ã«å¿œã˜ã¦ç‹¬è‡ªã®å¤‰æ›ã‚’è¡Œã„ãŸã„å ´åˆã«å½“ãƒ¡ã‚½ãƒƒãƒ‰ã§å¤‰æ›ã™ã‚‹
 	 * </p>
 	 *
 	 * @param value
-	 *            ’l
+	 *            å€¤
 	 * @param exp
 	 *            Expression
-	 * @return ’l
+	 * @return å€¤
 	 * @since eval16
 	 */
 	public Object variable(Object value, AbstractExpression exp)

@@ -6,14 +6,14 @@ import jp.hishidama.eval.exp.*;
 import jp.hishidama.util.NumberUtil;
 
 /**
- * Šg’£Java‰‰ZÀsƒNƒ‰ƒX.
+ * æ‹¡å¼µJavaæ¼”ç®—å®Ÿè¡Œã‚¯ãƒ©ã‚¹
  * <p>
- * Java‚à‚Ç‚«‚Ì‰‰Z‚ğs‚¤‰‰ZƒNƒ‰ƒXB
+ * Javaã‚‚ã©ãã®æ¼”ç®—ã‚’è¡Œã†æ¼”ç®—ã‚¯ãƒ©ã‚¹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2007.02.15
  * @version eval16
  */
@@ -183,7 +183,7 @@ public class JavaExOperator implements Operator {
 		if (x != null) {
 			c = x.getClass().getName();
 		}
-		return new UnsupportedOperationException("–¢’è‹`’P€‰‰Z" + name + "F" + c);
+		return new UnsupportedOperationException("ï¿½ï¿½ï¿½ï¿½ï¿½`ï¿½Pï¿½ï¿½ï¿½ï¿½ï¿½Z" + name + "ï¿½F" + c);
 	}
 
 	RuntimeException undefined(String name, Object x, Object y) {
@@ -194,7 +194,7 @@ public class JavaExOperator implements Operator {
 		if (y != null) {
 			c2 = y.getClass().getName();
 		}
-		return new UnsupportedOperationException("–¢’è‹`“ñ€‰‰Z" + name + "F" + c1
+		return new UnsupportedOperationException("ï¿½ï¿½ï¿½ï¿½ï¿½`ï¿½ñ€‰ï¿½ï¿½Z" + name + "ï¿½F" + c1
 				+ " , " + c2);
 	}
 
@@ -223,7 +223,7 @@ public class JavaExOperator implements Operator {
 			return n(-d(x), x);
 		}
 		if (x instanceof Boolean) {
-			return x; // -0‚Í0‚¾‚µ-1‚Í1‚È‚Ì‚ÅA0ˆÈŠO‚ğTRUE‚Æ‚·‚é‚Æ•ÏX‚È‚µ
+			return x; // -0ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½-1ï¿½ï¿½1ï¿½È‚Ì‚ÅA0ï¿½ÈŠOï¿½ï¿½TRUEï¿½Æ‚ï¿½ï¿½ï¿½ï¿½Æ•ÏXï¿½È‚ï¿½
 		}
 
 		throw undefined(SignMinusExpression.NAME, x);
@@ -275,7 +275,7 @@ public class JavaExOperator implements Operator {
 			return nn(d(x) * d(y), x, y);
 		}
 
-		// •¶š—ñ*”’l‚ÍA•¶š—ñ‚ğŒJ‚è•Ô‚·‚±‚Æ‚É‚µ‚Ä‚İ‚é
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*ï¿½ï¿½ï¿½lï¿½ÍAï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½ï¿½ï¿½Ô‚ï¿½ï¿½ï¿½ï¿½Æ‚É‚ï¿½ï¿½Ä‚İ‚ï¿½
 		String s = null;
 		int ct = 0;
 		boolean str = false;
@@ -311,7 +311,7 @@ public class JavaExOperator implements Operator {
 			return nn(d(x) / d(y), x);
 		}
 
-		// •¶š—ñ/•¶š—ñ‚ÍA•¶š—ñ‚ğ•ªŠ„‚·‚é‚±‚Æ‚É‚µ‚Ä‚İ‚é
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÍAï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ğ•ªŠï¿½ï¿½ï¿½ï¿½é‚±ï¿½Æ‚É‚ï¿½ï¿½Ä‚İ‚ï¿½
 		if (x instanceof String && y instanceof String) {
 			String s = (String) x;
 			String r = (String) y;
@@ -501,9 +501,9 @@ public class JavaExOperator implements Operator {
 	}
 
 	/**
-	 * ”äŠr.
+	 * ï¿½ï¿½ï¿½r.
 	 * <p>
-	 * x‚©y‚Ì‚Ç‚¿‚ç‚©‚ªnull‚Ìê‡‚ÉŒÄ‚Î‚ê‚éB</o>
+	 * xï¿½ï¿½yï¿½Ì‚Ç‚ï¿½ï¿½ç‚©ï¿½ï¿½nullï¿½Ìê‡ï¿½ÉŒÄ‚Î‚ï¿½ï¿½ï¿½ï¿½B</o>
 	 *
 	 * @param x
 	 * @param y

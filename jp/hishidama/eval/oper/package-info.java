@@ -1,10 +1,10 @@
 /**
- * Žl‘¥‰‰ŽZ‚ÌŠî–{‰‰ŽZƒpƒbƒP[ƒW.
+ * å››å‰‡æ¼”ç®—ã®åŸºæœ¬æ¼”ç®—ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸
  * <p>
- * ŒvŽZŽ®‚ÌŠî–{‰‰ŽZ‚ðŽÀs‚·‚éƒNƒ‰ƒXŒQ‚Å‚·B<br>
- * ¨<a target="hishidama" href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">Žg—p—á</a>
+ * è¨ˆç®—å¼ã®åŸºæœ¬æ¼”ç®—ã‚’å®Ÿè¡Œã™ã‚‹ã‚¯ãƒ©ã‚¹ç¾¤ã§ã™<br>
+ * ï¿½ï¿½<a target="hishidama" href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">ä½¿ç”¨ä¾‹</a>
  * </p>
- * @author <a target="hishidama" href="http://www.ne.jp/asahi/hishidama/home/tech/soft/index.html">‚Ð‚µ‚¾‚Ü</a>
+ * @author <a target="hishidama" href="http://www.ne.jp/asahi/hishidama/home/tech/soft/index.html">ã²ã—ã ã¾</a>
  */
 package jp.hishidama.eval.oper;
 
