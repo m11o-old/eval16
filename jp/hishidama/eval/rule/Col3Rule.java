@@ -5,16 +5,16 @@ import jp.hishidama.eval.exp.*;
 import jp.hishidama.eval.lex.Lex;
 
 /**
- * O€‰‰Zqƒ‹[ƒ‹ƒNƒ‰ƒX.
+ * ä¸‰é …æ¼”ç®—å­ãƒ«ãƒ¼ãƒ«ã‚¯ãƒ©ã‚¹
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @version 2007.02.17
  */
 public class Col3Rule extends AbstractRule {
 
-	/** ğŒ‰‰Zq */
+	/** æ¡ä»¶æ¼”ç®—å­ */
 	public AbstractExpression cond;
 
 	public Col3Rule(ShareRuleValue share) {
@@ -40,7 +40,7 @@ public class Col3Rule extends AbstractRule {
 	}
 
 	/**
-	 * ğŒ‰‰Z\•¶‰ğÍ.
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 	 *
 	 * @param lex
 	 * @param x

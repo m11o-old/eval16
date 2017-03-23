@@ -5,22 +5,22 @@ import jp.hishidama.eval.exp.*;
 import jp.hishidama.eval.lex.Lex;
 
 /**
- * ’P€Œã’u‰‰Zqƒ‹[ƒ‹ƒNƒ‰ƒX.
+ * å˜é …å¾Œç½®æ¼”ç®—å­ãƒ«ãƒ¼ãƒ«ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
- *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">‚Ğ‚µ‚¾‚Ü</a>
+ *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">ã²ã—ã ã¾</a>
  * @since 2006.10.27
  * @version 2007.02.17
  */
 public class Col1AfterRule extends AbstractRule {
 
-	/** ŠÖ”‚Ì‰‰Zq */
+	/** ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®æ¼”ç®—å­ */
 	public AbstractExpression func;
 
-	/** ”z—ñ‚Ì‰‰Zq */
+	/** é…åˆ—ã®æ¼”ç®—å­ */
 	public AbstractExpression array;
 
-	/** ƒtƒB[ƒ‹ƒh‚Ì‰‰Zq */
+	/** ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®æ¼”ç®—å­ */
 	public AbstractExpression field;
 
 	public Col1AfterRule(ShareRuleValue share) {
@@ -62,14 +62,14 @@ public class Col1AfterRule extends AbstractRule {
 	}
 
 	/**
-	 * ŠÖ”\•¶‰ğÍ.
+	 * ï¿½Öï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 	 * 
 	 * @param lex
 	 * @param x
 	 * @return Expression
 	 */
 	protected AbstractExpression parseFunc(Lex lex, AbstractExpression x) {
-		AbstractExpression a = null; // ˆø”‚ª–³‚¢ŠÖ”‚Ìê‡‚Ínull
+		AbstractExpression a = null; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½ï¿½Ìê‡ï¿½ï¿½null
 		lex.next();
 		if (!lex.isOperator(func.getEndOperator())) {
 			a = share.funcArgRule.parse(lex);
@@ -84,7 +84,7 @@ public class Col1AfterRule extends AbstractRule {
 	}
 
 	/**
-	 * ”z—ñ\•¶‰ğÍ.
+	 * ï¿½zï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 	 * 
 	 * @param lex
 	 * @param x
@@ -106,7 +106,7 @@ public class Col1AfterRule extends AbstractRule {
 	}
 
 	/**
-	 * ƒtƒB[ƒ‹ƒh\•¶‰ğÍ.
+	 * ï¿½tï¿½Bï¿½[ï¿½ï¿½ï¿½hï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 	 * 
 	 * @param lex
 	 * @param x

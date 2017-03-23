@@ -4,13 +4,13 @@ import jp.hishidama.eval.ExpRuleFactory;
 import jp.hishidama.eval.exp.AbstractExpression;
 
 /**
- * Javaƒ‹[ƒ‹ƒtƒ@ƒNƒgƒŠ[ƒNƒ‰ƒX.
+ * Javaãƒ«ãƒ¼ãƒ«ãƒ•ã‚¡ã‚¯ãƒˆãƒªãƒ¼ã‚¯ãƒ©ã‚¹
  * <p>
- * Java‚É‹ß‚¢ƒ‹[ƒ‹‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğ¶¬‚·‚éB
+ * Javaã«è¿‘ã„ãƒ«ãƒ¼ãƒ«ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã™ã‚‹
  * </p>
  * 
  * @author <a target="hishidama"
- *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">‚Ğ‚µ‚¾‚Ü</a>
+ *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">ã²ã—ã ã¾</a>
  * @since 2007.02.21
  */
 public class JavaRuleFactory extends ExpRuleFactory {
@@ -18,12 +18,12 @@ public class JavaRuleFactory extends ExpRuleFactory {
 	private static JavaRuleFactory me;
 
 	/**
-	 * ƒ‹[ƒ‹ƒtƒ@ƒNƒgƒŠ[æ“¾.
+	 * ãƒ«ãƒ¼ãƒ«ãƒ•ã‚¡ã‚¯ãƒˆãƒªãƒ¼å–å¾—
 	 * <p>
-	 * Javaƒ‹[ƒ‹‚Ìƒtƒ@ƒNƒgƒŠ[ƒCƒ“ƒXƒ^ƒ“ƒX‚ğ•Ô‚·B
+	 * Javaãƒ«ãƒ¼ãƒ«ã®ãƒ•ã‚¡ã‚¯ãƒˆãƒªãƒ¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’è¿”ã™
 	 * </p>
 	 * 
-	 * @return ƒ‹[ƒ‹ƒtƒ@ƒNƒgƒŠ[
+	 * @return ãƒ«ãƒ¼ãƒ«ãƒ•ã‚¡ã‚¯ãƒˆãƒªãƒ¼
 	 */
 	public static ExpRuleFactory getInstance() {
 		if (me == null) {

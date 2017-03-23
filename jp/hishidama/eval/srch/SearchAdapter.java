@@ -3,13 +3,13 @@ package jp.hishidama.eval.srch;
 import jp.hishidama.eval.exp.*;
 
 /**
- * 探索アダプタークラス.
+ * 謗｢邏｢繧｢繝繝励ち繝ｼ繧ｯ繝ｩ繧ｹ
  * <p>
- * 探索インターフェースの空実装。
+ * 謗｢邏｢繧､繝ｳ繧ｿ繝ｼ繝輔ぉ繝ｼ繧ｹ縺ｮ遨ｺ螳溯｣�
  * </p>
  * 
  * @author <a target="hishidama"
- *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">ひしだま</a>
+ *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">縺ｲ縺励□縺ｾ</a>
  * @since 2007.02.20
  */
 public class SearchAdapter implements Search {

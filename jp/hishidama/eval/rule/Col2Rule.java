@@ -4,10 +4,10 @@ import jp.hishidama.eval.exp.*;
 import jp.hishidama.eval.lex.Lex;
 
 /**
- * “ñ€‰‰Zqi¶Œ‹‡jƒ‹[ƒ‹ƒNƒ‰ƒX.
+ * äºŒé …æ¼”ç®—å­ï¼ˆå·¦çµåˆï¼‰ãƒ«ãƒ¼ãƒ«ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
- *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">‚Ğ‚µ‚¾‚Ü</a>
+ *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">ã²ã—ã ã¾</a>
  */
 public class Col2Rule extends AbstractRule {
 

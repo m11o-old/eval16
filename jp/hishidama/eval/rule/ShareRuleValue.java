@@ -15,11 +15,11 @@ import jp.hishidama.eval.srch.Search;
 import jp.hishidama.eval.var.Variable;
 
 /**
- * ƒ‹[ƒ‹‹¤’Êî•ñƒNƒ‰ƒX.
+ * ãƒ«ãƒ¼ãƒ«å…±é€šæƒ…å ±ã‚¯ãƒ©ã‚¹
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @version eval16
  */
 public class ShareRuleValue extends Rule {
@@ -28,20 +28,20 @@ public class ShareRuleValue extends Rule {
 	public AbstractRule funcArgRule;
 
 	/**
-	 * Lex‚ğì¬‚·‚éƒtƒ@ƒNƒgƒŠ[.
+	 * Lexã‚’ä½œæˆã™ã‚‹ãƒ•ã‚¡ã‚¯ãƒˆãƒªãƒ¼
 	 */
 	public LexFactory lexFactory;
 
 	/**
-	 * ‰‰ZqŒQ.
+	 * ï¿½ï¿½ï¿½Zï¿½qï¿½Q.
 	 * <p>
-	 * š‹å‰ğÍ‚Å‰‰Zq‚Æ”F¯‚·‚é•¶š—ñB ‰‰Zq‚Ì•¶š”‚É‚æ‚Á‚Ä”z—ñ‚ğ•ª‚¯‚Ä‚¢‚éB i’·‚¢‰‰Zq‚©‚çæ‚Éƒ}ƒbƒ`‚³‚¹‚éˆ×j
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚Å‰ï¿½ï¿½Zï¿½qï¿½Æ”Fï¿½ï¿½ï¿½ï¿½ï¿½é•¶ï¿½ï¿½ï¿½ï¿½ï¿½B ï¿½ï¿½ï¿½Zï¿½qï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ï¿½ï¿½Ä”zï¿½ï¿½ï¿½ğ•ª‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½B ï¿½iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½qï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Éƒ}ï¿½bï¿½`ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×j
 	 * </p>
 	 */
 	@SuppressWarnings("unchecked")
 	protected List<String>[] opeList = new List[4];
 
-	/** ŠÛŠ‡ŒÊ‚Ì‰‰Zq */
+	/** ä¸¸æ‹¬å¼§ã®æ¼”ç®—å­ */
 	public AbstractExpression paren;
 
 	@Override
@@ -75,13 +75,13 @@ public class ShareRuleValue extends Rule {
 	}
 
 	/**
-	 * \•¶‰ğÍi“à•”—pj
+	 * æ§‹æ–‡è§£æï¼ˆå†…éƒ¨ç”¨ï¼‰
 	 *
 	 * @param str
-	 *            ‰ğÍ‘ÎÛ•¶š—ñ
+	 *            è§£æå¯¾è±¡æ–‡å­—åˆ—
 	 * @param exp
-	 *            ®‹¤’Êî•ñ
-	 * @return \•¶‰ğÍ–Ø
+	 *            å¼å…±é€šæƒ…å ±
+	 * @return æ§‹æ–‡è§£ææœ¨
 	 * @since 2007.02.20
 	 */
 	public AbstractExpression parse(String str, ShareExpValue exp) {
@@ -100,7 +100,7 @@ public class ShareRuleValue extends Rule {
 	}
 
 	/**
-	 * ‰ğÍ‘ÎÛ‚ª–³‚¢‚Æ‚«‚É•Ô‚·‹óExpression
+	 * ï¿½ï¿½ï¿½Í‘ÎÛ‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½É•Ô‚ï¿½ï¿½ï¿½Expression
 	 */
 	class EmptyExpression extends Expression {
 

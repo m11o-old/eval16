@@ -5,10 +5,10 @@ import jp.hishidama.eval.exp.*;
 import jp.hishidama.eval.lex.Lex;
 
 /**
- * Šî–{—v‘fƒ‹[ƒ‹ƒNƒ‰ƒX.
+ * åŸºæœ¬è¦ç´ ãƒ«ãƒ¼ãƒ«ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
- *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">‚Ğ‚µ‚¾‚Ü</a>
+ *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">ã²ã—ã ã¾</a>
  * @version 2007.02.21
  */
 public class PrimaryRule extends AbstractRule {
@@ -58,7 +58,7 @@ public class PrimaryRule extends AbstractRule {
 	}
 
 	/**
-	 * ¬Š‡ŒÊ\•¶‰ğÍ.
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ê\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 	 * 
 	 * @param lex
 	 * @param ope
@@ -68,7 +68,7 @@ public class PrimaryRule extends AbstractRule {
 	protected AbstractExpression parseParen(Lex lex, String ope, int pos) {
 		AbstractExpression s = share.topRule.parse(lex.next());
 		if (!lex.isOperator(share.paren.getEndOperator())) {
-			// •Â‚¶Š‡ŒÊ‚Å‚È‚¢ê‡
+			// ï¿½Â‚ï¿½ï¿½ï¿½ï¿½Ê‚Å‚È‚ï¿½ï¿½ê‡
 			throw new EvalException(EvalException.PARSE_NOT_FOUND_END_OP,
 					new String[] { share.paren.getEndOperator() }, lex);
 		}

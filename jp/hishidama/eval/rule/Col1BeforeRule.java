@@ -5,11 +5,11 @@ import jp.hishidama.eval.exp.AbstractExpression;
 import jp.hishidama.eval.lex.Lex;
 
 /**
- * 単項前置演算子ルールクラス.
+ * 蜊倬�蜑咲ｽｮ貍皮ｮ怜ｭ舌Ν繝ｼ繝ｫ繧ｯ繝ｩ繧ｹ
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >ひしだま</a>
+ *         >縺ｲ縺励□縺ｾ</a>
  * @since 2006.10.27
  * @version 2006.10.31
  */

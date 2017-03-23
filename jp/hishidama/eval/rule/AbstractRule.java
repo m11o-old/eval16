@@ -6,19 +6,19 @@ import jp.hishidama.eval.exp.*;
 import jp.hishidama.eval.lex.*;
 
 /**
- * ƒ‹[ƒ‹’ŠÛƒNƒ‰ƒX.
+ * ãƒ«ãƒ¼ãƒ«æŠ½è±¡ã‚¯ãƒ©ã‚¹
  * <p>
- * ‰‰Zq‚Ìí—Ş–ˆ‚Ì—Dæ‡ˆÊ‚ğ•\‚µA\•¶‰ğÍ‚ğÀÛ‚És‚¤ƒNƒ‰ƒXB
+ * æ¼”ç®—å­ã®ç¨®é¡æ¯ã®å„ªå…ˆé †ä½ã‚’è¡¨ã—ã€æ§‹æ–‡è§£æã‚’å®Ÿéš›ã«è¡Œã†ã‚¯ãƒ©ã‚¹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @version 2007.02.16
  */
 public abstract class AbstractRule {
 
-	/** Ÿ‚Ì—Dæ‡ˆÊ‚Ìƒ‹[ƒ‹. */
+	/** æ¬¡ã®å„ªå…ˆé †ä½ã®ãƒ«ãƒ¼ãƒ« */
 	public AbstractRule nextRule;
 
 	protected ShareRuleValue share;
@@ -28,14 +28,14 @@ public abstract class AbstractRule {
 	}
 
 	/**
-	 * ‰‰Zq“o˜^.
+	 * æ¼”ç®—å­ç™»éŒ²
 	 * <p>
-	 * ©•ª‚Ìƒ‹[ƒ‹‚É‘®‚·‚é‰‰Zq‚ğ’Ç‰Á‚·‚éB‰Šú‰»—pB<br>
-	 * •¹‚¹‚ÄA‚»‚Ì‰‰Zq‚Ì®ƒNƒ‰ƒX‚Ì‰Šú‰»‚ğs‚¤B
+	 * è‡ªåˆ†ã®ãƒ«ãƒ¼ãƒ«ã«å±ã™ã‚‹æ¼”ç®—å­ã‚’è¿½åŠ ã™ã‚‹ã€‚åˆæœŸåŒ–ç”¨<br>
+	 * ä½µã›ã¦ã€ãã®æ¼”ç®—å­ã®å¼ã‚¯ãƒ©ã‚¹ã®åˆæœŸåŒ–ã‚’è¡Œã†
 	 * </p>
 	 *
 	 * @param exp
-	 *            ®ƒCƒ“ƒXƒ^ƒ“ƒXi‰‰Zq•¶š—ñ•Û—pj
+	 *            å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ï¼ˆæ¼”ç®—å­æ–‡å­—åˆ—ä¿æŒç”¨ï¼‰
 	 */
 	public final void addExpression(AbstractExpression exp) {
 		if (exp == null) {
@@ -51,10 +51,10 @@ public abstract class AbstractRule {
 	}
 
 	/**
-	 * ‰‰ZqŒQ.
+	 * ï¿½ï¿½ï¿½Zï¿½qï¿½Q.
 	 * <p>
-	 * “¯‚¶—Dæ‡ˆÊ‚É‘®‚·‚é‰‰ZqB<br>
-	 * Map&lt;‰‰Zq, ‰‰ZqƒCƒ“ƒXƒ^ƒ“ƒX&gt;
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Dï¿½æ‡ï¿½Ê‚É‘ï¿½ï¿½ï¿½ï¿½é‰‰ï¿½Zï¿½qï¿½B<br>
+	 * Map&lt;ï¿½ï¿½ï¿½Zï¿½q, ï¿½ï¿½ï¿½Zï¿½qï¿½Cï¿½ï¿½ï¿½Xï¿½^ï¿½ï¿½ï¿½X&gt;
 	 * </p>
 	 * 
 	 * @version 2007.02.16
@@ -62,15 +62,15 @@ public abstract class AbstractRule {
 	private final Map<String, AbstractExpression> opes = new HashMap<String, AbstractExpression>();
 
 	/**
-	 * ‰‰Zq’Ç‰Á.
+	 * æ¼”ç®—å­è¿½åŠ 
 	 * <p>
-	 * ©•ª‚Ìƒ‹[ƒ‹‚É‘®‚·‚é‰‰Zq‚ğ’Ç‰Á‚·‚éB‰Šú‰»—pB
+	 * è‡ªåˆ†ã®ãƒ«ãƒ¼ãƒ«ã«å±ã™ã‚‹æ¼”ç®—å­ã‚’è¿½åŠ ã™ã‚‹ã€‚åˆæœŸåŒ–ç”¨
 	 * </p>
 	 *
 	 * @param ope
-	 *            ‰‰Zq
+	 *            æ¼”ç®—å­
 	 * @param exp
-	 *            ƒ_ƒ~[‰‰ZqƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            ãƒ€ãƒŸãƒ¼æ¼”ç®—å­ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 */
 	public final void addOperator(String ope, AbstractExpression exp) {
 		opes.put(ope, exp);
@@ -79,9 +79,9 @@ public abstract class AbstractRule {
 	}
 
 	/**
-	 * ‰‰Zqˆê——æ“¾.
+	 * æ¼”ç®—å­ä¸€è¦§å–å¾—
 	 *
-	 * @return ‘S‰‰Zq
+	 * @return å…¨æ¼”ç®—å­
 	 * @since 2007.02.16
 	 */
 	public final String[] getOperators() {
@@ -93,14 +93,14 @@ public abstract class AbstractRule {
 	}
 
 	/**
-	 * ‰ğß‘ÎÛ‰‰Zq’Ç‰Á.
+	 * è§£é‡ˆå¯¾è±¡æ¼”ç®—å­è¿½åŠ 
 	 * <p>
-	 * ‰‰Zq‚Æ‰ğß‚·‚é•¶š—ñ‚ğ’Ç‰Á‚·‚éB‰Šúˆ—‚Å‚Ì‚İg—pB<br>
-	 * ‚±‚±‚Åì¬‚µ‚½opeList‚ÍLex‚Åg—p‚·‚éB
+	 * æ¼”ç®—å­ã¨è§£é‡ˆã™ã‚‹æ–‡å­—åˆ—ã‚’è¿½åŠ ã™ã‚‹ã€‚åˆæœŸå‡¦ç†ã§ã®ã¿ä½¿ç”¨<br>
+	 * ã“ã“ã§ä½œæˆã—ãŸopeListã¯Lexã§ä½¿ç”¨ã™ã‚‹
 	 * </p>
 	 *
 	 * @param ope
-	 *            ‰‰Zq
+	 *            æ¼”ç®—å­
 	 * @see Lex#isOperator(int)
 	 * @since 2007.02.16
 	 */
@@ -116,14 +116,14 @@ public abstract class AbstractRule {
 	}
 
 	/**
-	 * ‰‰Zq”»’f.
+	 * ï¿½ï¿½ï¿½Zï¿½qï¿½ï¿½ï¿½f.
 	 * <p>
-	 * ˆø”‚Ì‰‰Zq‚ªA©•ª‚Ìƒ‹[ƒ‹‚É‘®‚·‚é‚©‚Ç‚¤‚©ƒ`ƒFƒbƒN‚·‚éB
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ì‰ï¿½ï¿½Zï¿½qï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½Ìƒï¿½ï¿½[ï¿½ï¿½ï¿½É‘ï¿½ï¿½ï¿½ï¿½é‚©ï¿½Ç‚ï¿½ï¿½ï¿½ï¿½`ï¿½Fï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½B
 	 * </p>
 	 *
 	 * @param ope
-	 *            ‰‰Zq
-	 * @return ©•ª‚É‘®‚·‚éê‡Atrue
+	 *            ï¿½ï¿½ï¿½Zï¿½q
+	 * @return ï¿½ï¿½ï¿½ï¿½ï¿½É‘ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‡ï¿½Atrue
 	 * @version 2006.11.07
 	 */
 	protected final boolean isMyOperator(String ope) {
@@ -131,13 +131,13 @@ public abstract class AbstractRule {
 	}
 
 	/**
-	 * ‰‰ZqƒCƒ“ƒXƒ^ƒ“ƒX¶¬.
+	 * ï¿½ï¿½ï¿½Zï¿½qï¿½Cï¿½ï¿½ï¿½Xï¿½^ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ï¿½.
 	 *
 	 * @param ope
-	 *            ‰‰Zq
+	 *            ï¿½ï¿½ï¿½Zï¿½q
 	 * @param share
-	 *            ‹¤’Êî•ñ
-	 * @return ‰‰ZqƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            ï¿½ï¿½ï¿½Êï¿½ï¿½ï¿½
+	 * @return ï¿½ï¿½ï¿½Zï¿½qï¿½Cï¿½ï¿½ï¿½Xï¿½^ï¿½ï¿½ï¿½X
 	 * @since 2006.11.07
 	 * @version 2007.02.09
 	 */
@@ -156,14 +156,14 @@ public abstract class AbstractRule {
 		}
 	}
 
-	/** —Dæ‡ˆÊ. */
+	/** å„ªå…ˆé †ä½ */
 	public int prio;
 
 	/**
-	 * —Dæ‡ˆÊ‰Šú‰».
+	 * å„ªå…ˆé †ä½åˆæœŸåŒ–
 	 *
 	 * @param prio
-	 *            —Dæ‡ˆÊ
+	 *            å„ªå…ˆé †ä½
 	 * @since 2006.10.27
 	 */
 	public final void initPriority(int prio) {
@@ -175,11 +175,11 @@ public abstract class AbstractRule {
 	}
 
 	/**
-	 * \•¶‰ğÍ.
+	 * ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 	 *
 	 * @param lex
-	 *            š‹å‰ğÍƒCƒ“ƒXƒ^ƒ“ƒX
-	 * @return \•¶‰ğÍ–ØƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÍƒCï¿½ï¿½ï¿½Xï¿½^ï¿½ï¿½ï¿½X
+	 * @return ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½Í–ØƒCï¿½ï¿½ï¿½Xï¿½^ï¿½ï¿½ï¿½X
 	 */
 	protected abstract AbstractExpression parse(Lex lex);
 
