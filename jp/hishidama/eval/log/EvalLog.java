@@ -3,65 +3,65 @@ package jp.hishidama.eval.log;
 import jp.hishidama.eval.Expression;
 
 /**
- * ‰‰ZƒƒOo—ÍƒCƒ“ƒ^[ƒtƒF[ƒX.
+ * æ¼”ç®—æ™‚ãƒ­ã‚°å‡ºåŠ›ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹
  * <p>
- * {@link Expression#eval()}‚É‚¨‚¢‚Ä‰‰Z‚ğÀs‚µ‚½Û‚ÉƒƒOo—Í‚·‚éˆ×‚ÌƒCƒ“ƒ^[ƒtƒF[ƒXB
+ * {@link Expression#eval()}ã«ãŠã„ã¦æ¼”ç®—ã‚’å®Ÿè¡Œã—ãŸéš›ã«ãƒ­ã‚°å‡ºåŠ›ã™ã‚‹ç‚ºã®ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since eval16
  */
 public interface EvalLog {
 
 	/**
-	 * ƒƒOo—Íi–³‰‰Zj.
+	 * ãƒ­ã‚°å‡ºåŠ›ï¼ˆç„¡æ¼”ç®—ï¼‰
 	 *
 	 * @param name
-	 *            ‰‰Z–¼inullˆÈŠOj
+	 *            æ¼”ç®—åï¼ˆnullä»¥å¤–ï¼‰
 	 * @param r
-	 *            ‰‰ZŒ‹‰Ê‚Ì’l
+	 *            æ¼”ç®—çµæœã®å€¤
 	 */
 	public void logEval(String name, Object r);
 
 	/**
-	 * ƒƒOo—Íi’P€‰‰Zj.
+	 * ãƒ­ã‚°å‡ºåŠ›ï¼ˆå˜é …æ¼”ç®—ï¼‰
 	 *
 	 * @param name
-	 *            ‰‰Z–¼inullˆÈŠOj
+	 *            æ¼”ç®—åï¼ˆnullä»¥å¤–ï¼‰
 	 * @param x
-	 *            ’l
+	 *            å€¤
 	 * @param r
-	 *            ‰‰ZŒ‹‰Ê‚Ì’l
+	 *            æ¼”ç®—çµæœã®å€¤
 	 */
 	public void logEval(String name, Object x, Object r);
 
 	/**
-	 * ƒƒOo—Íi“ñ€‰‰Zj.
+	 * ãƒ­ã‚°å‡ºåŠ›ï¼ˆäºŒé …æ¼”ç®—ï¼‰
 	 *
 	 * @param name
-	 *            ‰‰Z–¼inullˆÈŠOj
+	 *            æ¼”ç®—åï¼ˆnullä»¥å¤–ï¼‰
 	 * @param x
-	 *            ’l1
+	 *            å€¤1
 	 * @param y
-	 *            ’l2
+	 *            å€¤2
 	 * @param r
-	 *            ‰‰ZŒ‹‰Ê‚Ì’l
+	 *            æ¼”ç®—çµæœã®å€¤
 	 */
 	public void logEval(String name, Object x, Object y, Object r);
 
 	/**
-	 * ƒƒOo—ÍiŠÖ”j.
+	 * ãƒ­ã‚°å‡ºåŠ›ï¼ˆé–¢æ•°ï¼‰
 	 *
 	 * @param name
-	 *            ‰‰Z–¼inullˆÈŠOj
+	 *            æ¼”ç®—åï¼ˆnullä»¥å¤–ï¼‰
 	 * @param funcName
-	 *            ŠÖ”–¼inullˆÈŠOj
+	 *            é–¢æ•°åï¼ˆnullä»¥å¤–ï¼‰
 	 * @param args
-	 *            ŠÖ”‚Ìˆø”‚Ì’linullˆÈŠOj
+	 *            é–¢æ•°ã®å¼•æ•°ã®å€¤ï¼ˆnullä»¥å¤–ï¼‰
 	 * @param r
-	 *            ‰‰ZŒ‹‰Ê‚Ì’l
+	 *            æ¼”ç®—çµæœã®å€¤
 	 */
 	public void logEvalFunction(String name, String funcName, Object[] args,
 			Object r);

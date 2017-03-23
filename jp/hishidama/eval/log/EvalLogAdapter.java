@@ -1,15 +1,15 @@
 package jp.hishidama.eval.log;
 
 /**
- * ‰‰ŽZŽžƒƒOo—ÍƒAƒ_ƒvƒ^[ƒNƒ‰ƒX.
+ * æ¼”ç®—æ™‚ãƒ­ã‚°å‡ºåŠ›ã‚¢ãƒ€ãƒ—ã‚¿ãƒ¼ã‚¯ãƒ©ã‚¹
  * <p>
- * {@link EvalLog ƒƒOo—ÍƒCƒ“ƒ^[ƒtƒF[ƒX}‚ðŽÀ‘•‚µ‚½ƒNƒ‰ƒXB<br>
- * “–ƒNƒ‰ƒX‚Å‚ÍAˆ—‚Í‰½‚às‚í‚È‚¢B
+ * {@link EvalLog ãƒ­ã‚°å‡ºåŠ›ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹}ã‚’å®Ÿè£…ã—ãŸã‚¯ãƒ©ã‚¹<br>
+ * å½“ã‚¯ãƒ©ã‚¹ã§ã¯ã€å‡¦ç†ã¯ä½•ã‚‚è¡Œã‚ãªã„
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ð‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since eval16
  */
 public class EvalLogAdapter implements EvalLog {
