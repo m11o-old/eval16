@@ -5,30 +5,30 @@ import java.util.*;
 import jp.hishidama.eval.EvalException;
 
 /**
- * ®‚Ì’ŠÛƒNƒ‰ƒX.
+ * å¼ã®æŠ½è±¡ã‚¯ãƒ©ã‚¹
  * <p>
- * \•¶‰ğÍ–Ø‚ğ\¬‚µA‰‰Z‚Ì•]‰¿‚ğÀ{‚·‚éB
+ * æ§‹æ–‡è§£ææœ¨ã‚’æ§‹æˆã—ã€æ¼”ç®—ã®è©•ä¾¡ã‚’å®Ÿæ–½ã™ã‚‹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @version eval16
  */
 public abstract class AbstractExpression {
 
 	/**
-	 * ‘S‘Ì•¶š—ñ.
+	 * ï¿½Sï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½.
 	 * <p>
-	 * ‰ğß‘ÎÛ‘S‘Ì‚Ì•¶š—ñB
+	 * ï¿½ï¿½ï¿½ß‘ÎÛ‘Sï¿½Ì‚Ì•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
 	 * </p>
 	 */
 	protected String string = null;
 
 	/**
-	 * ˆÊ’u.
+	 * ï¿½Ê’u.
 	 * <p>
-	 * ‘S‘Ì•¶š—ñ“à‚ÌˆÊ’uB
+	 * ï¿½Sï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÌˆÊ’uï¿½B
 	 * </p>
 	 */
 	protected int pos = -1;
@@ -56,37 +56,37 @@ public abstract class AbstractExpression {
 	}
 
 	/**
-	 * •¡»¶¬.
+	 * è¤‡è£½ç”Ÿæˆ
 	 * <p>
-	 * “–ƒCƒ“ƒXƒ^ƒ“ƒX‚Ì•¡»‚ğì¬‚·‚éB
+	 * å½“ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®è¤‡è£½ã‚’ä½œæˆã™ã‚‹
 	 * </p>
 	 *
 	 * @param s
-	 *            V‹¤’Êî•ñ
-	 * @return VƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            æ–°å…±é€šæƒ…å ±
+	 * @return æ–°ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 * @since 2007.02.17
 	 */
 	public abstract AbstractExpression dup(ShareExpValue s);
 
 	/**
-	 * ‰‰Zqæ“¾.
+	 * æ¼”ç®—å­å–å¾—
 	 * <p>
-	 * ®ƒNƒ‰ƒX‚ÉŒÅ—L‚Ì‰‰Zq‚ğ•Ô‚·B
+	 * å¼ã‚¯ãƒ©ã‚¹ã«å›ºæœ‰ã®æ¼”ç®—å­ã‚’è¿”ã™
 	 * </p>
 	 *
-	 * @return ‰‰Zq
+	 * @return æ¼”ç®—å­
 	 */
 	public final String getOperator() {
 		return ope1;
 	}
 
 	/**
-	 * I—¹‰‰Zqæ“¾.
+	 * çµ‚äº†æ¼”ç®—å­å–å¾—
 	 * <p>
-	 * ")"‚â"]"‚È‚ÇB
+	 * ")"ã‚„"]"ãªã©
 	 * </p>
 	 *
-	 * @return ‰‰Zqi‘¶İ‚µ‚È‚¢ê‡‚Ínullj
+	 * @return æ¼”ç®—å­ï¼ˆå­˜åœ¨ã—ãªã„å ´åˆã¯nullï¼‰
 	 * @since 2007.02.16
 	 */
 	public final String getEndOperator() {
@@ -94,10 +94,10 @@ public abstract class AbstractExpression {
 	}
 
 	/**
-	 * ‰‰ZqƒZƒbƒg.
+	 * æ¼”ç®—å­ã‚»ãƒƒãƒˆ
 	 *
 	 * @param ope
-	 *            ‰‰Zq
+	 *            æ¼”ç®—å­
 	 * @since 2007.02.17
 	 */
 	public final void setOperator(String ope) {
@@ -105,10 +105,10 @@ public abstract class AbstractExpression {
 	}
 
 	/**
-	 * I—¹‰‰ZqƒZƒbƒg.
+	 * çµ‚äº†æ¼”ç®—å­ã‚»ãƒƒãƒˆ
 	 *
 	 * @param ope
-	 *            ‰‰Zq
+	 *            æ¼”ç®—å­
 	 * @since 2007.02.17
 	 */
 	public final void setEndOperator(String ope) {
@@ -116,9 +116,9 @@ public abstract class AbstractExpression {
 	}
 
 	/**
-	 * ¯•Êqæ“¾.
+	 * è­˜åˆ¥å­å–å¾—
 	 *
-	 * @return ¯•Êq
+	 * @return è­˜åˆ¥å­
 	 */
 	public String getWord() {
 		return getOperator();
@@ -129,23 +129,23 @@ public abstract class AbstractExpression {
 	}
 
 	/**
-	 * €”æ“¾.
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½æ“¾.
 	 * <p>
-	 * ‰‰Z‚Ì€‚Ì”‚ğ•Ô‚·B<br>
-	 * i—áF“ñ€‰‰Zq‚Ìê‡A2‚ğ•Ô‚·j
+	 * ï¿½ï¿½ï¿½Zï¿½Ìï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½Ô‚ï¿½ï¿½B<br>
+	 * ï¿½iï¿½ï¿½ï¿½Fï¿½ñ€‰ï¿½ï¿½Zï¿½qï¿½Ìê‡ï¿½A2ï¿½ï¿½ï¿½Ô‚ï¿½ï¿½j
 	 * </p>
 	 *
-	 * @return €”
+	 * @return ï¿½ï¿½ï¿½ï¿½
 	 */
 	protected abstract int getCols();
 
 	/**
-	 * ˆÊ’uİ’è.
+	 * ï¿½Ê’uï¿½İ’ï¿½.
 	 *
 	 * @param string
-	 *            •¶š—ñ
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @param pos
-	 *            ˆÊ’u
+	 *            ï¿½Ê’u
 	 */
 	protected final void setPos(String string, int pos) {
 		this.string = string;
@@ -153,48 +153,48 @@ public abstract class AbstractExpression {
 	}
 
 	/**
-	 * ‰ğÍ–¼æ“¾.
+	 * è§£æåå–å¾—
 	 *
-	 * @return ‰ğÍ–¼
+	 * @return è§£æå
 	 */
 	public abstract String getExpressionName();
 
 	/**
-	 * ‰ğÍ‘ÎÛ•¶š—ñæ“¾.
+	 * è§£æå¯¾è±¡æ–‡å­—åˆ—å–å¾—
 	 *
-	 * @return •¶š—ñ
+	 * @return æ–‡å­—åˆ—
 	 */
 	public final String getString() {
 		return string;
 	}
 
 	/**
-	 * ˆÊ’uæ“¾.
+	 * ä½ç½®å–å¾—
 	 *
-	 * @return ˆÊ’u
+	 * @return ä½ç½®
 	 */
 	public final int getPos() {
 		return pos;
 	}
 
 	/**
-	 * æ“ªˆÊ’uæ“¾.
+	 * ï¿½æ“ªï¿½Ê’uï¿½æ“¾.
 	 * <p>
-	 * ©•ª‚Ì‰‰Z‚É‘®‚·‚éˆê”Ô¶‘¤‚ÌˆÊ’u‚ğ•Ô‚·B
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ì‰ï¿½ï¿½Zï¿½É‘ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôï¿½ï¿½ï¿½ï¿½ÌˆÊ’uï¿½ï¿½ï¿½Ô‚ï¿½ï¿½B
 	 * </p>
 	 *
-	 * @return ˆÊ’u
+	 * @return ï¿½Ê’u
 	 */
 	protected abstract int getFirstPos();
 
-	/** —Dæ‡ˆÊ. */
+	/** ï¿½Dï¿½æ‡ï¿½ï¿½. */
 	protected int prio;
 
 	/**
-	 * —Dæ‡ˆÊİ’è.
+	 * å„ªå…ˆé †ä½è¨­å®š
 	 *
 	 * @param prio
-	 *            —Dæ‡ˆÊ
+	 *            å„ªå…ˆé †ä½
 	 * @since 2006.10.27
 	 */
 	public final void setPriority(int prio) {
@@ -202,9 +202,9 @@ public abstract class AbstractExpression {
 	}
 
 	/**
-	 * —Dæ‡ˆÊæ“¾.
+	 * ï¿½Dï¿½æ‡ï¿½Êæ“¾.
 	 *
-	 * @return —Dæ‡ˆÊ
+	 * @return ï¿½Dï¿½æ‡ï¿½ï¿½
 	 * @since 2006.10.27
 	 */
 	protected final int getPriority() {
@@ -212,39 +212,39 @@ public abstract class AbstractExpression {
 	}
 
 	/**
-	 * ‘ã“üÀs.
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½s.
 	 * <p>
-	 * •Ï”i“–Expressionj‚É’l‚ğ‘ã“ü‚·‚éB
+	 * ï¿½Ïï¿½ï¿½iï¿½ï¿½Expressionï¿½jï¿½É’lï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
 	 * </p>
 	 *
 	 * @param val
-	 *            ‘ã“ü‚·‚é’l
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½l
 	 * @param pos
-	 *            ‰‰Zq‚ÌˆÊ’uiƒGƒ‰[‚Ég—pj
+	 *            ï¿½ï¿½ï¿½Zï¿½qï¿½ÌˆÊ’uï¿½iï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Égï¿½pï¿½j
 	 * @throws EvalException
-	 *             ¶•Ó’l‚ª•Ï”‚Å‚È‚¢‚Æ‚«
+	 *             ï¿½ï¿½ï¿½Ó’lï¿½ï¿½ï¿½Ïï¿½ï¿½Å‚È‚ï¿½ï¿½Æ‚ï¿½
 	 * @since 2007.2.13
 	 */
 	protected void let(Object val, int pos) {
-		// •Ï”‚Æ‚µ‚Äˆµ‚¦‚éƒNƒ‰ƒX‚ÍA“–ƒƒ\ƒbƒh‚ğƒI[ƒo[ƒ‰ƒCƒh‚µ‚Ä’l‚ğ‘ã“ü‚·‚éB
+		// ï¿½Ïï¿½ï¿½Æ‚ï¿½ï¿½Äˆï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½Xï¿½ÍAï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½ï¿½ï¿½Iï¿½[ï¿½oï¿½[ï¿½ï¿½ï¿½Cï¿½hï¿½ï¿½ï¿½Ä’lï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
 		throw new EvalException(EvalException.EXP_NOT_LET, toString(), this,
 				null);
 	}
 
 	/**
-	 * •Ï”æ“¾.
+	 * ï¿½Ïï¿½ï¿½æ“¾.
 	 * <p>
-	 * •Ï”’læ“¾i•]‰¿j—pB
+	 * ï¿½Ïï¿½ï¿½lï¿½æ“¾ï¿½iï¿½]ï¿½ï¿½ï¿½jï¿½pï¿½B
 	 * </p>
 	 *
-	 * @return •Ï”‚ğ•\‚·ƒIƒuƒWƒFƒNƒg
+	 * @return ï¿½Ïï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½g
 	 * @throws EvalException
-	 *             •Ï”‚Å‚Í‚È‚¢‚Æ‚«
+	 *             ï¿½Ïï¿½ï¿½Å‚Í‚È‚ï¿½ï¿½Æ‚ï¿½
 	 * @since 2006.10.27
 	 * @version 2007.02.13
 	 */
 	protected Object getVariable() {
-		// •Ï”‚Æ‚µ‚Äˆµ‚¦‚éƒNƒ‰ƒX‚ÍA“–ƒƒ\ƒbƒh‚ğƒI[ƒo[ƒ‰ƒCƒh‚µ‚Ä•Ï”ƒIƒuƒWƒFƒNƒg‚ğ•Ô‚·B
+		// ï¿½Ïï¿½ï¿½Æ‚ï¿½ï¿½Äˆï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½Xï¿½ÍAï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½ï¿½ï¿½Iï¿½[ï¿½oï¿½[ï¿½ï¿½ï¿½Cï¿½hï¿½ï¿½ï¿½Ä•Ïï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½Ô‚ï¿½ï¿½B
 		// int first = getFirstPos();
 		// String word = string.substring(first, pos);
 		String word = this.toString();
@@ -253,13 +253,13 @@ public abstract class AbstractExpression {
 	}
 
 	/**
-	 * ˆø”‚Ì’lİ’è.
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ì’lï¿½İ’ï¿½.
 	 * <p>
-	 * •]‰¿‚ğÀs‚µ‚ÄƒŠƒXƒg‚ÉƒZƒbƒg‚·‚éB
+	 * ï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Äƒï¿½ï¿½Xï¿½gï¿½ÉƒZï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½B
 	 * </p>
 	 *
 	 * @param args
-	 *            ’l‚ğİ’è‚·‚éƒŠƒXƒg
+	 *            ï¿½lï¿½ï¿½ï¿½İ’è‚·ï¿½éƒŠï¿½Xï¿½g
 	 * @since 2005.02.15
 	 */
 	protected void evalArgs(List<Object> args) {
@@ -267,28 +267,28 @@ public abstract class AbstractExpression {
 	}
 
 	/**
-	 * •]‰¿Às.
+	 * è©•ä¾¡å®Ÿè¡Œ
 	 * <p>
-	 * ObjectŒ^‚Å‰‰Z‚ğÀ{‚µ‚ÄŒ‹‰Ê‚ğ•Ô‚·B<br>
-	 * ‰‰ZÀsƒNƒ‰ƒX‚ğ“o˜^‚·‚é•K—v‚ ‚èB
+	 * Objectå‹ã§æ¼”ç®—ã‚’å®Ÿæ–½ã—ã¦çµæœã‚’è¿”ã™<br>
+	 * æ¼”ç®—å®Ÿè¡Œã‚¯ãƒ©ã‚¹ã‚’ç™»éŒ²ã™ã‚‹å¿…è¦ã‚ã‚Š
 	 * </p>
 	 *
-	 * @return ‰‰ZŒ‹‰Ê
+	 * @return æ¼”ç®—çµæœ
 	 * @throws EvalException
-	 *             ‰‰Z’†‚ÉƒGƒ‰[‚ª”­¶‚µ‚½‚Æ‚«
+	 *             æ¼”ç®—ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã¨ã
 	 * @since 2007.02.15
 	 */
 	public abstract Object eval();
 
 	/**
-	 * ’TõÀs([‚³—Dæ).
+	 * ï¿½Tï¿½ï¿½ï¿½ï¿½ï¿½s(ï¿½[ï¿½ï¿½ï¿½Dï¿½ï¿½).
 	 *
 	 * @since 2007.02.17
 	 */
 	protected abstract void search();
 
 	/**
-	 * •ÏŠ·Às
+	 * ï¿½ÏŠï¿½ï¿½ï¿½ï¿½s
 	 *
 	 * @return Expression
 	 * @since 2007.02.20
@@ -296,7 +296,7 @@ public abstract class AbstractExpression {
 	protected abstract AbstractExpression replace();
 
 	/**
-	 * ¶•Ó’l‚Æ‚µ‚Ä•ÏŠ·Às
+	 * ï¿½ï¿½ï¿½Ó’lï¿½Æ‚ï¿½ï¿½Ä•ÏŠï¿½ï¿½ï¿½ï¿½s
 	 *
 	 * @return Expression
 	 * @since 2007.02.20
@@ -304,15 +304,15 @@ public abstract class AbstractExpression {
 	protected abstract AbstractExpression replaceVar();
 
 	/**
-	 * ƒIƒuƒWƒFƒNƒg”äŠr.
+	 * ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæ¯”è¼ƒ
 	 * <p>
-	 * –Ø\‘¢‚ª“™‚µ‚¢‚©‚Ç‚¤‚©‚ğƒ`ƒFƒbƒN‚·‚éB<br>
-	 * ‰‰Zq‚Ì•¶š—ñ•\Œ»‚Ìˆá‚¢‚ÍˆÓ¯‚µ‚È‚¢B
+	 * æœ¨æ§‹é€ ãŒç­‰ã—ã„ã‹ã©ã†ã‹ã‚’ãƒã‚§ãƒƒã‚¯ã™ã‚‹<br>
+	 * æ¼”ç®—å­ã®æ–‡å­—åˆ—è¡¨ç¾ã®é•ã„ã¯æ„è­˜ã—ãªã„
 	 * </p>
 	 *
 	 * @param obj
-	 *            ƒIƒuƒWƒFƒNƒg
-	 * @return “™‚µ‚¢‚Æ‚«Atrue
+	 *            ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+	 * @return ç­‰ã—ã„ã¨ãã€true
 	 * @see #same(AbstractExpression)
 	 * @since 2007.02.27
 	 */
@@ -320,23 +320,23 @@ public abstract class AbstractExpression {
 	public abstract boolean equals(Object obj);
 
 	/**
-	 * ƒnƒbƒVƒ…ƒR[ƒh’læ“¾.
+	 * ãƒãƒƒã‚·ãƒ¥ã‚³ãƒ¼ãƒ‰å€¤å–å¾—
 	 *
-	 * @return ƒnƒbƒVƒ…ƒR[ƒh’l
+	 * @return ãƒãƒƒã‚·ãƒ¥ã‚³ãƒ¼ãƒ‰å€¤
 	 * @since 2007.02.27
 	 */
 	@Override
 	public abstract int hashCode();
 
 	/**
-	 * ƒIƒuƒWƒFƒNƒg”äŠr.
+	 * ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæ¯”è¼ƒ
 	 * <p>
-	 * ‰‰Zq‚Ì•¶š—ñ•\Œ»‚Ü‚ÅŠÜ‚ß‚ÄƒIƒuƒWƒFƒNƒg‚ª“™‚µ‚¢‚©‚Ç‚¤‚©ƒ`ƒFƒbƒN‚·‚éB
+	 * æ¼”ç®—å­ã®æ–‡å­—åˆ—è¡¨ç¾ã¾ã§å«ã‚ã¦ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒç­‰ã—ã„ã‹ã©ã†ã‹ãƒã‚§ãƒƒã‚¯ã™ã‚‹
 	 * </p>
 	 *
 	 * @param exp
-	 *            ”äŠr‘ÎÛ
-	 * @return “™‚µ‚¢‚Æ‚«Atrue
+	 *            æ¯”è¼ƒå¯¾è±¡
+	 * @return ç­‰ã—ã„ã¨ãã€true
 	 * @see #equals(Object)
 	 * @since 2007.02.27
 	 */
@@ -354,20 +354,20 @@ public abstract class AbstractExpression {
 	}
 
 	/**
-	 * ƒfƒoƒbƒO—pƒ_ƒ“ƒv.
+	 * ãƒ‡ãƒãƒƒã‚°ç”¨ãƒ€ãƒ³ãƒ—
 	 *
 	 * @param n
-	 *            ƒ^ƒu—p‚ÌŒ…”
+	 *            ã‚¿ãƒ–ç”¨ã®æ¡æ•°
 	 */
 	public abstract void dump(int n);
 
 	/**
-	 * •¶š—ñ•\Œ»•ÏŠ·.
+	 * æ–‡å­—åˆ—è¡¨ç¾å¤‰æ›
 	 * <p>
-	 * ®‚Ì•¶š—ñ•\Œ»‚ğ•Ô‚·B
+	 * å¼ã®æ–‡å­—åˆ—è¡¨ç¾ã‚’è¿”ã™
 	 * </p>
 	 *
-	 * @return •¶š—ñ•\Œ»
+	 * @return æ–‡å­—åˆ—è¡¨ç¾
 	 * @since 2006.10.27
 	 */
 	@Override
