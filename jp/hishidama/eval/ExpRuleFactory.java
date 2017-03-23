@@ -8,6 +8,8 @@ import jp.hishidama.eval.oper.Operator;
 import jp.hishidama.eval.rule.*;
 import jp.hishidama.eval.var.Variable;
 
+//コメント修正 不完全
+
 /**
  * ルールファクトリークラス
  * <p>

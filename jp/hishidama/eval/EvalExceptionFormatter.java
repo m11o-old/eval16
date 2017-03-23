@@ -3,14 +3,14 @@ package jp.hishidama.eval;
 import static jp.hishidama.eval.EvalException.*;
 
 /**
- * ‰‰ZƒGƒ‰[ƒƒbƒZ[ƒW•ÒWƒNƒ‰ƒX.
+ * æ¼”ç®—ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ç·¨é›†ã‚¯ãƒ©ã‚¹
  * <p>
- * {@link EvalException}—p‚ÌƒGƒ‰[ƒƒbƒZ[ƒW‚ğ•ÒW‚·‚éB
+ * {@link EvalException}ç”¨ã®ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ç·¨é›†ã™ã‚‹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since eval16
  */
 public class EvalExceptionFormatter {
@@ -18,9 +18,9 @@ public class EvalExceptionFormatter {
 	private static EvalExceptionFormatter me;
 
 	/**
-	 * ƒfƒtƒHƒ‹ƒgƒtƒH[ƒ}ƒbƒ^[æ“¾
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒ•ã‚©ãƒ¼ãƒãƒƒã‚¿ãƒ¼å–å¾—
 	 *
-	 * @return ƒtƒH[ƒ}ƒbƒ^[
+	 * @return ãƒ•ã‚©ãƒ¼ãƒãƒƒã‚¿ãƒ¼
 	 */
 	public static EvalExceptionFormatter getDefault() {
 		if (me == null) {
@@ -30,14 +30,14 @@ public class EvalExceptionFormatter {
 	}
 
 	/**
-	 * ƒGƒ‰[ƒƒbƒZ[ƒW¶¬.
+	 * ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ç”Ÿæˆ
 	 * <p>
-	 * {@link EvalException}‚ÌƒGƒ‰[ƒƒbƒZ[ƒW‚ğ¶¬‚·‚éB
+	 * {@link EvalException}ã®ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ç”Ÿæˆã™ã‚‹
 	 * </p>
 	 *
 	 * @param e
-	 *            —áŠO
-	 * @return ƒGƒ‰[ƒƒbƒZ[ƒW
+	 *            ä¾‹å¤–
+	 * @return ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 	 * @see EvalException#toString()
 	 */
 	public String toString(EvalException e) {
@@ -47,69 +47,69 @@ public class EvalExceptionFormatter {
 	}
 
 	/**
-	 * ƒR[ƒh•ÊƒƒbƒZ[ƒWæ“¾
+	 * ã‚³ãƒ¼ãƒ‰åˆ¥ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å–å¾—
 	 *
 	 * @param code
-	 *            ƒGƒ‰[ƒR[ƒh
-	 * @return åƒƒbƒZ[ƒWiƒtƒH[ƒ}ƒbƒg•t‚«j
+	 *            ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰
+	 * @return ä¸»ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ï¼ˆãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆä»˜ãï¼‰
 	 */
 	public String getErrCodeMessage(int code) {
 		switch (code) {
 		case PARSE_NOT_FOUND_END_OP:
-			return "‰‰Zqu%0v‚ªİ‚è‚Ü‚¹‚ñB";
+			return "ï¿½ï¿½ï¿½Zï¿½qï¿½u%0ï¿½vï¿½ï¿½ï¿½İ‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case PARSE_INVALID_OP:
-			return "‰‰Zq‚Ì•¶–@ƒGƒ‰[‚Å‚·B";
+			return "ï¿½ï¿½ï¿½Zï¿½qï¿½Ì•ï¿½ï¿½@ï¿½Gï¿½ï¿½ï¿½[ï¿½Å‚ï¿½ï¿½B";
 		case PARSE_INVALID_CHAR:
-			return "–¢‘Î‰‚Ì¯•Êq‚Å‚·B";
+			return "ï¿½ï¿½ï¿½Î‰ï¿½ï¿½Ìï¿½ï¿½Êqï¿½Å‚ï¿½ï¿½B";
 		case PARSE_END_OF_STR:
-			return "®‚Ì‰ğß‚Ì“r’†‚Å•¶š—ñ‚ªI—¹‚µ‚Ä‚¢‚Ü‚·B";
+			return "ï¿½ï¿½ï¿½Ì‰ï¿½ï¿½ß‚Ì“rï¿½ï¿½ï¿½Å•ï¿½ï¿½ï¿½ï¿½ñ‚ªIï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B";
 		case PARSE_STILL_EXIST:
-			return "®‚Ì‰ğß‚ªI‚í‚è‚Ü‚µ‚½‚ª•¶š—ñ‚ªc‚Á‚Ä‚¢‚Ü‚·B";
+			return "ï¿½ï¿½ï¿½Ì‰ï¿½ï¿½ß‚ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ñ‚ªcï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B";
 		case PARSE_NOT_FUNC:
-			return "ŠÖ”‚Æ‚µ‚Äg—p‚Å‚«‚Ü‚¹‚ñB";
+			return "ï¿½Öï¿½ï¿½Æ‚ï¿½ï¿½Ägï¿½pï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_FORBIDDEN_CALL:
-			return "‹Ö~‚³‚ê‚Ä‚¢‚éƒƒ\ƒbƒh‚ğŒÄ‚Ño‚µ‚Ü‚µ‚½B";
+			return "ï¿½Ö~ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½éƒï¿½\ï¿½bï¿½hï¿½ï¿½ï¿½Ä‚Ñoï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_NOT_VARIABLE:
-			return "•Ï”‚Æ‚µ‚Äg—p‚Å‚«‚Ü‚¹‚ñB";
+			return "ï¿½Ïï¿½ï¿½Æ‚ï¿½ï¿½Ägï¿½pï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_NOT_NUMBER:
-			return "”’l‚Æ‚µ‚Äg—p‚Å‚«‚Ü‚¹‚ñB";
+			return "ï¿½ï¿½ï¿½lï¿½Æ‚ï¿½ï¿½Ägï¿½pï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_NOT_LET:
-			return "‘ã“ü‚Å‚«‚Ü‚¹‚ñB";
+			return "ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_NOT_CHAR:
-			return "•¶š‚Æ‚µ‚Äg—p‚Å‚«‚Ü‚¹‚ñB";
+			return "ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½Ägï¿½pï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_NOT_STRING:
-			return "•¶š—ñ‚Æ‚µ‚Äg—p‚Å‚«‚Ü‚¹‚ñB";
+			return "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½Ägï¿½pï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_NOT_VAR_VALUE:
-			return "•Ï”‚Ì’l‚ªæ“¾‚Å‚«‚Ü‚¹‚ñB";
+			return "ï¿½Ïï¿½ï¿½Ì’lï¿½ï¿½ï¿½æ“¾ï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_NOT_LET_VAR:
-			return "•Ï”‚É‘ã“ü‚Å‚«‚Ü‚¹‚ñB";
+			return "ï¿½Ïï¿½ï¿½É‘ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_NOT_DEF_VAR:
-			return "•Ï”‚ª–¢’è‹`‚Å‚·B";
+			return "ï¿½Ïï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½`ï¿½Å‚ï¿½ï¿½B";
 		case EXP_NOT_DEF_OBJ:
-			return "ƒIƒuƒWƒFƒNƒg‚ª–¢’è‹`‚Å‚·B";
+			return "ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½`ï¿½Å‚ï¿½ï¿½B";
 		case EXP_NOT_ARR_VALUE:
-			return "”z—ñ‚Ì’l‚ªæ“¾‚Å‚«‚Ü‚¹‚ñB";
+			return "ï¿½zï¿½ï¿½ï¿½Ì’lï¿½ï¿½ï¿½æ“¾ï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_NOT_LET_ARR:
-			return "”z—ñ‚É‘ã“ü‚Å‚«‚Ü‚¹‚ñB";
+			return "ï¿½zï¿½ï¿½ï¿½É‘ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_NOT_FLD_VALUE:
-			return "ƒtƒB[ƒ‹ƒh‚Ì’l‚ªæ“¾‚Å‚«‚Ü‚¹‚ñB";
+			return "ï¿½tï¿½Bï¿½[ï¿½ï¿½ï¿½hï¿½Ì’lï¿½ï¿½ï¿½æ“¾ï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_NOT_LET_FIELD:
-			return "ƒtƒB[ƒ‹ƒh‚É‘ã“ü‚Å‚«‚Ü‚¹‚ñB";
+			return "ï¿½tï¿½Bï¿½[ï¿½ï¿½ï¿½hï¿½É‘ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		case EXP_FUNC_CALL_ERROR:
-			return "ŠÖ”‚ÌŒÄ‚Ño‚µ‚É¸”s‚µ‚Ü‚µ‚½B";
+			return "ï¿½Öï¿½ï¿½ÌŒÄ‚Ñoï¿½ï¿½ï¿½Éï¿½ï¿½sï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		default:
-			return "ƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B";
+			return "ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½ï¿½B";
 		}
 	}
 
 	/**
-	 * ƒtƒH[ƒ}ƒbƒgæ“¾
+	 * ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆå–å¾—
 	 *
 	 * @param e
-	 *            —áŠO
+	 *            ä¾‹å¤–
 	 * @param msgFmt
-	 *            åƒƒbƒZ[ƒW
-	 * @return ƒƒbƒZ[ƒWƒtƒH[ƒ}ƒbƒg
+	 *            ä¸»ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
+	 * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ
 	 */
 	public String getFormat(EvalException e, String msgFmt) {
 		StringBuilder fmt = new StringBuilder(128);
@@ -126,7 +126,7 @@ public class EvalExceptionFormatter {
 			}
 		}
 		if (bWord) {
-			fmt.append(" %n=u%wv");
+			fmt.append(" %n=ï¿½u%wï¿½v");
 		}
 
 		int pos = e.getPos();
@@ -134,7 +134,7 @@ public class EvalExceptionFormatter {
 			fmt.append(" pos=%p");
 		}
 		if (string != null) {
-			fmt.append(" string=u%sv");
+			fmt.append(" string=ï¿½u%sï¿½v");
 		}
 		if (e.getCause() != null) {
 			fmt.append(" cause by %e");
@@ -144,50 +144,50 @@ public class EvalExceptionFormatter {
 	}
 
 	/**
-	 * ƒGƒ‰[ƒƒbƒZ[ƒWæ“¾.
+	 * ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å–å¾—
 	 * <p>
-	 * ƒtƒH[ƒ}ƒbƒg‚ğŒ³‚ÉƒƒbƒZ[ƒW‚ğ•ÒW‚·‚éB
+	 * ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã‚’å…ƒã«ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ç·¨é›†ã™ã‚‹
 	 * <table border="1">
 	 * <tr>
-	 * <td>%0`9</td>
-	 * <td>•t‰Áî•ñ‚Ì0`9”ÔB‘¶İ‚µ‚È‚¢ê‡‚Í‹ó•¶š—ñ</td>
+	 * <td>%0ï½9</td>
+	 * <td>ä»˜åŠ æƒ…å ±ã®0ï½9ç•ªã€‚å­˜åœ¨ã—ãªã„å ´åˆã¯ç©ºæ–‡å­—åˆ—</td>
 	 * </tr>
 	 * <tr>
 	 * <td>%c</td>
-	 * <td>ƒGƒ‰[ƒR[ƒh</td>
+	 * <td>ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰</td>
 	 * </tr>
 	 * <tr>
 	 * <td>%n</td>
-	 * <td>‰ğÍ–¼</td>
+	 * <td>è§£æå</td>
 	 * </tr>
 	 * <tr>
 	 * <td>%s</td>
-	 * <td>‰ğÍ‘O‚Ì•¶š—ñ</td>
+	 * <td>è§£æå‰ã®æ–‡å­—åˆ—</td>
 	 * </tr>
 	 * <tr>
 	 * <td>%p</td>
-	 * <td>ƒGƒ‰[‚ª”­¶‚µ‚½A‰ğÍ‘O•¶š—ñ“à‚ÌˆÊ’u</td>
+	 * <td>ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸã€è§£æå‰æ–‡å­—åˆ—å†…ã®ä½ç½®</td>
 	 * </tr>
 	 * <tr>
 	 * <td>%w</td>
-	 * <td>ƒGƒ‰[‚ÌŒ´ˆö‚Æ‚È‚Á‚½•¶š—ñ</td>
+	 * <td>ã‚¨ãƒ©ãƒ¼ã®åŸå› ã¨ãªã£ãŸæ–‡å­—åˆ—</td>
 	 * </tr>
 	 * <tr>
 	 * <td>%e</td>
-	 * <td>‰½‚ç‚©‚Ì—áŠO”­¶‚ÅƒGƒ‰[‚Æ‚È‚Á‚½ê‡‚ÌA‚»‚Ì—áŠO</td>
+	 * <td>ä½•ã‚‰ã‹ã®ä¾‹å¤–ç™ºç”Ÿã§ã‚¨ãƒ©ãƒ¼ã¨ãªã£ãŸå ´åˆã®ã€ãã®ä¾‹å¤–</td>
 	 * </tr>
 	 * <tr>
 	 * <td>%%</td>
-	 * <td>u%v</td>
+	 * <td>ã€Œ%ã€</td>
 	 * </tr>
 	 * </table>
 	 * </p>
 	 *
 	 * @param e
-	 *            —áŠO
+	 *            ä¾‹å¤–
 	 * @param format
-	 *            ƒtƒH[ƒ}ƒbƒg
-	 * @return ƒGƒ‰[ƒƒbƒZ[ƒW
+	 *            ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ
+	 * @return ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 	 */
 	public String toString(EvalException e, String format) {
 		StringBuilder sb = new StringBuilder(256);
