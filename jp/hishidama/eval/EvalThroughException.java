@@ -1,17 +1,17 @@
 package jp.hishidama.eval;
 
 /**
- * ‰‰ŽZƒGƒ‰[iƒXƒ‹[jƒNƒ‰ƒX.
+ * æ¼”ç®—ã‚¨ãƒ©ãƒ¼ï¼ˆã‚¹ãƒ«ãƒ¼ï¼‰ã‚¯ãƒ©ã‚¹
  * <p>
- * ‰‰ŽZ‚ÌŒ‹‰Ê¶‚¶‚½ŽÀsŽž—áŠO‚ð‚»‚Ì‚Ü‚Ü•Ô‚·ˆ×‚Ì—áŠOB<br>
- * {@link Expression#eval()}‚©‚çŒÄ‚Î‚ê‚½ˆ—‚Ì’†‚Å“–—áŠO‚ðƒXƒ[‚·‚é‚ÆA
- * eval()‚©‚ç‚Í“–—áŠO‚Åƒ‰ƒbƒv‚³‚ê‚½ŽÀsŽž—áŠO‚ðƒXƒ[‚·‚éB
+ * æ¼”ç®—ã®çµæžœç”Ÿã˜ãŸå®Ÿè¡Œæ™‚ä¾‹å¤–ã‚’ãã®ã¾ã¾è¿”ã™ç‚ºã®ä¾‹å¤–<br>
+ * {@link Expression#eval()}ã‹ã‚‰å‘¼ã°ã‚ŒãŸå‡¦ç†ã®ä¸­ã§å½“ä¾‹å¤–ã‚’ã‚¹ãƒ­ãƒ¼ã™ã‚‹ã¨ã€ 
+ * eval()ã‹ã‚‰ã¯å½“ä¾‹å¤–ã§ãƒ©ãƒƒãƒ—ã•ã‚ŒãŸå®Ÿè¡Œæ™‚ä¾‹å¤–ã‚’ã‚¹ãƒ­ãƒ¼ã™ã‚‹
  * </p>
  *
  * @see Expression#eval()
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ð‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since eval16
  */
 @SuppressWarnings("serial")
