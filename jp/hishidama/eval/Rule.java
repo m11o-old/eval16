@@ -6,15 +6,15 @@ import jp.hishidama.eval.oper.Operator;
 import jp.hishidama.eval.var.Variable;
 
 /**
- * ƒ‹[ƒ‹ƒNƒ‰ƒX.
+ * ãƒ«ãƒ¼ãƒ«ã‚¯ãƒ©ã‚¹
  * <p>
- * \•¶‰ğÍƒ‹[ƒ‹ŠÖ˜A‚Ìƒ†[ƒU[‘‹ŒûB
+ * æ§‹æ–‡è§£æãƒ«ãƒ¼ãƒ«é–¢é€£ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼çª“å£
  * </p>
  *
  * @see jp.hishidama.eval.ExpRuleFactory#getRule()
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @version eval16
  */
 public abstract class Rule implements Cloneable {
@@ -28,9 +28,9 @@ public abstract class Rule implements Cloneable {
 	protected EvalLog defaultLog = null;
 
 	/**
-	 * ƒfƒtƒHƒ‹ƒg•Ï”ŒQæ“¾.
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå¤‰æ•°ç¾¤å–å¾—
 	 *
-	 * @return ƒfƒtƒHƒ‹ƒg‚Ì•Ï”ŒQ
+	 * @return ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®å¤‰æ•°ç¾¤
 	 * @since eval16
 	 */
 	public Variable getDefaultVariable() {
@@ -38,11 +38,11 @@ public abstract class Rule implements Cloneable {
 	}
 
 	/**
-	 * ƒfƒtƒHƒ‹ƒg•Ï”ŒQ‚ğİ’è‚µ‚½ƒ‹[ƒ‹‚ğ•Ô‚·B
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå¤‰æ•°ç¾¤ã‚’è¨­å®šã—ãŸãƒ«ãƒ¼ãƒ«ã‚’è¿”ã™
 	 *
 	 * @param var
-	 *            •Ï”ŒQ
-	 * @return ƒfƒtƒHƒ‹ƒg’l‚ªİ’è‚³‚ê‚½ƒ‹[ƒ‹
+	 *            å¤‰æ•°ç¾¤
+	 * @return ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ãŒè¨­å®šã•ã‚ŒãŸãƒ«ãƒ¼ãƒ«
 	 * @since eval16
 	 */
 	public Rule defaultVariable(Variable var) {
@@ -52,9 +52,9 @@ public abstract class Rule implements Cloneable {
 	}
 
 	/**
-	 * ƒfƒtƒHƒ‹ƒgŠÖ”ŒQæ“¾.
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆé–¢æ•°ç¾¤å–å¾—
 	 *
-	 * @return ƒfƒtƒHƒ‹ƒg‚ÌŠÖ”ŒQ
+	 * @return ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®é–¢æ•°ç¾¤
 	 * @since eval16
 	 */
 	public Function getDefaultFunction() {
@@ -62,11 +62,11 @@ public abstract class Rule implements Cloneable {
 	}
 
 	/**
-	 * ƒfƒtƒHƒ‹ƒgŠÖ”ŒQ‚ğİ’è‚µ‚½ƒ‹[ƒ‹‚ğ•Ô‚·B
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆé–¢æ•°ç¾¤ã‚’è¨­å®šã—ãŸãƒ«ãƒ¼ãƒ«ã‚’è¿”ã™
 	 *
 	 * @param func
-	 *            ŠÖ”ŒQ
-	 * @return ƒfƒtƒHƒ‹ƒg’l‚ªİ’è‚³‚ê‚½ƒ‹[ƒ‹
+	 *            é–¢æ•°ç¾¤
+	 * @return ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ãŒè¨­å®šã•ã‚ŒãŸãƒ«ãƒ¼ãƒ«
 	 */
 	public Rule defaultFunction(Function func) {
 		Rule rule = this.clone();
@@ -75,9 +75,9 @@ public abstract class Rule implements Cloneable {
 	}
 
 	/**
-	 * ƒfƒtƒHƒ‹ƒg‰‰ZŒQæ“¾.
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆæ¼”ç®—ç¾¤å–å¾—
 	 *
-	 * @return ƒfƒtƒHƒ‹ƒg‚Ì‰‰Z
+	 * @return ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®æ¼”ç®—
 	 * @since eval16
 	 */
 	public Operator getDefaultOperator() {
@@ -85,11 +85,11 @@ public abstract class Rule implements Cloneable {
 	}
 
 	/**
-	 * ƒfƒtƒHƒ‹ƒg‰‰ZŒQ‚ğİ’è‚µ‚½ƒ‹[ƒ‹‚ğ•Ô‚·B
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆæ¼”ç®—ç¾¤ã‚’è¨­å®šã—ãŸãƒ«ãƒ¼ãƒ«ã‚’è¿”ã™
 	 *
 	 * @param oper
-	 *            ‰‰Z
-	 * @return ƒfƒtƒHƒ‹ƒg’l‚ªİ’è‚³‚ê‚½ƒ‹[ƒ‹
+	 *            æ¼”ç®—
+	 * @return ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ãŒè¨­å®šã•ã‚ŒãŸãƒ«ãƒ¼ãƒ«
 	 * @since eval16
 	 */
 	public Rule defaultOperator(Operator oper) {
@@ -99,9 +99,9 @@ public abstract class Rule implements Cloneable {
 	}
 
 	/**
-	 * ƒfƒtƒHƒ‹ƒgƒƒOo—Íæ“¾.
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒ­ã‚°å‡ºåŠ›å–å¾—
 	 *
-	 * @return ƒfƒtƒHƒ‹ƒg‚ÌƒƒOo—ÍƒIƒuƒWƒFƒNƒg
+	 * @return ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ãƒ­ã‚°å‡ºåŠ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 * @since eval16
 	 */
 	public EvalLog getDefaultEvalLog() {
@@ -109,11 +109,11 @@ public abstract class Rule implements Cloneable {
 	}
 
 	/**
-	 * ƒfƒtƒHƒ‹ƒgƒƒOo—Í‚ğİ’è‚µ‚½ƒ‹[ƒ‹‚ğ•Ô‚·B
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒ­ã‚°å‡ºåŠ›ã‚’è¨­å®šã—ãŸãƒ«ãƒ¼ãƒ«ã‚’è¿”ã™
 	 *
 	 * @param log
-	 *            ƒƒOo—ÍƒIƒuƒWƒFƒNƒg
-	 * @return ƒfƒtƒHƒ‹ƒg’l‚ªİ’è‚³‚ê‚½ƒ‹[ƒ‹
+	 *            ãƒ­ã‚°å‡ºåŠ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+	 * @return ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ãŒè¨­å®šã•ã‚ŒãŸãƒ«ãƒ¼ãƒ«
 	 * @since eval16
 	 */
 	public Rule defaultEvalLog(EvalLog log) {
@@ -123,11 +123,11 @@ public abstract class Rule implements Cloneable {
 	}
 
 	/**
-	 * \•¶‰ğÍ
+	 * æ§‹æ–‡è§£æ
 	 *
 	 * @param str
-	 *            ‰ğÍ‘ÎÛ•¶š—ñ
-	 * @return \•¶‰ğÍŒ‹‰Ê
+	 *            è§£æå¯¾è±¡æ–‡å­—åˆ—
+	 * @return æ§‹æ–‡è§£æçµæœ
 	 */
 	public abstract Expression parse(String str);
 
