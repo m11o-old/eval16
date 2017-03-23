@@ -1,52 +1,52 @@
 package jp.hishidama.eval.lex.comment;
 
 /**
- * ƒRƒƒ“ƒg‰ğßƒNƒ‰ƒX.
+ * ã‚³ãƒ¡ãƒ³ãƒˆè§£é‡ˆã‚¯ãƒ©ã‚¹
  * <p>
- * ƒRƒƒ“ƒg‚ÌŠJnEI—¹‚ğ‰ğß‚·‚éB
+ * ã‚³ãƒ¡ãƒ³ãƒˆã®é–‹å§‹ãƒ»çµ‚äº†ã‚’è§£é‡ˆã™ã‚‹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since eval16
  */
 public abstract class CommentLex {
 
-	/** ŠJn•¶š—ñ */
+	/** ï¿½Jï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 	protected String top;
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param top
-	 *            ŠJn•¶š—ñinull•s‰Âj
+	 *            ï¿½Jï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½inullï¿½sï¿½Âj
 	 */
 	protected CommentLex(String top) {
 		this.top = top;
 	}
 
 	/**
-	 * ŠJn•¶š—ñ‚Æˆê’v‚µ‚Ä‚¢‚é‚©.
+	 * é–‹å§‹æ–‡å­—åˆ—ã¨ä¸€è‡´ã—ã¦ã„ã‚‹ã‹
 	 *
 	 * @param string
-	 *            ‘ÎÛ•¶š—ñ
+	 *            å¯¾è±¡æ–‡å­—åˆ—
 	 * @param pos
-	 *            ˆÊ’u
-	 * @return 0ˆÈãFˆê’v‚µ‚Ä‚¢‚é•¶š”A•‰Fˆê’v‚µ‚Ä‚¢‚È‚¢
+	 *            ä½ç½®
+	 * @return 0ä»¥ä¸Šï¼šä¸€è‡´ã—ã¦ã„ã‚‹æ–‡å­—æ•°ã€è² ï¼šä¸€è‡´ã—ã¦ã„ãªã„
 	 */
 	public int isTop(String string, int pos) {
 		return is(top, string, pos);
 	}
 
 	/**
-	 * I—¹•¶š—ñ‚Æˆê’v‚µ‚Ä‚¢‚é‚©.
+	 * çµ‚äº†æ–‡å­—åˆ—ã¨ä¸€è‡´ã—ã¦ã„ã‚‹ã‹
 	 *
 	 * @param string
-	 *            ‘ÎÛ•¶š—ñ
+	 *            å¯¾è±¡æ–‡å­—åˆ—
 	 * @param pos
-	 *            ˆÊ’u
-	 * @return 0ˆÈãFˆê’v‚µ‚Ä‚¢‚é•¶š”A•‰Fˆê’v‚µ‚Ä‚¢‚È‚¢
+	 *            ä½ç½®
+	 * @return 0ä»¥ä¸Šï¼šä¸€è‡´ã—ã¦ã„ã‚‹æ–‡å­—æ•°ã€è² ï¼šä¸€è‡´ã—ã¦ã„ãªã„
 	 */
 	public abstract int isEnd(String string, int pos);
 
@@ -66,36 +66,36 @@ public abstract class CommentLex {
 	}
 
 	/**
-	 * ŠJn•¶š—ñæ“¾.
+	 * é–‹å§‹æ–‡å­—åˆ—å–å¾—
 	 *
-	 * @return ŠJn•¶š—ñ
+	 * @return é–‹å§‹æ–‡å­—åˆ—
 	 */
 	public String getTopString() {
 		return top;
 	}
 
 	/**
-	 * ŠJn•¶š—ñ’·æ“¾.
+	 * é–‹å§‹æ–‡å­—åˆ—é•·å–å¾—
 	 *
-	 * @return ŠJn•¶š—ñ‚Ì’·‚³
+	 * @return é–‹å§‹æ–‡å­—åˆ—ã®é•·ã•
 	 */
 	public int topLength() {
 		return top.length();
 	}
 
 	/**
-	 * ƒRƒƒ“ƒgƒXƒLƒbƒv.
+	 * ã‚³ãƒ¡ãƒ³ãƒˆã‚¹ã‚­ãƒƒãƒ—
 	 *
 	 * @param string
-	 *            ‘ÎÛ•¶š—ñ
+	 *            å¯¾è±¡æ–‡å­—åˆ—
 	 * @param pos
-	 *            ƒXƒLƒbƒvŠJnˆÊ’u
-	 * @return ƒRƒƒ“ƒg‚ÌŸ‚Ì•¶š‚ÌˆÊ’ui•‰‚Ìê‡AƒRƒƒ“ƒg‚ªI—¹‚¹‚¸‚É•¶š—ñ‚ªI‚í‚Á‚½j
+	 *            ã‚¹ã‚­ãƒƒãƒ—é–‹å§‹ä½ç½®
+	 * @return ã‚³ãƒ¡ãƒ³ãƒˆã®æ¬¡ã®æ–‡å­—ã®ä½ç½®ï¼ˆè² ã®å ´åˆã€ã‚³ãƒ¡ãƒ³ãƒˆãŒçµ‚äº†ã›ãšã«æ–‡å­—åˆ—ãŒçµ‚ã‚ã£ãŸï¼‰
 	 */
 	public int skip(String string, int pos) {
 		for (;;) {
 			if (pos > string.length()) {
-				return -1; // •¶š—ñ‚ÌÅŒã‚Ü‚Å—ˆ‚½
+				return -1; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÌÅŒï¿½ï¿½Ü‚Å—ï¿½ï¿½ï¿½
 			}
 			int e = isEnd(string, pos);
 			if (e < 0) {

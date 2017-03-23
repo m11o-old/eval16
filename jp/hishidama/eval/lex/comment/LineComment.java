@@ -1,23 +1,23 @@
 package jp.hishidama.eval.lex.comment;
 
 /**
- * sƒRƒƒ“ƒg‰ðŽßƒNƒ‰ƒX.
+ * è¡Œã‚³ãƒ¡ãƒ³ãƒˆè§£é‡ˆã‚¯ãƒ©ã‚¹
  * <p>
- * sƒRƒƒ“ƒgi—áF//`j‚ÌŠJŽn•¶Žš—ñ‚ð•ÛŽ‚·‚éB
+ * è¡Œã‚³ãƒ¡ãƒ³ãƒˆï¼ˆä¾‹ï¼š//ï½žï¼‰ã®é–‹å§‹æ–‡å­—åˆ—ã‚’ä¿æŒã™ã‚‹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ð‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since eval16
  */
 public class LineComment extends CommentLex {
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param top
-	 *            ŠJŽn•¶Žš—ñinull•s‰Âj
+	 *            é–‹å§‹æ–‡å­—åˆ—ï¼ˆnullä¸å¯ï¼‰
 	 */
 	public LineComment(String top) {
 		super(top);
@@ -26,7 +26,7 @@ public class LineComment extends CommentLex {
 	@Override
 	public int isEnd(String string, int pos) {
 		if (pos >= string.length()) {
-			return 0; // sƒRƒƒ“ƒg‚Å‚ÍA•¶Žš—ñ‚Ì––”ö‚Ü‚Å—ˆ‚½‚ç³í‚ÉƒRƒƒ“ƒgI—¹
+			return 0; // ï¿½sï¿½Rï¿½ï¿½ï¿½ï¿½ï¿½gï¿½Å‚ÍAï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì–ï¿½ï¿½ï¿½ï¿½Ü‚Å—ï¿½ï¿½ï¿½ï¿½ç³ï¿½ï¿½ï¿½ÉƒRï¿½ï¿½ï¿½ï¿½ï¿½gï¿½Iï¿½ï¿½
 		}
 		char c = string.charAt(pos);
 		switch (c) {

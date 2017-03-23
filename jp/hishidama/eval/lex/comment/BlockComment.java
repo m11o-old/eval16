@@ -1,29 +1,29 @@
 package jp.hishidama.eval.lex.comment;
 
 /**
- * ƒuƒƒbƒNƒRƒƒ“ƒg‰ğßƒNƒ‰ƒX.
+ * ãƒ–ãƒ­ãƒƒã‚¯ã‚³ãƒ¡ãƒ³ãƒˆè§£é‡ˆã‚¯ãƒ©ã‚¹
  * <p>
- * ƒuƒƒbƒNƒRƒƒ“ƒgi—áF/&#x2a;`&#x2a;/j‚ÌŠJnEI—¹•¶š—ñ‚ğ•Û‚·‚éB<br>
- * ƒuƒƒbƒNƒRƒƒ“ƒg‚ÌƒlƒXƒg‚Ío—ˆ‚È‚¢B
+ * ãƒ–ãƒ­ãƒƒã‚¯ã‚³ãƒ¡ãƒ³ãƒˆï¼ˆä¾‹ï¼š\/*ï½*\/ï¼‰ã®é–‹å§‹ãƒ»çµ‚äº†æ–‡å­—åˆ—ã‚’ä¿æŒã™ã‚‹<br>
+ * ãƒ–ãƒ­ãƒƒã‚¯ã‚³ãƒ¡ãƒ³ãƒˆã®ãƒã‚¹ãƒˆã¯å‡ºæ¥ãªã„
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since eval16
  */
 public class BlockComment extends CommentLex {
 
-	/** I—¹•¶š—ñ */
+	/** ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 	protected String end;
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param top
-	 *            ŠJn•¶š—ñinull•s‰Âj
+	 *            é–‹å§‹æ–‡å­—åˆ—ï¼ˆnullä¸å¯ï¼‰
 	 * @param end
-	 *            I—¹•¶š—ñinull•s‰Âj
+	 *            çµ‚äº†æ–‡å­—åˆ—ï¼ˆnullä¸å¯ï¼‰
 	 */
 	public BlockComment(String top, String end) {
 		super(top);
@@ -31,9 +31,9 @@ public class BlockComment extends CommentLex {
 	}
 
 	/**
-	 * I—¹•¶š—ñæ“¾.
+	 * çµ‚äº†æ–‡å­—åˆ—å–å¾—
 	 *
-	 * @return I—¹•¶š—ñ
+	 * @return çµ‚äº†æ–‡å­—åˆ—
 	 */
 	public String getEndString() {
 		return end;

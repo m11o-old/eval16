@@ -10,21 +10,21 @@ import jp.hishidama.eval.lex.comment.LineComment;
 import jp.hishidama.eval.rule.ShareRuleValue;
 
 /**
- * Lexƒtƒ@ƒNƒgƒŠ[.
+ * Lexãƒ•ã‚¡ã‚¯ãƒˆãƒªãƒ¼
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2007.02.16
  * @version eval16
  */
 public class LexFactory {
 
-	/** ƒfƒtƒHƒ‹ƒgƒRƒƒ“ƒg•¶š—ñˆê—— */
+	/** ï¿½fï¿½tï¿½Hï¿½ï¿½ï¿½gï¿½Rï¿½ï¿½ï¿½ï¿½ï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê—— */
 	protected List<CommentLex> defaultCommentList = new ArrayList<CommentLex>();
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 */
 	public LexFactory() {
 		initCommentList();
@@ -36,10 +36,10 @@ public class LexFactory {
 	}
 
 	/**
-	 * ƒfƒtƒHƒ‹ƒgƒRƒƒ“ƒg•¶š—ñİ’è.
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚³ãƒ¡ãƒ³ãƒˆæ–‡å­—åˆ—è¨­å®š
 	 *
 	 * @param list
-	 *            ƒRƒƒ“ƒg•¶š—ñˆê——
+	 *            ã‚³ãƒ¡ãƒ³ãƒˆæ–‡å­—åˆ—ä¸€è¦§
 	 * @since eval16
 	 */
 	public void setDefaultCommentLexList(List<CommentLex> list) {
@@ -47,17 +47,17 @@ public class LexFactory {
 	}
 
 	/**
-	 * LexƒCƒ“ƒXƒ^ƒ“ƒX¶¬.
+	 * Lexã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ç”Ÿæˆ
 	 *
 	 * @param str
-	 *            š‹å‰ğÍ‘ÎÛ•¶š—ñ
+	 *            å­—å¥è§£æå¯¾è±¡æ–‡å­—åˆ—
 	 * @param opeList
-	 *            ‰‰ZqŒQ
+	 *            æ¼”ç®—å­ç¾¤
 	 * @param share
-	 *            ƒ‹[ƒ‹‹¤’Êî•ñ
+	 *            ãƒ«ãƒ¼ãƒ«å…±é€šæƒ…å ±
 	 * @param exp
-	 *            \•¶‰ğÍ–Ø‹¤’Êî•ñ
-	 * @return LexƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            æ§‹æ–‡è§£ææœ¨å…±é€šæƒ…å ±
+	 * @return Lexã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 */
 	public Lex create(String str, List<String>[] opeList, ShareRuleValue share,
 			ShareExpValue exp) {
