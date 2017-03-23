@@ -3,14 +3,14 @@ package jp.hishidama.eval.var;
 import java.util.*;
 
 /**
- * •Ï”ŠÇ—ƒNƒ‰ƒX.
+ * å¤‰æ•°ç®¡ç†ã‚¯ãƒ©ã‚¹
  * <p>
- * •Ï”‚Æ•Ï”’l‚ğŠÇ—‚·‚éB
+ * å¤‰æ•°ã¨å¤‰æ•°å€¤ã‚’ç®¡ç†ã™ã‚‹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2007.02.13
  * @version eval16
  */
@@ -19,9 +19,9 @@ public class MapVariable<K, V> extends DefaultVariable {
 	protected Map<K, V> map;
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 * <p>
-	 * ‹ó‚Ì•Ï”ƒ}ƒbƒv‚ğì¬‚·‚éB
+	 * ç©ºã®å¤‰æ•°ãƒãƒƒãƒ—ã‚’ä½œæˆã™ã‚‹
 	 * </p>
 	 */
 	public MapVariable() {
@@ -29,15 +29,15 @@ public class MapVariable<K, V> extends DefaultVariable {
 	}
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 * <p>
-	 * ‹ó‚Ì•Ï”ƒ}ƒbƒv‚ğì¬‚·‚éBi“®“IŒ^•ÛØ‚ğs‚¤j
+	 * ç©ºã®å¤‰æ•°ãƒãƒƒãƒ—ã‚’ä½œæˆã™ã‚‹ã€‚ï¼ˆå‹•çš„å‹ä¿è¨¼ã‚’è¡Œã†ï¼‰
 	 * </p>
 	 *
 	 * @param keyType
-	 *            ƒL[‚ÌŒ^
+	 *            ã‚­ãƒ¼ã®å‹
 	 * @param valueType
-	 *            ’l‚ÌŒ^
+	 *            å€¤ã®å‹
 	 * @see Collections#checkedMap(Map, Class, Class)
 	 * @since eval16
 	 */
@@ -46,77 +46,77 @@ public class MapVariable<K, V> extends DefaultVariable {
 	}
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param varMap
-	 *            •Ï”ƒ}ƒbƒv
+	 *            å¤‰æ•°ãƒãƒƒãƒ—
 	 */
 	public MapVariable(Map<K, V> varMap) {
 		map = varMap;
 	}
 
 	/**
-	 * •Ï”ƒ}ƒbƒvİ’è.
+	 * å¤‰æ•°ãƒãƒƒãƒ—è¨­å®š
 	 * <p>
-	 * •Ï”–¼(String)‚Æ’l‚Ìƒ}ƒbƒv‚ğİ’è‚·‚éB
+	 * å¤‰æ•°å(String)ã¨å€¤ã®ãƒãƒƒãƒ—ã‚’è¨­å®šã™ã‚‹
 	 * </p>
 	 * <p>
-	 * ’l‚ª”’l‚Ìê‡‚ÍNumberiLong‚âDoublej‚Å‚ ‚é‚±‚ÆB<br>
+	 * å€¤ãŒæ•°å€¤ã®å ´åˆã¯Numberï¼ˆLongã‚„Doubleï¼‰ã§ã‚ã‚‹ã“ã¨<br>
 	 * varMap.put("var", new Long(1));
 	 * </p>
 	 * <p>
-	 * ’l‚ª‚»‚êˆÈŠOi”z—ñj‚Ìê‡‚ÍJava‚ÌƒIƒuƒWƒFƒNƒg‚ğ‚»‚Ì‚Ü‚ÜŠi”[‚·‚éB<br>
+	 * å€¤ãŒãã‚Œä»¥å¤–ï¼ˆé…åˆ—ï¼‰ã®å ´åˆã¯Javaã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ãã®ã¾ã¾æ ¼ç´ã™ã‚‹<br>
 	 * Long[] arr = new Long[2]; varMap.put("arr", arr);
 	 * </p>
 	 *
 	 * @param varMap
-	 *            •Ï”ƒ}ƒbƒv
+	 *            å¤‰æ•°ãƒãƒƒãƒ—
 	 */
 	public void setMap(Map<K, V> varMap) {
 		map = varMap;
 	}
 
 	/**
-	 * •Ï”ƒ}ƒbƒvæ“¾.
+	 * å¤‰æ•°ãƒãƒƒãƒ—å–å¾—
 	 *
-	 * @return •Ï”ƒ}ƒbƒv
+	 * @return å¤‰æ•°ãƒãƒƒãƒ—
 	 */
 	public Map<K, V> getMap() {
 		return map;
 	}
 
 	/**
-	 * ’lİ’è.
+	 * å€¤è¨­å®š
 	 *
 	 * @param name
-	 *            •Ï”–¼
+	 *            å¤‰æ•°å
 	 * @param value
-	 *            ’l
+	 *            å€¤
 	 */
 	public void put(K name, V value) {
 		map.put(name, value);
 	}
 
 	/**
-	 * ’læ“¾.
+	 * å€¤å–å¾—
 	 *
 	 * @param name
-	 *            •Ï”–¼
-	 * @return ’l
+	 *            å¤‰æ•°å
+	 * @return å€¤
 	 */
 	public V get(K name) {
 		return map.get(name);
 	}
 
 	/**
-	 * •Ï”ƒIƒuƒWƒFƒNƒgæ“¾.
+	 * å¤‰æ•°ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå–å¾—
 	 * <p>
-	 * •Ï”‚ğ•\‚·ƒIƒuƒWƒFƒNƒg‚ğ•Ô‚·Bi’P‚È‚é•Ï”‚â”z—ñ‚ğ‘z’èj
+	 * å¤‰æ•°ã‚’è¡¨ã™ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã™ã€‚ï¼ˆå˜ãªã‚‹å¤‰æ•°ã‚„é…åˆ—ã‚’æƒ³å®šï¼‰
 	 * </p>
 	 *
 	 * @param name
-	 *            •Ï”–¼
-	 * @return •Ï”ƒIƒuƒWƒFƒNƒg
+	 *            å¤‰æ•°å
+	 * @return å¤‰æ•°ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
@@ -125,15 +125,15 @@ public class MapVariable<K, V> extends DefaultVariable {
 	}
 
 	/**
-	 * •Ï”İ’è.
+	 * å¤‰æ•°è¨­å®š
 	 * <p>
-	 * •Ï”‚É’l‚ğƒZƒbƒg‚·‚éB
+	 * å¤‰æ•°ã«å€¤ã‚’ã‚»ãƒƒãƒˆã™ã‚‹
 	 * </p>
 	 *
 	 * @param name
-	 *            •Ï”–¼
+	 *            å¤‰æ•°å
 	 * @param value
-	 *            ’l
+	 *            å€¤
 	 */
 	@SuppressWarnings("unchecked")
 	@Override

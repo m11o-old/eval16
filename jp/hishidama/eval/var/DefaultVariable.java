@@ -9,33 +9,33 @@ import jp.hishidama.eval.EvalException;
 import jp.hishidama.eval.exp.AbstractExpression;
 
 /**
- * ƒfƒtƒHƒ‹ƒg•Ï”ŠÇ—ƒNƒ‰ƒX.
+ * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå¤‰æ•°ç®¡ç†ã‚¯ãƒ©ã‚¹
  * <ul>
- * <li>{@link #getValue(Object)}E{@link #setValue(Object, Object)}‚Å‚ÍA“Á‚É‰½‚à‚µ‚È‚¢B</li>
- * <li>{@link #getArrayValue(Object, String, Object, AbstractExpression)}E
+ * <li>{@link #getValue(Object)}ãƒ»{@link #setValue(Object, Object)}ã§ã¯ã€ç‰¹ã«ä½•ã‚‚ã—ãªã„</li>
+ * <li>{@link #getArrayValue(Object, String, Object, AbstractExpression)}ãƒ»
  * {@link #setArrayValue(Object, String, Object, Object, AbstractExpression)}
- * ‚Å‚ÍAƒIƒuƒWƒFƒNƒg‚ª”z—ñEƒŠƒXƒgEƒ}ƒbƒv‚É‘Î‰‚µ‚Ä‚¢‚éB‚»‚êˆÈŠO‚Ìê‡‚Í—áŠO‚ğ”­¶‚³‚¹‚éB</li>
- * <li>{@link #getFieldValue(Object, String, String, AbstractExpression)}E
+ * ã§ã¯ã€ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒé…åˆ—ãƒ»ãƒªã‚¹ãƒˆãƒ»ãƒãƒƒãƒ—ã«å¯¾å¿œã—ã¦ã„ã‚‹ã€‚ãã‚Œä»¥å¤–ã®å ´åˆã¯ä¾‹å¤–ã‚’ç™ºç”Ÿã•ã›ã‚‹</li>
+ * <li>{@link #getFieldValue(Object, String, String, AbstractExpression)}ãƒ»
  * {@link #setFieldValue(Object, String, String, Object, AbstractExpression)}
- * ‚Å‚ÍAƒŠƒtƒŒƒNƒVƒ‡ƒ“‚ğ—p‚¢‚ÄƒIƒuƒWƒFƒNƒg‚ÉƒAƒNƒZƒX‚·‚éB‘¶İ‚µ‚È‚¢ƒtƒB[ƒ‹ƒh‚Ìê‡‚Í—áŠO‚ª”­¶‚·‚éB</li>
+ * ã§ã¯ã€ãƒªãƒ•ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ã‚’ç”¨ã„ã¦ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ã€‚å­˜åœ¨ã—ãªã„ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®å ´åˆã¯ä¾‹å¤–ãŒç™ºç”Ÿã™ã‚‹</li>
  * </ul>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since eval16
  */
 public class DefaultVariable implements Variable {
 
 	@Override
 	public Object getValue(Object name) {
-		// “–ƒNƒ‰ƒX‚Å‚Íí‚Énull‚ğ•Ô‚·
+		// ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½Xï¿½Å‚Íï¿½ï¿½ï¿½nullï¿½ï¿½ï¿½Ô‚ï¿½
 		return null;
 	}
 
 	@Override
 	public void setValue(Object name, Object value) {
-		// “–ƒNƒ‰ƒX‚Å‚Í‰½‚à‚µ‚È‚¢
+		// ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½Xï¿½Å‚Í‰ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½
 	}
 
 	@Override
@@ -90,11 +90,11 @@ public class DefaultVariable implements Variable {
 	}
 
 	/**
-	 * ”’l•ÏŠ·.
+	 * æ•°å€¤å¤‰æ›
 	 *
 	 * @param value
-	 *            ’l
-	 * @return ”’l
+	 *            å€¤
+	 * @return æ•°å€¤
 	 * @throws NumberFormatException
 	 */
 	public int getInt(Object value) {

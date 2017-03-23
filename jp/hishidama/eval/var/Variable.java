@@ -3,118 +3,118 @@ package jp.hishidama.eval.var;
 import jp.hishidama.eval.exp.AbstractExpression;
 
 /**
- * •Ï”ƒCƒ“ƒ^[ƒtƒF[ƒX.
+ * å¤‰æ•°ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹
  * <p>
- * •Ï”‚Æ•Ï”’l‚ğŠÇ—‚·‚éƒCƒ“ƒ^[ƒtƒF[ƒXB
+ * å¤‰æ•°ã¨å¤‰æ•°å€¤ã‚’ç®¡ç†ã™ã‚‹ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2007.02.15
  * @version eval16
  */
 public interface Variable {
 
 	/**
-	 * •Ï”’læ“¾.
+	 * å¤‰æ•°å€¤å–å¾—
 	 * <p>
-	 * •Ï”‚ğ•\‚·ƒIƒuƒWƒFƒNƒg‚ğ•Ô‚·Bi’P‚È‚é•Ï”‚â”z—ñ‚ğ‘z’èj
+	 * å¤‰æ•°ã‚’è¡¨ã™ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã™ã€‚ï¼ˆå˜ãªã‚‹å¤‰æ•°ã‚„é…åˆ—ã‚’æƒ³å®šï¼‰
 	 * </p>
 	 *
 	 * @param name
-	 *            •Ï”–¼
-	 * @return •Ï”ƒIƒuƒWƒFƒNƒg
+	 *            å¤‰æ•°å
+	 * @return å¤‰æ•°ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	public Object getValue(Object name);
 
 	/**
-	 * •Ï”İ’è.
+	 * å¤‰æ•°è¨­å®š
 	 * <p>
-	 * •Ï”‚É’l‚ğƒZƒbƒg‚·‚éB
+	 * å¤‰æ•°ã«å€¤ã‚’ã‚»ãƒƒãƒˆã™ã‚‹
 	 * </p>
 	 *
 	 * @param name
-	 *            •Ï”–¼
+	 *            å¤‰æ•°å
 	 * @param value
-	 *            ’l
+	 *            å€¤
 	 */
 	public void setValue(Object name, Object value);
 
 	/**
-	 * •Ï”’læ“¾.
+	 * å¤‰æ•°å€¤å–å¾—
 	 * <p>
-	 * ”z—ñ‚Ì—v‘f‚ğ•Ô‚·B
+	 * é…åˆ—ã®è¦ç´ ã‚’è¿”ã™
 	 * </p>
 	 *
 	 * @param array
-	 *            ”z—ñƒIƒuƒWƒFƒNƒg
+	 *            é…åˆ—ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 * @param arrayName
-	 *            ”z—ñ–¼
+	 *            é…åˆ—å
 	 * @param index
-	 *            “Yš
+	 *            æ·»å­—
 	 * @param exp
-	 *            “–ƒƒ\ƒbƒh‚ğŒÄ‚Ño‚µ‚½®ƒNƒ‰ƒX
-	 * @return —v‘fƒIƒuƒWƒFƒNƒg
+	 *            å½“ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³å‡ºã—ãŸå¼ã‚¯ãƒ©ã‚¹
+	 * @return è¦ç´ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	public Object getArrayValue(Object array, String arrayName, Object index,
 			AbstractExpression exp);
 
 	/**
-	 * ”z—ñ’lİ’è.
+	 * é…åˆ—å€¤è¨­å®š
 	 * <p>
-	 * ”z—ñ‚É’l‚ğƒZƒbƒg‚·‚éB
+	 * é…åˆ—ã«å€¤ã‚’ã‚»ãƒƒãƒˆã™ã‚‹
 	 * </p>
 	 *
 	 * @param array
-	 *            ”z—ñƒIƒuƒWƒFƒNƒg
+	 *            é…åˆ—ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 * @param arrayName
-	 *            ”z—ñ–¼
+	 *            é…åˆ—å
 	 * @param index
-	 *            “Yš
+	 *            æ·»å­—
 	 * @param value
-	 *            ’l
+	 *            å€¤
 	 * @param exp
-	 *            “–ƒƒ\ƒbƒh‚ğŒÄ‚Ño‚µ‚½®ƒNƒ‰ƒX
+	 *            å½“ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³å‡ºã—ãŸå¼ã‚¯ãƒ©ã‚¹
 	 */
 	public void setArrayValue(Object array, String arrayName, Object index,
 			Object value, AbstractExpression exp);
 
 	/**
-	 * ƒtƒB[ƒ‹ƒh’læ“¾.
+	 * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰å€¤å–å¾—
 	 * <p>
-	 * ƒIƒuƒWƒFƒNƒg‚ÌƒtƒB[ƒ‹ƒh‚Ì’l‚ğ•Ô‚·B
+	 * ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®å€¤ã‚’è¿”ã™
 	 * </p>
 	 *
 	 * @param obj
-	 *            ƒIƒuƒWƒFƒNƒg
+	 *            ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 * @param objName
-	 *            ƒIƒuƒWƒFƒNƒg–¼
+	 *            ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå
 	 * @param field
-	 *            ƒtƒB[ƒ‹ƒh–¼
+	 *            ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰å
 	 * @param exp
-	 *            “–ƒƒ\ƒbƒh‚ğŒÄ‚Ño‚µ‚½®ƒNƒ‰ƒX
-	 * @return —v‘fƒIƒuƒWƒFƒNƒg
+	 *            å½“ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³å‡ºã—ãŸå¼ã‚¯ãƒ©ã‚¹
+	 * @return è¦ç´ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	public Object getFieldValue(Object obj, String objName, String field,
 			AbstractExpression exp);
 
 	/**
-	 * ƒtƒB[ƒ‹ƒh’lİ’è.
+	 * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰å€¤è¨­å®š
 	 * <p>
-	 * ƒIƒuƒWƒFƒNƒg‚ÌƒtƒB[ƒ‹ƒh‚É’l‚ğƒZƒbƒg‚·‚éB
+	 * ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã«å€¤ã‚’ã‚»ãƒƒãƒˆã™ã‚‹
 	 * </p>
 	 *
 	 * @param obj
-	 *            ƒIƒuƒWƒFƒNƒg
+	 *            ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 * @param objName
-	 *            ƒIƒuƒWƒFƒNƒg–¼
+	 *            ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå
 	 * @param field
-	 *            ƒtƒB[ƒ‹ƒh–¼
+	 *            ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰å
 	 * @param value
-	 *            ’l
+	 *            å€¤
 	 * @param exp
-	 *            “–ƒƒ\ƒbƒh‚ğŒÄ‚Ño‚µ‚½®ƒNƒ‰ƒX
+	 *            å½“ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³å‡ºã—ãŸå¼ã‚¯ãƒ©ã‚¹
 	 */
 	public void setFieldValue(Object obj, String objName, String field,
 			Object value, AbstractExpression exp);
