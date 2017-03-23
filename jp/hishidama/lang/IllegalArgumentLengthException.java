@@ -1,11 +1,11 @@
 package jp.hishidama.lang;
 
 /**
- * ˆø”‚ÌŒÂ”‚ªŠÔˆá‚Á‚Ä‚¢‚éê‡‚ÉƒXƒ[‚³‚ê‚é—áŠO
+ * å¼•æ•°ã®å€‹æ•°ãŒé–“é•ã£ã¦ã„ã‚‹å ´åˆã«ã‚¹ãƒ­ãƒ¼ã•ã‚Œã‚‹ä¾‹å¤–
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2010.02.16
  */
 public class IllegalArgumentLengthException extends IllegalArgumentException {
@@ -16,14 +16,14 @@ public class IllegalArgumentLengthException extends IllegalArgumentException {
 	protected int max;
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param len
-	 *            ˆø”‚ÌŒÂ”
+	 *            å¼•æ•°ã®å€‹æ•°
 	 * @param min
-	 *            ‹–—eŒÂ”‚ÌÅ¬’l
+	 *            è¨±å®¹å€‹æ•°ã®æœ€å°å€¤
 	 * @param max
-	 *            ‹–—eŒÂ”‚ÌÅ‘å’l
+	 *            è¨±å®¹å€‹æ•°ã®æœ€å¤§å€¤
 	 */
 	public IllegalArgumentLengthException(int len, int min, int max) {
 		this.len = len;
@@ -32,16 +32,16 @@ public class IllegalArgumentLengthException extends IllegalArgumentException {
 	}
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param message
-	 *            ƒƒbƒZ[ƒW
+	 *            ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 	 * @param len
-	 *            ˆø”‚ÌŒÂ”
+	 *            å¼•æ•°ã®å€‹æ•°
 	 * @param min
-	 *            ‹–—eŒÂ”‚ÌÅ¬’l
+	 *            è¨±å®¹å€‹æ•°ã®æœ€å°å€¤
 	 * @param max
-	 *            ‹–—eŒÂ”‚ÌÅ‘å’l
+	 *            è¨±å®¹å€‹æ•°ã®æœ€å¤§å€¤
 	 */
 	public IllegalArgumentLengthException(String message, int len, int min,
 			int max) {
@@ -52,57 +52,57 @@ public class IllegalArgumentLengthException extends IllegalArgumentException {
 	}
 
 	/**
-	 * ˆø”‚ÌŒÂ”æ“¾.
+	 * å¼•æ•°ã®å€‹æ•°å–å¾—
 	 *
-	 * @return ˆø”‚ÌŒÂ”
+	 * @return å¼•æ•°ã®å€‹æ•°
 	 */
 	public int getLen() {
 		return len;
 	}
 
 	/**
-	 * ˆø”‚ÌŒÂ”İ’è.
+	 * å¼•æ•°ã®å€‹æ•°è¨­å®š
 	 *
 	 * @param len
-	 *            ˆø”‚ÌŒÂ”
+	 *            å¼•æ•°ã®å€‹æ•°
 	 */
 	public void setLen(int len) {
 		this.len = len;
 	}
 
 	/**
-	 * ‹–—eŒÂ”‚ÌÅ¬’læ“¾.
+	 * è¨±å®¹å€‹æ•°ã®æœ€å°å€¤å–å¾—
 	 *
-	 * @return Å¬ŒÂ”
+	 * @return æœ€å°å€‹æ•°
 	 */
 	public int getMin() {
 		return min;
 	}
 
 	/**
-	 * ‹–—eŒÂ”‚ÌÅ¬’lİ’è.
+	 * è¨±å®¹å€‹æ•°ã®æœ€å°å€¤è¨­å®š
 	 *
 	 * @param min
-	 *            Å¬ŒÂ”
+	 *            æœ€å°å€‹æ•°
 	 */
 	public void setMin(int min) {
 		this.min = min;
 	}
 
 	/**
-	 * ‹–—eŒÂ”‚ÌÅ‘å’læ“¾.
+	 * è¨±å®¹å€‹æ•°ã®æœ€å¤§å€¤å–å¾—
 	 *
-	 * @return Å‘åŒÂ”
+	 * @return æœ€å¤§å€‹æ•°
 	 */
 	public int getMax() {
 		return max;
 	}
 
 	/**
-	 * ‹–—eŒÂ”‚ÌÅ‘å’lİ’è.
+	 * è¨±å®¹å€‹æ•°ã®æœ€å¤§å€¤è¨­å®š
 	 *
 	 * @param max
-	 *            Å‘åŒÂ”
+	 *            æœ€å¤§å€‹æ•°
 	 */
 	public void setMax(int max) {
 		this.max = max;
