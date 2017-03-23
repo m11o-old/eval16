@@ -3,117 +3,117 @@ package jp.hishidama.eval.repl;
 import jp.hishidama.eval.exp.*;
 
 /**
- * \•¶‰ğÍ–Ø’uŠ·ƒCƒ“ƒ^[ƒtƒF[ƒX.
+ * æ§‹æ–‡è§£ææœ¨ç½®æ›ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹
  * <p>
- * AbstractExpression#replace()‚ªŒÄ‚Î‚ê‚½ÛA\•¶‰ğÍ–Ø‚Ì‚»‚ê‚¼‚ê‚ÌğŒ‚É‰‚¶‚½“–ƒCƒ“ƒ^[ƒtƒF[ƒX‚Ìƒƒ\ƒbƒh‚ªŒÄ‚Î‚ê‚éB<br>
- * Šeƒƒ\ƒbƒh‚Å‚ÍA\•¶‰ğÍ–Ø‚ğ’uŠ·‚·‚éê‡‚ÍV‚µ‚¢\•¶‰ğÍ–Ø‚ğ•Ô‚µA’uŠ·‚µ‚È‚¢ê‡‚Íˆø”‚ğ‚»‚Ì‚Ü‚Ü•Ô‚·•K—v‚ª‚ ‚éB
+ * AbstractExpression#replace()ãŒå‘¼ã°ã‚ŒãŸéš›ã€æ§‹æ–‡è§£ææœ¨ã®ãã‚Œãã‚Œã®æ¡ä»¶ã«å¿œã˜ãŸå½“ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹ã®ãƒ¡ã‚½ãƒƒãƒ‰ãŒå‘¼ã°ã‚Œã‚‹<br>
+ * å„ãƒ¡ã‚½ãƒƒãƒ‰ã§ã¯ã€æ§‹æ–‡è§£ææœ¨ã‚’ç½®æ›ã™ã‚‹å ´åˆã¯æ–°ã—ã„æ§‹æ–‡è§£ææœ¨ã‚’è¿”ã—ã€ç½®æ›ã—ãªã„å ´åˆã¯å¼•æ•°ã‚’ãã®ã¾ã¾è¿”ã™å¿…è¦ãŒã‚ã‚‹
  * </p>
  * 
  * @author <a target="hishidama"
- *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">‚Ğ‚µ‚¾‚Ü</a>
+ *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">ã²ã—ã ã¾</a>
  * @since 2007.02.20
  */
 public interface Replace {
 
 	/**
-	 * ¯•Êq’uŠ·
+	 * è­˜åˆ¥å­ç½®æ›
 	 * 
 	 * @param exp
-	 * @return Vexp
+	 * @return æ–°exp
 	 */
 	AbstractExpression replace0(WordExpression exp);
 
 	/**
-	 * ’P€‰‰Zq’uŠ·
+	 * å˜é …æ¼”ç®—å­ç½®æ›
 	 * 
 	 * @param exp
-	 * @return Vexp
+	 * @return æ–°exp
 	 */
 	AbstractExpression replace1(Col1Expression exp);
 
 	/**
-	 * “ñ€‰‰Zq’uŠ·
+	 * äºŒé …æ¼”ç®—å­ç½®æ›
 	 * <p>
-	 * ‰ÁŒ¸Z‚È‚Ç‚Ì’Pƒ‚È“ñ€‰‰Zq‚Ì‚Æ‚«ŒÄ‚Î‚ê‚éB
+	 * åŠ æ¸›ç®—ãªã©ã®å˜ç´”ãªäºŒé …æ¼”ç®—å­ã®ã¨ãå‘¼ã°ã‚Œã‚‹
 	 * </p>
 	 * 
 	 * @param exp
-	 * @return Vexp
+	 * @return æ–°exp
 	 */
 	AbstractExpression replace2(Col2Expression exp);
 
 	/**
-	 * “ñ€‰‰Zqi“Áêj’uŠ·
+	 * äºŒé …æ¼”ç®—å­ï¼ˆç‰¹æ®Šï¼‰ç½®æ›
 	 * <p>
-	 * and,or,ƒJƒ“ƒ}‚È‚Ç‚Ì’Pƒ‚Å‚È‚¢“ñ€‰‰Zq‚Ì‚Æ‚«ŒÄ‚Î‚ê‚éB
+	 * and,or,ã‚«ãƒ³ãƒãªã©ã®å˜ç´”ã§ãªã„äºŒé …æ¼”ç®—å­ã®ã¨ãå‘¼ã°ã‚Œã‚‹
 	 * </p>
 	 * 
 	 * @param exp
-	 * @return Vexp
+	 * @return æ–°exp
 	 */
 	AbstractExpression replace2(Col2OpeExpression exp);
 
 	/**
-	 * O€‰‰Zq’uŠ·
+	 * ä¸‰é …æ¼”ç®—å­ç½®æ›
 	 * 
 	 * @param exp
-	 * @return Vexp
+	 * @return æ–°exp
 	 */
 	AbstractExpression replace3(Col3Expression exp);
 
 	/**
-	 * ¯•Êq’uŠ·i¶•Ó’l‚Æ‚µ‚Äg—p‚³‚ê‚éê‡j
+	 * è­˜åˆ¥å­ç½®æ›ï¼ˆå·¦è¾ºå€¤ã¨ã—ã¦ä½¿ç”¨ã•ã‚Œã‚‹å ´åˆï¼‰
 	 * 
 	 * @param exp
-	 * @return Vexp
+	 * @return æ–°exp
 	 */
 	AbstractExpression replaceVar0(WordExpression exp);
 
 	/**
-	 * ’P€‰‰Zq’uŠ·i¶•Ó’l‚Æ‚µ‚Äg—p‚³‚ê‚éê‡j
+	 * å˜é …æ¼”ç®—å­ç½®æ›ï¼ˆå·¦è¾ºå€¤ã¨ã—ã¦ä½¿ç”¨ã•ã‚Œã‚‹å ´åˆï¼‰
 	 * 
 	 * @param exp
-	 * @return Vexp
+	 * @return æ–°exp
 	 */
 	AbstractExpression replaceVar1(Col1Expression exp);
 
 	/**
-	 * “ñ€‰‰Zq’uŠ·i¶•Ó’l‚Æ‚µ‚Äg—p‚³‚ê‚éê‡j
+	 * äºŒé …æ¼”ç®—å­ç½®æ›ï¼ˆå·¦è¾ºå€¤ã¨ã—ã¦ä½¿ç”¨ã•ã‚Œã‚‹å ´åˆï¼‰
 	 * 
 	 * @param exp
-	 * @return Vexp
+	 * @return æ–°exp
 	 */
 	AbstractExpression replaceVar2(Col2Expression exp);
 
 	/**
-	 * “ñ€‰‰Zq’uŠ·i¶•Ó’l‚Æ‚µ‚Äg—p‚³‚ê‚éê‡j
+	 * äºŒé …æ¼”ç®—å­ç½®æ›ï¼ˆå·¦è¾ºå€¤ã¨ã—ã¦ä½¿ç”¨ã•ã‚Œã‚‹å ´åˆï¼‰
 	 * 
 	 * @param exp
-	 * @return Vexp
+	 * @return æ–°exp
 	 */
 	AbstractExpression replaceVar2(Col2OpeExpression exp);
 
 	/**
-	 * O€‰‰Zq’uŠ·i¶•Ó’l‚Æ‚µ‚Äg—p‚³‚ê‚éê‡j
+	 * ä¸‰é …æ¼”ç®—å­ç½®æ›ï¼ˆå·¦è¾ºå€¤ã¨ã—ã¦ä½¿ç”¨ã•ã‚Œã‚‹å ´åˆï¼‰
 	 * 
 	 * @param exp
-	 * @return Vexp
+	 * @return æ–°exp
 	 */
 	AbstractExpression replaceVar3(Col3Expression exp);
 
 	/**
-	 * ŠÖ”’uŠ·
+	 * é–¢æ•°ç½®æ›
 	 * 
 	 * @param exp
-	 * @return Vexp
+	 * @return æ–°exp
 	 */
 	AbstractExpression replaceFunc(FunctionExpression exp);
 
 	/**
-	 * ‘ã“ü‰‰Zq’uŠ·
+	 * ä»£å…¥æ¼”ç®—å­ç½®æ›
 	 * 
 	 * @param exp
-	 * @return Vexp
+	 * @return æ–°exp
 	 */
 	AbstractExpression replaceLet(Col2Expression exp);
 

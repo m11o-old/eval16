@@ -3,10 +3,10 @@ package jp.hishidama.eval.repl;
 import jp.hishidama.eval.exp.*;
 
 /**
- * 構文解析木置換アダプタークラス.
+ * 讒区枚隗｣譫先惠鄂ｮ謠帙い繝繝励ち繝ｼ繧ｯ繝ｩ繧ｹ
  * 
  * @author <a target="hishidama"
- *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">ひしだま</a>
+ *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">縺ｲ縺励□縺ｾ</a>
  * @since 2007.02.20
  */
 public class ReplaceAdapter implements Replace {
