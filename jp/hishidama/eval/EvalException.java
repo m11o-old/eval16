@@ -4,123 +4,123 @@ import jp.hishidama.eval.exp.AbstractExpression;
 import jp.hishidama.eval.lex.Lex;
 
 /**
- * ‰‰ZƒGƒ‰[ƒNƒ‰ƒX.
+ * æ¼”ç®—ã‚¨ãƒ©ãƒ¼ã‚¯ãƒ©ã‚¹
  * <p>
- * \•¶‰ğÍ‚É¸”s‚µ‚½ê‡‚â•]‰¿‚ÌÀs‚É¸”s‚µ‚½ê‡‚ÉƒXƒ[‚³‚ê‚éB
+ * æ§‹æ–‡è§£æã«å¤±æ•—ã—ãŸå ´åˆã‚„è©•ä¾¡ã®å®Ÿè¡Œã«å¤±æ•—ã—ãŸå ´åˆã«ã‚¹ãƒ­ãƒ¼ã•ã‚Œã‚‹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @version 2007.03.02
  */
 @SuppressWarnings("serial")
 public class EvalException extends RuntimeException {
 
 	/**
-	 * •Â‚¶Š‡ŒÊ‚ª‘¶İ‚µ‚È‚¢.
+	 * é–‰ã˜æ‹¬å¼§ãŒå­˜åœ¨ã—ãªã„
 	 * <p>
-	 * %0F•Â‚¶Š‡ŒÊ
+	 * %0ï¼šé–‰ã˜æ‹¬å¼§
 	 * </p>
 	 */
 	public static final int PARSE_NOT_FOUND_END_OP = 1001;
 
-	/** –¢’è‹`‚Ì‰‰Zq */
+	/** æœªå®šç¾©ã®æ¼”ç®—å­ */
 	public static final int PARSE_INVALID_OP = 1002;
 
-	/** –¢’è‹`‚Ì•¶š */
+	/** æœªå®šç¾©ã®æ–‡å­— */
 	public static final int PARSE_INVALID_CHAR = 1003;
 
-	/** ‰ğß‚Ì“r’†‚Å•¶š—ñ‚ªI—¹‚µ‚½ */
+	/** è§£é‡ˆã®é€”ä¸­ã§æ–‡å­—åˆ—ãŒçµ‚äº†ã—ãŸ */
 	public static final int PARSE_END_OF_STR = 1004;
 
-	/** ‰ğß‚ªI—¹‚µ‚½‚Ì‚É•¶š—ñ‚ªc‚Á‚Ä‚¢‚é */
+	/** è§£é‡ˆãŒçµ‚äº†ã—ãŸã®ã«æ–‡å­—åˆ—ãŒæ®‹ã£ã¦ã„ã‚‹ */
 	public static final int PARSE_STILL_EXIST = 1005;
 
-	/** ŠÖ”‚Æ‚µ‚Äˆµ‚¦‚È‚¢ */
+	/** é–¢æ•°ã¨ã—ã¦æ‰±ãˆãªã„ */
 	public static final int PARSE_NOT_FUNC = 1101;
 
 	/**
-	 * ‹Ö~‚³‚ê‚½ƒƒ\ƒbƒh‚ğŒÄ‚Ño‚µ‚½.
+	 * ç¦æ­¢ã•ã‚ŒãŸãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³å‡ºã—ãŸ
 	 * <p>
-	 * l‚¦‚ç‚ê‚éŒ´ˆöF
+	 * è€ƒãˆã‚‰ã‚Œã‚‹åŸå› ï¼š
 	 * <ul>
-	 * <li>•K—v‚Èƒƒ\ƒbƒh‚ªƒI[ƒo[ƒ‰ƒCƒh‚³‚ê‚Ä‚¢‚È‚¢</li>
-	 * <li>‚»‚ÌƒNƒ‰ƒX‚Å‚ÍAd—lã‚»‚Ìƒƒ\ƒbƒh‚ğŒÄ‚ñ‚Å‚Í‚¢‚¯‚È‚¢</li>
+	 * <li>å¿…è¦ãªãƒ¡ã‚½ãƒƒãƒ‰ãŒã‚ªãƒ¼ãƒãƒ¼ãƒ©ã‚¤ãƒ‰ã•ã‚Œã¦ã„ãªã„</li>
+	 * <li>ãã®ã‚¯ãƒ©ã‚¹ã§ã¯ã€ä»•æ§˜ä¸Šãã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã‚“ã§ã¯ã„ã‘ãªã„</li>
 	 * </p>
 	 */
 	public static final int EXP_FORBIDDEN_CALL = 2001;
 
-	/** •Ï”‚Æ‚µ‚Äˆµ‚¦‚È‚¢ */
+	/** å¤‰æ•°ã¨ã—ã¦æ‰±ãˆãªã„ */
 	public static final int EXP_NOT_VARIABLE = 2002;
 
-	/** ”’l‚Æ‚µ‚Äˆµ‚¦‚È‚¢ */
+	/** æ•°å€¤ã¨ã—ã¦æ‰±ãˆãªã„ */
 	public static final int EXP_NOT_NUMBER = 2003;
 
-	/** ‘ã“ü‚Å‚«‚È‚¢ */
+	/** ä»£å…¥ã§ããªã„ */
 	public static final int EXP_NOT_LET = 2004;
 
 	/**
-	 * •¶š‚Æ‚µ‚Äˆµ‚¦‚È‚¢
+	 * æ–‡å­—ã¨ã—ã¦æ‰±ãˆãªã„
 	 */
 	public static final int EXP_NOT_CHAR = 2005;
 
 	/**
-	 * •¶š—ñ‚Æ‚µ‚Äˆµ‚¦‚È‚¢
+	 * æ–‡å­—åˆ—ã¨ã—ã¦æ‰±ãˆãªã„
 	 */
 	public static final int EXP_NOT_STRING = 2006;
 
-	/** •Ï”’l‚ªæ“¾‚Å‚«‚È‚¢ */
+	/** å¤‰æ•°å€¤ãŒå–å¾—ã§ããªã„ */
 	public static final int EXP_NOT_VAR_VALUE = 2101;
 
-	/** •Ï”‚É‘ã“ü‚Å‚«‚È‚¢ */
+	/** å¤‰æ•°ã«ä»£å…¥ã§ããªã„ */
 	public static final int EXP_NOT_LET_VAR = 2102;
 
-	/** •Ï”‚ª–¢’è‹` */
+	/** å¤‰æ•°ãŒæœªå®šç¾© */
 	public static final int EXP_NOT_DEF_VAR = 2103;
 
-	/** ƒIƒuƒWƒFƒNƒg‚ª–¢’è‹` */
+	/** ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒæœªå®šç¾© */
 	public static final int EXP_NOT_DEF_OBJ = 2104;
 
-	/** ”z—ñ’l‚ªæ“¾‚Å‚«‚È‚¢ */
+	/** é…åˆ—å€¤ãŒå–å¾—ã§ããªã„ */
 	public static final int EXP_NOT_ARR_VALUE = 2201;
 
-	/** ”z—ñ‚É‘ã“ü‚Å‚«‚È‚¢ */
+	/** é…åˆ—ã«ä»£å…¥ã§ããªã„ */
 	public static final int EXP_NOT_LET_ARR = 2202;
 
-	/** ƒtƒB[ƒ‹ƒh’l‚ªæ“¾‚Å‚«‚È‚¢ */
+	/** ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰å€¤ãŒå–å¾—ã§ããªã„ */
 	public static final int EXP_NOT_FLD_VALUE = 2301;
 
-	/** ƒtƒB[ƒ‹ƒh‚É‘ã“ü‚Å‚«‚È‚¢ */
+	/** ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã«ä»£å…¥ã§ããªã„ */
 	public static final int EXP_NOT_LET_FIELD = 2302;
 
-	/** ŠÖ”ŒÄ‚Ño‚µ‚Ì¸”s */
+	/** é–¢æ•°å‘¼ã³å‡ºã—ã®å¤±æ•— */
 	public static final int EXP_FUNC_CALL_ERROR = 2401;
 
 	/**
-	 * ƒGƒ‰[ƒƒbƒZ[ƒWƒR[ƒh.
+	 * ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚³ãƒ¼ãƒ‰
 	 *
 	 * @since 2007.03.02
 	 */
 	protected int msgCode;
 
 	/**
-	 * ƒGƒ‰[ƒƒbƒZ[ƒW‚ÌƒIƒvƒVƒ‡ƒ“.
+	 * ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚ªãƒ—ã‚·ãƒ§ãƒ³
 	 *
 	 * @since 2007.03.02
 	 */
 	protected String[] msgOpt;
 
-	/** ƒGƒ‰[‚Ì‹N‚«‚½•¶š—ñ. */
+	/** ï¿½Gï¿½ï¿½ï¿½[ï¿½Ì‹Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½. */
 	protected String string;
 
-	/** •¶š—ñ’†‚ÌƒGƒ‰[‚Ì‹N‚«‚½ˆÊ’u. */
+	/** ï¿½ï¿½ï¿½ï¿½ï¿½ñ’†‚ÌƒGï¿½ï¿½ï¿½[ï¿½Ì‹Nï¿½ï¿½ï¿½ï¿½ï¿½Ê’u. */
 	protected int pos = -1;
 
-	/** ‰½‚ğ‰ğÍ‚µ‚Ä‚¢‚½‚©. */
+	/** ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½. */
 	protected String ename = "word";
 
-	/** ‰ğß’†‚Ì•¶š—ñ. */
+	/** ï¿½ï¿½ï¿½ß’ï¿½ï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½. */
 	protected String word;
 
 	protected EvalException(RuntimeException e) {
@@ -128,12 +128,12 @@ public class EvalException extends RuntimeException {
 	}
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param msg
-	 *            ƒGƒ‰[ƒƒbƒZ[ƒWƒR[ƒh
+	 *            ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚³ãƒ¼ãƒ‰
 	 * @param lex
-	 *            š‹å‰ğÍˆÊ’u
+	 *            å­—å¥è§£æä½ç½®
 	 * @since 2007.03.02
 	 */
 	public EvalException(int msg, Lex lex) {
@@ -141,14 +141,14 @@ public class EvalException extends RuntimeException {
 	}
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param msg
-	 *            ƒGƒ‰[ƒƒbƒZ[ƒWƒR[ƒh
+	 *            ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚³ãƒ¼ãƒ‰
 	 * @param opt
-	 *            ƒGƒ‰[ƒƒbƒZ[ƒWƒIƒvƒVƒ‡ƒ“
+	 *            ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚ªãƒ—ã‚·ãƒ§ãƒ³
 	 * @param lex
-	 *            š‹å‰ğÍˆÊ’u
+	 *            å­—å¥è§£æä½ç½®
 	 * @since 2007.03.02
 	 */
 	public EvalException(int msg, String[] opt, Lex lex) {
@@ -163,14 +163,14 @@ public class EvalException extends RuntimeException {
 	}
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param msg
-	 *            ƒGƒ‰[ƒƒbƒZ[ƒWƒR[ƒh
+	 *            ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚³ãƒ¼ãƒ‰
 	 * @param exp
 	 *            Expression
 	 * @param e
-	 *            Œ´ˆö‚Æ‚È‚Á‚½—áŠO
+	 *            åŸå› ã¨ãªã£ãŸä¾‹å¤–
 	 */
 	public EvalException(int msg, AbstractExpression exp, Throwable e) {
 		this(msg, exp.getExpressionName(), exp.getWord(), exp.getString(), exp
@@ -178,16 +178,16 @@ public class EvalException extends RuntimeException {
 	}
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param msg
-	 *            ƒGƒ‰[ƒƒbƒZ[ƒWƒR[ƒh
+	 *            ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚³ãƒ¼ãƒ‰
 	 * @param word
-	 *            ‘ÎÛ•¶š—ñ
+	 *            å¯¾è±¡æ–‡å­—åˆ—
 	 * @param exp
 	 *            Expression
 	 * @param e
-	 *            Œ´ˆö‚Æ‚È‚Á‚½—áŠO
+	 *            åŸå› ã¨ãªã£ãŸä¾‹å¤–
 	 */
 	public EvalException(int msg, String word, AbstractExpression exp,
 			Throwable e) {
@@ -196,20 +196,20 @@ public class EvalException extends RuntimeException {
 	}
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param msg
-	 *            ƒGƒ‰[ƒƒbƒZ[ƒWƒR[ƒh
+	 *            ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚³ãƒ¼ãƒ‰
 	 * @param expName
-	 *            ‰ğÍ–¼
+	 *            è§£æå
 	 * @param word
-	 *            ‘ÎÛ•¶š—ñ
+	 *            å¯¾è±¡æ–‡å­—åˆ—
 	 * @param string
-	 *            ‘S•¶š—ñ
+	 *            å…¨æ–‡å­—åˆ—
 	 * @param pos
-	 *            ˆÊ’u
+	 *            ä½ç½®
 	 * @param e
-	 *            Œ´ˆö‚Æ‚È‚Á‚½—áŠO
+	 *            åŸå› ã¨ãªã£ãŸä¾‹å¤–
 	 * @since 2007.03.02
 	 */
 	public EvalException(int msg, String expName, String word, String string,
@@ -236,9 +236,9 @@ public class EvalException extends RuntimeException {
 	}
 
 	/**
-	 * ƒGƒ‰[ƒR[ƒhæ“¾
+	 * ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰å–å¾—
 	 *
-	 * @return ƒGƒ‰[ƒR[ƒh
+	 * @return ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰
 	 * @since 2007.03.02
 	 */
 	public int getErrorCode() {
@@ -246,9 +246,9 @@ public class EvalException extends RuntimeException {
 	}
 
 	/**
-	 * ƒƒbƒZ[ƒW•t‰Áî•ñæ“¾
+	 * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ä»˜åŠ æƒ…å ±å–å¾—
 	 *
-	 * @return •t‰Áî•ñ
+	 * @return ä»˜åŠ æƒ…å ±
 	 * @since 2007.03.02
 	 */
 	public String[] getOption() {
@@ -256,18 +256,18 @@ public class EvalException extends RuntimeException {
 	}
 
 	/**
-	 * ‰ğÍ–¼Ìæ“¾.
+	 * è§£æåç§°å–å¾—
 	 *
-	 * @return ‰ğÍ–¼
+	 * @return è§£æå
 	 */
 	public String getExpressionName() {
 		return ename;
 	}
 
 	/**
-	 * ‘ÎÛ¯•Êqæ“¾
+	 * å¯¾è±¡è­˜åˆ¥å­å–å¾—
 	 *
-	 * @return •¶š—ñ
+	 * @return æ–‡å­—åˆ—
 	 * @since 2007.03.02
 	 */
 	public String getWord() {
@@ -275,9 +275,9 @@ public class EvalException extends RuntimeException {
 	}
 
 	/**
-	 * ‰ğÍ‘O•¶š—ñæ“¾
+	 * è§£æå‰æ–‡å­—åˆ—å–å¾—
 	 *
-	 * @return •¶š—ñ
+	 * @return æ–‡å­—åˆ—
 	 * @since 2007.03.02
 	 */
 	public String getString() {
@@ -285,9 +285,9 @@ public class EvalException extends RuntimeException {
 	}
 
 	/**
-	 * ƒGƒ‰[”­¶ˆÊ’uæ“¾
+	 * ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿä½ç½®å–å¾—
 	 *
-	 * @return ˆÊ’u
+	 * @return ä½ç½®
 	 * @since 2007.03.02
 	 */
 	public int getPos() {
