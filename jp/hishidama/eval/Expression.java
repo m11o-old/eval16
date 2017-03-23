@@ -13,15 +13,15 @@ import jp.hishidama.eval.srch.Search;
 import jp.hishidama.eval.var.Variable;
 
 /**
- * ���N���X.
+ * 式クラス
  * <p>
- * �\����͖؂�ێ����A���Z�̕]�������{����B
+ * 構文解析木を保持し、演算の評価を実施する
  * </p>
  *
  * @see Rule#parse(String)
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >�Ђ�����</a>
+ *         >ひしだま</a>
  * @version eval16
  */
 public abstract class Expression {
@@ -41,16 +41,16 @@ public abstract class Expression {
 	protected AbstractExpression ae;
 
 	/**
-	 * �\����͎��s.
+	 * 構文解析実行
 	 * <p>
-	 * �f�t�H���g���[���ō\����͂��s���B
+	 * デフォルトルールで構文解析を行う
 	 * </p>
 	 *
 	 * @param str
-	 *            ��͑Ώە�����
-	 * @return �\����͌���
+	 *            解析対象文字列
+	 * @return 構文解析結果
 	 * @throws EvalException
-	 *             �\�������������Ƃ�
+	 *             構文がおかしいとき
 	 * @see ExpRuleFactory#getDefaultRule()
 	 * @see Rule#parse(String)
 	 */
@@ -59,13 +59,13 @@ public abstract class Expression {
 	}
 
 	/**
-	 * �ϐ��Q�ݒ�.
+	 * 変数群設定
 	 * <p>
-	 * �]�����s�̍ۂ� ���̒��ɕϐ�������΁A�����\�b�h�Ŏw�肵���ϐ��I�u�W�F�N�g�̃��\�b�h���Ă΂��B
+	 * 評価実行の際に 式の中に変数があれば、当メソッドで指定した変数オブジェクトのメソッドが呼ばれる
 	 * </p>
 	 *
 	 * @param var
-	 *            �ϐ��I�u�W�F�N�g
+	 *            変数オブジェクト
 	 * @see #evalInt()
 	 * @see #evalLong()
 	 * @see #evalDouble()
@@ -77,13 +77,13 @@ public abstract class Expression {
 	}
 
 	/**
-	 * �֐��Q�ݒ�.
+	 * 関数群設定
 	 * <p>
-	 * �]�����s�̍ۂ� ���̒��Ɋ֐�������΁A�����\�b�h�Ŏw�肵���֐��I�u�W�F�N�g�̃��\�b�h���Ă΂��B
+	 * 評価実行の際に 式の中に関数があれば、当メソッドで指定した関数オブジェクトのメソッドが呼ばれる
 	 * </p>
 	 *
 	 * @param func
-	 *            �֐��I�u�W�F�N�g
+	 *            関数オブジェクト
 	 * @see #evalInt()
 	 * @see #evalLong()
 	 * @see #evalDouble()
@@ -94,13 +94,13 @@ public abstract class Expression {
 	}
 
 	/**
-	 * ���Z�ݒ�.
+	 * 演算設定
 	 * <p>
-	 * �]�����s�̍ۂ� ���̒��ɉ��Z�i+��-���j������΁A�w�肵�����Z�I�u�W�F�N�g�̃��\�b�h���Ă΂��B
+	 * 評価実行の際に 式の中に演算（+や-等）があれば、指定した演算オブジェクトのメソッドが呼ばれる
 	 * </p>
 	 *
 	 * @param oper
-	 *            ���Z�I�u�W�F�N�g
+	 *            演算オブジェクト
 	 * @see #eval()
 	 * @since 2007.02.15
 	 */
@@ -109,13 +109,13 @@ public abstract class Expression {
 	}
 
 	/**
-	 * ���O�o�͐ݒ�.
+	 * ログ出力設定
 	 * <p>
-	 * �]�����s�̍ۂɎw�肵�����O�o�̓I�u�W�F�N�g�̃��\�b�h���Ă΂��B
+	 * 評価実行の際に指定したログ出力オブジェクトのメソッドが呼ばれる
 	 * </p>
 	 *
 	 * @param log
-	 *            ���O�o�̓I�u�W�F�N�g
+	 *            ログ出力オブジェクト
 	 * @see #eval()
 	 * @since eval16
 	 */
@@ -124,14 +124,14 @@ public abstract class Expression {
 	}
 
 	/**
-	 * �]�����s(int).
+	 * 評価実行(int)
 	 *<p>
-	 * �����\�b�h�ł́A{@link IntOperator}���g�p���ĉ��Z����B
+	 * 当メソッドでは、{@link IntOperator}を使用して演算する。
 	 * </p>
 	 *
-	 * @return ���Z����
+	 * @return 演算結果
 	 * @throws EvalException
-	 *             ���Z���ɃG���[�����������Ƃ�
+	 *             演算中にエラーが発生したとき
 	 * @see #setOperator(Operator)
 	 * @see IntOperator
 	 * @since eval16
@@ -154,14 +154,14 @@ public abstract class Expression {
 	}
 
 	/**
-	 * �]�����s(long).
+	 * 評価実行(long)
 	 *<p>
-	 * �����\�b�h�ł́A{@link LongOperator}���g�p���ĉ��Z����B
+	 * 当メソッドでは、{@link LongOperator}を使用して演算する
 	 * </p>
 	 *
-	 * @return ���Z����
+	 * @return 演算結果
 	 * @throws EvalException
-	 *             ���Z���ɃG���[�����������Ƃ�
+	 *             演算中にエラーが発生したとき
 	 * @see #setOperator(Operator)
 	 * @see LongOperator
 	 */
@@ -183,14 +183,14 @@ public abstract class Expression {
 	}
 
 	/**
-	 * �]�����s(double).
+	 * 評価実行(double)
 	 *<p>
-	 * �����\�b�h�ł́A{@link DoubleOperator}���g�p���ĉ��Z����B
+	 * 当メソッドでは、{@link DoubleOperator}を使用して演算する
 	 * </p>
 	 *
-	 * @return ���Z����
+	 * @return 演算結果
 	 * @throws EvalException
-	 *             ���Z���ɃG���[�����������Ƃ�
+	 *             演算中にエラーが発生したとき
 	 * @see #setOperator(Operator)
 	 * @see DoubleOperator
 	 */
@@ -212,106 +212,106 @@ public abstract class Expression {
 	}
 
 	/**
-	 * �]�����s(Object).
+	 * 評価実行(Object)
 	 * <p>
-	 * Object�^�ŉ��Z�����{���Č��ʂ�Ԃ��B<br>
-	 * ���Z���s�N���X��o�^����K�v����B
+	 * Object型で演算を実施して結果を返す<br>
+	 * 演算実行クラスを登録する必要あり
 	 * </p>
 	 *
 	 * @see #setOperator(Operator)
-	 * @return ���Z����
+	 * @return 演算結果
 	 * @throws EvalException
-	 *             ���Z���ɃG���[�����������Ƃ�
+	 *             演算中にエラーが発生したとき
 	 * @since 2007.02.15
 	 */
 	public abstract Object eval();
 
 	/**
-	 * �œK�����s(Object).
+	 * 最適化実行(Object)
 	 * <p>
-	 * ���ȈՍœK�����s���B���Z�͎w�肳�ꂽoper���g���čs���B<br>
-	 * �ϐ��ɒl�������Ă���ꍇ�A�萔�ƌ��Ȃ��A�l�ɒu������B
+	 * 超簡易最適化を行う。演算は指定されたoperを使って行う<br>
+	 * 変数に値が入っている場合、定数と見なし、値に置換する
 	 * </p>
 	 *
 	 * @param var
-	 *            �萔�Ƃ��Ĉ����ϐ��Q�inull�j
+	 *            定数として扱う変数群（null可）
 	 * @param oper
-	 *            ���Z���s�N���X
+	 *            演算実行クラス
 	 * @throws EvalException
-	 *             �œK�����ɃG���[�����������Ƃ�
+	 *             最適化中にエラーが発生したとき
 	 * @since 2007.02.21
 	 */
 	public abstract void optimize(Variable var, Operator oper);
 
 	/**
-	 * �T�����s.
+	 * 探索実行
 	 * <p>
-	 * �\����͖؂̒T�����s���B<br>
-	 * �S�\����͖؂ɂ��āA1���T���C���^�[�t�F�[�X�̃��\�b�h���Ăяo���B
+	 * 構文解析木の探索を行う<br>
+	 * 全構文解析木について、1つずつ探索インターフェースのメソッドを呼び出す
 	 * </p>
 	 *
 	 * @param srch
-	 *            �T���C���^�[�t�F�[�X
+	 *            探索インターフェース
 	 * @see Search#search(AbstractExpression)
 	 * @since 2007.02.17
 	 */
 	public abstract void search(Search srch);
 
 	/**
-	 * ���t�@�N�^�����O�i���ʎq���ύX�j.
+	 * リファクタリング（識別子名変更）
 	 * <p>
-	 * �ϐ���/�֐������邢�̓I�u�W�F�N�g�̃t�B�[���h��/���\�b�h����ϊ�����B
+	 * 変数名/関数名あるいはオブジェクトのフィールド名/メソッド名を変換する
 	 * </p>
 	 * <p>
-	 * ���̒��ɃI�u�W�F�N�g�̃����o�[�����݂���ꍇ�́A�I�u�W�F�N�g���擾���ĕύX�Ώۂ̃I�u�W�F�N�g���ǂ������肷��B<br>
-	 * ���������āA�I�u�W�F�N�g���݂�ꍇ��setVariable()�ŃI�u�W�F�N�g�̕ϐ���Ԃ��悤�ɂ��Ă����K�v������B
+	 * 式の中にオブジェクトのメンバーが存在する場合は、オブジェクトを取得して変更対象のオブジェクトかどうか判定する<br>
+	 * したがって、オブジェクトが在る場合はsetVariable()でオブジェクトの変数を返すようにしておく必要がある
 	 * </p>
 	 *
 	 * @param ref
-	 *            ���t�@�N�^�����O�C���^�[�t�F�[�X
+	 *            リファクタリングインターフェース
 	 * @since 2007.02.19
 	 */
 	public abstract void refactorName(Refactor ref);
 
 	/**
-	 * ���t�@�N�^�����O�i�֐��ւ̕ύX�j.
+	 * リファクタリング（関数への変更）
 	 * <p>
-	 * �ϐ������邢�̓I�u�W�F�N�g�̃t�B�[���h�����֐��i���邢�̓��\�b�h�j�ɕϊ�����B
+	 * 変数名あるいはオブジェクトのフィールド名を関数（あるいはメソッド）に変換する
 	 * </p>
 	 * <p>
-	 * ���̒��ɃI�u�W�F�N�g�̃����o�[�����݂���ꍇ�́A�I�u�W�F�N�g���擾���ĕύX�Ώۂ̃I�u�W�F�N�g���ǂ������肷��B<br>
-	 * ���������āA�I�u�W�F�N�g���݂�ꍇ��setVariable()�ŃI�u�W�F�N�g�̕ϐ���Ԃ��悤�ɂ��Ă����K�v������B
+	 * 式の中にオブジェクトのメンバーが存在する場合は、オブジェクトを取得して変更対象のオブジェクトかどうか判定する<br>
+	 * したがって、オブジェクトが在る場合はsetVariable()でオブジェクトの変数を返すようにしておく必要がある
 	 * </p>
 	 *
 	 * @param ref
-	 *            ���t�@�N�^�����O�C���^�[�t�F�[�X
+	 *            リファクタリングインターフェース
 	 * @param rule
-	 *            �ϊ����Ɏg�p���郋�[��
+	 *            変換時に使用するルール
 	 * @since 2007.02.20
 	 */
 	public abstract void refactorFunc(Refactor ref, Rule rule);
 
 	/**
-	 * �����쐬.
+	 * 複製作成
 	 * <p>
-	 * ���C���X�^���X�̕������쐬����B
+	 * 当インスタンスの複製を作成する
 	 * </p>
 	 *
-	 * @return ����
+	 * @return 複製
 	 * @since 2007.02.17
 	 */
 	public abstract Expression dup();
 
 	/**
-	 * �I�u�W�F�N�g��r.
+	 * オブジェクト比較
 	 * <p>
-	 * ���Z��͌��ʂ����������ǂ������`�F�b�N����B<br>
-	 * ���Z�q�̕�����\���̈Ⴂ�͈ӎ����Ȃ��B
+	 * 演算解析結果が等しいかどうかをチェックする<br>
+	 * 演算子の文字列表現の違いは意識しない
 	 * </p>
 	 *
 	 * @param obj
-	 *            �I�u�W�F�N�g
-	 * @return �������Ƃ��Atrue
+	 *            オブジェクト
+	 * @return 等しいとき、true
 	 * @see #same(Expression)
 	 * @since 2007.02.27
 	 */
@@ -331,9 +331,9 @@ public abstract class Expression {
 	}
 
 	/**
-	 * �n�b�V���R�[�h�l�擾.
+	 * ハッシュコード値取得
 	 *
-	 * @return �n�b�V���R�[�h�l
+	 * @return ハッシュコード値
 	 * @since 2007.02.27
 	 */
 	@Override
@@ -345,14 +345,14 @@ public abstract class Expression {
 	}
 
 	/**
-	 * �I�u�W�F�N�g��r.
+	 * オブジェクト比較
 	 * <p>
-	 * ���Z�q�̕�����\���܂Ŋ܂߂ăI�u�W�F�N�g�����������ǂ����`�F�b�N����B
+	 * 演算子の文字列表現まで含めてオブジェクトが等しいかどうかチェックする
 	 * </p>
 	 *
 	 * @param obj
-	 *            ��r�Ώ�
-	 * @return �������Ƃ��Atrue
+	 *            比較対象
+	 * @return 等しいとき、true
 	 * @see #equals(Object)
 	 * @since 2007.02.27
 	 */
@@ -365,12 +365,12 @@ public abstract class Expression {
 	}
 
 	/**
-	 * ��`�F�b�N.
+	 * 空チェック
 	 * <p>
-	 * ��͌��ʂ��󂩂ǂ������`�F�b�N����B
+	 * 解析結果が空かどうかをチェックする
 	 * </p>
 	 *
-	 * @return ��̂Ƃ��Atrue
+	 * @return 空のとき、true
 	 * @since 2007.03.01
 	 */
 	public boolean isEmpty() {
