@@ -1,11 +1,11 @@
 package jp.hishidama.lang.reflect.conv;
 
 /**
- * ƒIƒuƒWƒFƒNƒgŒ^•ÏŠ·ƒNƒ‰ƒX.
+ * ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå‹å¤‰æ›ã‚¯ãƒ©ã‚¹
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2010.02.16
  */
 public abstract class TypeConverter {
@@ -17,20 +17,20 @@ public abstract class TypeConverter {
 	protected static final int MATCH_EQUALS = Short.MAX_VALUE;
 
 	/**
-	 * Œ^‚ªƒ}ƒbƒ`‚µ‚Ä‚¢‚é“x‡‚¢‚ğ•Ô‚·B
+	 * å‹ãŒãƒãƒƒãƒã—ã¦ã„ã‚‹åº¦åˆã„ã‚’è¿”ã™
 	 *
 	 * @param obj
-	 *            ƒIƒuƒWƒFƒNƒg
-	 * @return ‡’v“xi‘å‚«‚¢‚Ù‚Çƒ}ƒbƒ`‚µ‚Ä‚¢‚éj
+	 *            ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+	 * @return åˆè‡´åº¦ï¼ˆå¤§ãã„ã»ã©ãƒãƒƒãƒã—ã¦ã„ã‚‹ï¼‰
 	 */
 	public abstract int match(Object obj);
 
 	/**
-	 * Œ^•ÏŠ·.
+	 * å‹å¤‰æ›
 	 *
 	 * @param obj
-	 *            ƒIƒuƒWƒFƒNƒg
-	 * @return •ÏŠ·ŒãƒIƒuƒWƒFƒNƒg
+	 *            ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+	 * @return å¤‰æ›å¾Œã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	public abstract Object convert(Object obj);
 }

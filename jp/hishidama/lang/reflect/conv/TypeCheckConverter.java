@@ -1,15 +1,15 @@
 package jp.hishidama.lang.reflect.conv;
 
 /**
- * ”Ä—pŒ^•ÏŠ·ƒNƒ‰ƒX.
+ * æ±Žç”¨åž‹å¤‰æ›ã‚¯ãƒ©ã‚¹
  * <p>
- * Žw’è‚³‚ê‚½Œ^‚ÉƒLƒƒƒXƒg‚·‚éB<br>
- * i‚µ‚½‚ª‚Á‚ÄAŒ^‚ªˆê’v‚µ‚È‚¢ƒIƒuƒWƒFƒNƒg‚Ìê‡‚ÍClassCastException‚ª”­¶‚·‚éj
+ * æŒ‡å®šã•ã‚ŒãŸåž‹ã«ã‚­ãƒ£ã‚¹ãƒˆã™ã‚‹<br>
+ * ï¼ˆã—ãŸãŒã£ã¦ã€åž‹ãŒä¸€è‡´ã—ãªã„ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å ´åˆã¯ClassCastExceptionãŒç™ºç”Ÿã™ã‚‹ï¼‰
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ð‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2010.02.16
  */
 public class TypeCheckConverter extends TypeConverter {

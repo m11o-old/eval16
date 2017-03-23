@@ -3,11 +3,11 @@ package jp.hishidama.lang.reflect.conv;
 import java.util.Map;
 
 /**
- * Map•ÏŠ·ƒNƒ‰ƒX.
+ * Mapå¤‰æ›ã‚¯ãƒ©ã‚¹
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2010.02.16
  */
 public class MapConverter extends TypeConverter {
@@ -31,6 +31,6 @@ public class MapConverter extends TypeConverter {
 		if (object == null) {
 			return null;
 		}
-		return (Map<?, ?>) object; // Map‚Å‚È‚©‚Á‚½‚ç—áŠO”­¶
+		return (Map<?, ?>) object; // Mapï¿½Å‚È‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½
 	}
 }

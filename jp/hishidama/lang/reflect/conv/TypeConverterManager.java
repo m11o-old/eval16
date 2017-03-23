@@ -7,21 +7,21 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 /**
- * Œ^•ÏŠ·ƒIƒuƒWƒFƒNƒgŠÇ—ƒNƒ‰ƒX.
+ * å‹å¤‰æ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç®¡ç†ã‚¯ãƒ©ã‚¹
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2010.02.16
  */
 public class TypeConverterManager {
 
 	/**
-	 * Œ^•ÏŠ·ƒIƒuƒWƒFƒNƒgæ“¾.
+	 * å‹å¤‰æ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå–å¾—
 	 *
 	 * @param clazz
-	 *            •ÏŠ·æ‚ÌŒ^
-	 * @return Œ^•ÏŠ·ƒIƒuƒWƒFƒNƒg
+	 *            å¤‰æ›å…ˆã®å‹
+	 * @return å‹å¤‰æ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	public TypeConverter getConverter(Class<?> clazz) {
 		if (clazz.isArray()) {
@@ -36,11 +36,11 @@ public class TypeConverterManager {
 	}
 
 	/**
-	 * “o˜^‚³‚ê‚Ä‚¢‚éŒ^•ÏŠ·ƒIƒuƒWƒFƒNƒg‚ğ•Ô‚·B
+	 * ï¿½oï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½^ï¿½ÏŠï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½Ô‚ï¿½ï¿½B
 	 *
 	 * @param clazz
-	 *            •ÏŠ·æ‚ÌŒ^
-	 * @return Œ^•ÏŠ·ƒIƒuƒWƒFƒNƒgiŒ©‚Â‚©‚ç‚È‚©‚Á‚½ê‡‚Ínullj
+	 *            ï¿½ÏŠï¿½ï¿½ï¿½ï¿½ÌŒ^
+	 * @return ï¿½^ï¿½ÏŠï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½iï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‡ï¿½ï¿½nullï¿½j
 	 */
 	protected TypeConverter findConverter(Class<?> clazz) {
 		Map<Class<?>, TypeConverter> map = getConverterMap();
@@ -52,7 +52,7 @@ public class TypeConverterManager {
 			return ObjectConverter.INSTANCE;
 		}
 
-		// eƒNƒ‰ƒX‚ğ’T‚·
+		// ï¿½eï¿½Nï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½Tï¿½ï¿½
 		for (Entry<Class<?>, TypeConverter> entry : map.entrySet()) {
 			Class<?> c = entry.getKey();
 			if (c.isAssignableFrom(clazz)) {
@@ -67,11 +67,11 @@ public class TypeConverterManager {
 	}
 
 	/**
-	 * “o˜^‚³‚ê‚Ä‚¢‚È‚¢ƒNƒ‰ƒX‚Ìê‡‚Ìˆ—‚ğs‚¤B
+	 * ï¿½oï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½È‚ï¿½ï¿½Nï¿½ï¿½ï¿½Xï¿½Ìê‡ï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½B
 	 *
 	 * @param clazz
-	 *            •ÏŠ·æ‚ÌŒ^
-	 * @return Œ^•ÏŠ·ƒIƒuƒWƒFƒNƒg
+	 *            ï¿½ÏŠï¿½ï¿½ï¿½ï¿½ÌŒ^
+	 * @return ï¿½^ï¿½ÏŠï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½g
 	 */
 	protected TypeConverter getDefaultConverter(Class<?> clazz) {
 		return new TypeCheckConverter(clazz);
@@ -80,12 +80,12 @@ public class TypeConverterManager {
 	protected Map<Class<?>, TypeConverter> MAP = null;
 
 	/**
-	 * Œ^•ÏŠ·ƒIƒuƒWƒFƒNƒgƒ}ƒbƒvæ“¾.
+	 * å‹å¤‰æ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãƒãƒƒãƒ—å–å¾—
 	 * <p>
-	 * “–ƒCƒ“ƒXƒ^ƒ“ƒX“à—Bˆê‚Ìƒ}ƒbƒv‚ğ•Ô‚·B
+	 * å½“ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹å†…å”¯ä¸€ã®ãƒãƒƒãƒ—ã‚’è¿”ã™
 	 * </p>
 	 *
-	 * @return ƒ}ƒbƒv
+	 * @return ãƒãƒƒãƒ—
 	 */
 	public Map<Class<?>, TypeConverter> getConverterMap() {
 		if (MAP == null) {
@@ -98,10 +98,10 @@ public class TypeConverterManager {
 	}
 
 	/**
-	 * ‰Šú‰»‚Ìˆ×‚Éˆê“x‚¾‚¯ŒÄ‚Î‚ê‚éB
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìˆ×‚Éˆï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½Ä‚Î‚ï¿½ï¿½ï¿½ï¿½B
 	 *
 	 * @param map
-	 *            ‰Šú‰»‘ÎÛ
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îï¿½
 	 */
 	protected void initConverterMap(Map<Class<?>, TypeConverter> map) {
 		map.put(boolean.class, BooleanConverter.INSTANCE);

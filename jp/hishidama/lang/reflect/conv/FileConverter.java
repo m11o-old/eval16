@@ -4,11 +4,11 @@ import java.io.File;
 import java.net.URI;
 
 /**
- * File•ÏŠ·ƒNƒ‰ƒX.
+ * Fileå¤‰æ›ã‚¯ãƒ©ã‚¹
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2010.02.16
  */
 public class FileConverter extends TypeConverter {

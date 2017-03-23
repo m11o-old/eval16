@@ -3,28 +3,28 @@ package jp.hishidama.lang.reflect.conv;
 import java.lang.reflect.Array;
 
 /**
- * ”z—ñ•ÏŠ·ƒNƒ‰ƒX.
+ * é…åˆ—å¤‰æ›ã‚¯ãƒ©ã‚¹
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2010.02.16
  */
 public class ArrayConverter extends TypeConverter {
 
-	/** ”z—ñƒNƒ‰ƒX */
+	/** é…åˆ—ã‚¯ãƒ©ã‚¹ */
 	protected Class<?> clazz;
 
-	/** ”z—ñ‚Ì—v‘f‚ÌƒRƒ“ƒo[ƒ^[ */
+	/** å‹å¤‰æ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ */
 	protected TypeConverter conv;
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param clazz
-	 *            ”z—ñƒNƒ‰ƒX
+	 *            é…åˆ—ã‚¯ãƒ©ã‚¹
 	 * @param manager
-	 *            Œ^•ÏŠ·ƒIƒuƒWƒFƒNƒgŠÇ—ƒNƒ‰ƒX
+	 *            å‹å¤‰æ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç®¡ç†ã‚¯ãƒ©ã‚¹
 	 */
 	public ArrayConverter(Class<?> clazz, TypeConverterManager manager) {
 		assert clazz.isArray() : clazz;
@@ -81,7 +81,7 @@ public class ArrayConverter extends TypeConverter {
 			return arr;
 		}
 
-		// ”z—ñ‚Å‚È‚¢ê‡A‚»‚ÌƒIƒuƒWƒFƒNƒg‚ğ—v‘f‚Æ‚·‚é”z—ñ‚ğì‚é
+		// ï¿½zï¿½ï¿½ï¿½Å‚È‚ï¿½ï¿½ê‡ï¿½Aï¿½ï¿½ï¿½ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½vï¿½fï¿½Æ‚ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Object arr = Array.newInstance(clazz.getComponentType(), 1);
 		Array.set(arr, 0, conv.convert(object));
 		return arr;
