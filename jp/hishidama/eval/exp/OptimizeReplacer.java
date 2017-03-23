@@ -3,20 +3,20 @@ package jp.hishidama.eval.exp;
 import jp.hishidama.eval.repl.ReplaceAdapter;
 
 /**
- * Å“K‰»ƒNƒ‰ƒX.
+ * æœ€é©åŒ–ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since eval16
  */
 public class OptimizeReplacer extends ReplaceAdapter {
 
 	/**
-	 * ’è””»’f
+	 * ï¿½è”ï¿½ï¿½ï¿½f
 	 * 
 	 * @param x
-	 * @return ’è”‚Ì‚Æ‚«true
+	 * @return ï¿½è”ï¿½Ì‚Æ‚ï¿½true
 	 */
 	protected boolean isConst(AbstractExpression x) {
 		return x instanceof NumberExpression || x instanceof StringExpression
@@ -24,20 +24,20 @@ public class OptimizeReplacer extends ReplaceAdapter {
 	}
 
 	/**
-	 * ^‹U’læ“¾
+	 * ï¿½^ï¿½Uï¿½lï¿½æ“¾
 	 * 
 	 * @param x
-	 * @return ^‹U’l
+	 * @return ï¿½^ï¿½Uï¿½l
 	 */
 	protected boolean isTrue(AbstractExpression x) {
 		return x.share.oper.bool(x.eval());
 	}
 
 	/**
-	 * ’è”•ÏŠ·
+	 * ï¿½è”ï¿½ÏŠï¿½
 	 * 
 	 * @param exp
-	 * @return ’è”
+	 * @return ï¿½è”
 	 */
 	protected AbstractExpression toConst(AbstractExpression exp) {
 		try {

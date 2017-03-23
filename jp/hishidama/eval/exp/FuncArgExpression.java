@@ -3,11 +3,11 @@ package jp.hishidama.eval.exp;
 import java.util.List;
 
 /**
- * ŠÖ”ˆø”ƒNƒ‰ƒX.
+ * é–¢æ•°å¼•æ•°ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2006.11.07
  * @version 2007.02.17
  */

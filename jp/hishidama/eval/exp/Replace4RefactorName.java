@@ -5,13 +5,13 @@ import jp.hishidama.eval.ref.Refactor;
 import jp.hishidama.eval.repl.ReplaceAdapter;
 
 /**
- * ƒŠƒtƒ@ƒNƒ^ƒŠƒ“ƒOi•Ï”–¼•ÏX—pj’uŠ·ƒNƒ‰ƒX.
+ * ãƒªãƒ•ã‚¡ã‚¯ã‚¿ãƒªãƒ³ã‚°ï¼ˆå¤‰æ•°åå¤‰æ›´ç”¨ï¼‰ç½®æ›ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2007.02.20
- * @deprecated ‚µ‚Éì‚Á‚Ä‚İ‚½•¨‚È‚Ì‚Åíœ—\’è
+ * @deprecated è©¦ã—ã«ä½œã£ã¦ã¿ãŸç‰©ãªã®ã§å‰Šé™¤äºˆå®š
  */
 @Deprecated
 public class Replace4RefactorName extends ReplaceAdapter {

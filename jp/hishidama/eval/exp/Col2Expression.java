@@ -1,29 +1,29 @@
 package jp.hishidama.eval.exp;
 
 /**
- * “ñ€‰‰ZqƒNƒ‰ƒX.
+ * äºŒé …æ¼”ç®—å­ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @version 2006.11.07
  */
 public abstract class Col2Expression extends AbstractExpression {
 
 	/**
-	 * ®ƒCƒ“ƒXƒ^ƒ“ƒX¶¬i“ñ€‰‰Zq—pj.
+	 * å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ç”Ÿæˆï¼ˆäºŒé …æ¼”ç®—å­ç”¨ï¼‰.
 	 * 
 	 * @param exp
-	 *            ‰‰ZqƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            æ¼”ç®—å­ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 * @param string
-	 *            ‘S‘Ì•¶š—ñ
+	 *            å…¨ä½“æ–‡å­—åˆ—
 	 * @param pos
-	 *            ˆÊ’u
+	 *            ä½ç½®
 	 * @param x
-	 *            ®ƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 * @param y
-	 *            ®ƒCƒ“ƒXƒ^ƒ“ƒX
-	 * @return ®ƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
+	 * @return å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 */
 	public static AbstractExpression create(AbstractExpression exp,
 			String string, int pos, AbstractExpression x, AbstractExpression y) {
@@ -33,10 +33,10 @@ public abstract class Col2Expression extends AbstractExpression {
 		return n;
 	}
 
-	/** ¶ˆø”‚Ì®. */
+	/** å·¦å¼•æ•°ã®å¼ */
 	public AbstractExpression expl;
 
-	/** ‰Eˆø”‚Ì®. */
+	/** å³å¼•æ•°ã®å¼ */
 	public AbstractExpression expr;
 
 	protected Col2Expression() {
@@ -53,12 +53,12 @@ public abstract class Col2Expression extends AbstractExpression {
 	}
 
 	/**
-	 * ˆø”İ’è.
+	 * å¼•æ•°è¨­å®š
 	 * 
 	 * @param x
-	 *            ¶®ƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            å·¦å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 * @param y
-	 *            ‰E®ƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            å³å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 */
 	public final void setExpression(AbstractExpression x, AbstractExpression y) {
 		expl = x;

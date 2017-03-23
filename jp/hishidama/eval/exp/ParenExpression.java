@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * ¬Š‡ŒÊƒNƒ‰ƒX.
+ * å°æ‹¬å¼§ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2007.02.17
  */
 public class ParenExpression extends Col1Expression {

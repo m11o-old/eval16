@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * ‰ÁŽZƒNƒ‰ƒX.
+ * åŠ ç®—ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ð‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  */
 public class PlusExpression extends Col2Expression {
 

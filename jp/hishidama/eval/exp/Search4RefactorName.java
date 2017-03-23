@@ -5,11 +5,11 @@ import jp.hishidama.eval.ref.Refactor;
 import jp.hishidama.eval.srch.SearchAdapter;
 
 /**
- * ƒŠƒtƒ@ƒNƒ^ƒŠƒ“ƒOi•Ï”–¼•ÏX—pj\•¶‰ğÍ–Ø’TõƒNƒ‰ƒX.
+ * ãƒªãƒ•ã‚¡ã‚¯ã‚¿ãƒªãƒ³ã‚°ï¼ˆå¤‰æ•°åå¤‰æ›´ç”¨ï¼‰æ§‹æ–‡è§£ææœ¨æ¢ç´¢ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2007.02.20
  */
 public class Search4RefactorName extends SearchAdapter {

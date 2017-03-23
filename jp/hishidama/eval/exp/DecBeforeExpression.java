@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * 前置デクリメント演算子クラス.
+ * 蜑咲ｽｮ繝�繧ｯ繝ｪ繝｡繝ｳ繝域ｼ皮ｮ怜ｭ舌け繝ｩ繧ｹ
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >ひしだま</a>
+ *         >縺ｲ縺励□縺ｾ</a>
  * @since 2006.10.31
  */
 public class DecBeforeExpression extends Col1Expression {

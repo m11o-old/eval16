@@ -3,14 +3,14 @@ package jp.hishidama.eval.exp;
 import jp.hishidama.eval.EvalException;
 
 /**
- * ƒtƒB[ƒ‹ƒhƒNƒ‰ƒX.
+ * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã‚¯ãƒ©ã‚¹
  * <p>
- * ƒNƒ‰ƒX‚ÌƒtƒB[ƒ‹ƒhuobj.fieldv
+ * ã‚¯ãƒ©ã‚¹ã®ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã€Œobj.fieldã€
  * </p>
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2007.02.14
  */
 public class FieldExpression extends Col2OpeExpression {

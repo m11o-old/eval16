@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * ビット論理和クラス.
+ * 繝薙ャ繝郁ｫ也炊蜥後け繝ｩ繧ｹ
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >ひしだま</a>
+ *         >縺ｲ縺励□縺ｾ</a>
  */
 public class BitOrExpression extends Col2Expression {
 

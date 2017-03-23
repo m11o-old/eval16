@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * 右シフト代入演算子クラス.
+ * 蜿ｳ繧ｷ繝輔ヨ莉｣蜈･貍皮ｮ怜ｭ舌け繝ｩ繧ｹ
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >ひしだま</a>
+ *         >縺ｲ縺励□縺ｾ</a>
  */
 public class LetShiftRightExpression extends ShiftRightExpression {
 

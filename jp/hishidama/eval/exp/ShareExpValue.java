@@ -11,11 +11,11 @@ import jp.hishidama.eval.srch.Search;
 import jp.hishidama.eval.var.*;
 
 /**
- * Ž®‹¤’Êî•ñƒNƒ‰ƒX.
+ * å¼å…±é€šæƒ…å ±ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ð‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2007.02.16
  * @version eval16
  */

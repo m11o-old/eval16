@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * ˜_—˜aƒNƒ‰ƒX.
+ * è«–ç†å’Œã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  */
 public class OrExpression extends Col2OpeExpression {
 

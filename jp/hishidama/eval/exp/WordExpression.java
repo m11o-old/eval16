@@ -1,22 +1,22 @@
 package jp.hishidama.eval.exp;
 
 /**
- * ¯•ÊqƒNƒ‰ƒX.
+ * è­˜åˆ¥å­ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  */
 public abstract class WordExpression extends AbstractExpression {
 
-	/** ¯•Êq. */
+	/** ï¿½ï¿½ï¿½Êq. */
 	protected String word;
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ï¿½Rï¿½ï¿½ï¿½Xï¿½gï¿½ï¿½ï¿½Nï¿½^ï¿½[.
 	 * 
 	 * @param str
-	 *            ¯•Êq
+	 *            ï¿½ï¿½ï¿½Êq
 	 */
 	protected WordExpression(String str) {
 		word = str;

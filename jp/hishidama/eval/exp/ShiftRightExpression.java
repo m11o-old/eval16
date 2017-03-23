@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * 右シフトクラス.
+ * 蜿ｳ繧ｷ繝輔ヨ繧ｯ繝ｩ繧ｹ
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >ひしだま</a>
+ *         >縺ｲ縺励□縺ｾ</a>
  */
 public class ShiftRightExpression extends Col2Expression {
 

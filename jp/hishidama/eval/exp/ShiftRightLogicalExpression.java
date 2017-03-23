@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * ‰EƒVƒtƒg(•„†‚È‚µ)ƒNƒ‰ƒX.
+ * å³ã‚·ãƒ•ãƒˆ(ç¬¦å·ãªã—)ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ð‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  */
 public class ShiftRightLogicalExpression extends Col2Expression {
 

@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * ˜_—”Û’èƒNƒ‰ƒX.
+ * è«–ç†å¦å®šã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  */
 public class NotExpression extends Col1Expression {
 

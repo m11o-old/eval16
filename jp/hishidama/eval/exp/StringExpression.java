@@ -5,11 +5,11 @@ import jp.hishidama.eval.lex.Lex;
 import jp.hishidama.util.CharUtil;
 
 /**
- * •¶š—ñƒNƒ‰ƒX.
+ * æ–‡å­—åˆ—ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2007.02.21
  */
 public class StringExpression extends WordExpression {
@@ -22,13 +22,13 @@ public class StringExpression extends WordExpression {
 	}
 
 	/**
-	 * ®ƒCƒ“ƒXƒ^ƒ“ƒX¶¬i•¶š—ñ—pj.
+	 * å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ç”Ÿæˆï¼ˆæ–‡å­—åˆ—ç”¨ï¼‰
 	 * 
 	 * @param lex
-	 *            ‰ğß’†ˆÊ’u
+	 *            è§£é‡ˆä¸­ä½ç½®
 	 * @param prio
-	 *            —Dæ‡ˆÊ
-	 * @return ®ƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            å„ªå…ˆé †ä½
+	 * @return å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 */
 	public static AbstractExpression create(Lex lex, int prio) {
 		String str = lex.getWord();

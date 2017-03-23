@@ -1,14 +1,14 @@
 package jp.hishidama.eval.exp;
 
 /**
- * “ñ€‰‰Zq(“Æ©À‘•)ƒNƒ‰ƒX.
+ * äºŒé …æ¼”ç®—å­(ç‹¬è‡ªå®Ÿè£…)ã‚¯ãƒ©ã‚¹
  * <p>
- * ‰‰Z‚ğ“Æ©À‘•‚·‚éƒ^ƒCƒvB
+ * æ¼”ç®—ã‚’ç‹¬è‡ªå®Ÿè£…ã™ã‚‹ã‚¿ã‚¤ãƒ—
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2006.11.6
  */
 public abstract class Col2OpeExpression extends Col2Expression {
@@ -22,7 +22,7 @@ public abstract class Col2OpeExpression extends Col2Expression {
 
 	@Override
 	protected final Object operateObject(Object vl, Object vr) {
-		throw new UnsupportedOperationException("‚±‚Ìƒƒ\ƒbƒh‚ªŒÄ‚Î‚ê‚Ä‚Í‚¢‚¯‚È‚¢");
+		throw new UnsupportedOperationException("ï¿½ï¿½ï¿½Ìƒï¿½ï¿½\ï¿½bï¿½hï¿½ï¿½ï¿½Ä‚Î‚ï¿½ï¿½Ä‚Í‚ï¿½ï¿½ï¿½ï¿½È‚ï¿½");
 	}
 
 	@Override

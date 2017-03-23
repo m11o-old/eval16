@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * 単項後置演算子クラス.
+ * 蜊倬�蠕檎ｽｮ貍皮ｮ怜ｭ舌け繝ｩ繧ｹ
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >ひしだま</a>
+ *         >縺ｲ縺励□縺ｾ</a>
  * @since 2006.10.31
  */
 public abstract class Col1AfterExpression extends Col1Expression {

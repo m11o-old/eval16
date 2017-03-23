@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * ビット排他的論理代入演算子クラス.
+ * 繝薙ャ繝域賜莉也噪隲也炊莉｣蜈･貍皮ｮ怜ｭ舌け繝ｩ繧ｹ
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >ひしだま</a>
+ *         >縺ｲ縺励□縺ｾ</a>
  */
 public class LetXorExpression extends BitXorExpression {
 

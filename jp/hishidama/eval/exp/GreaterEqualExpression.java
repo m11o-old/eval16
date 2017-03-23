@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * ”äŠr‰‰Zi>=jƒNƒ‰ƒX.
+ * æ¯”è¼ƒæ¼”ç®—ï¼ˆ>=ï¼‰ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  */
 public class GreaterEqualExpression extends Col2Expression {
 

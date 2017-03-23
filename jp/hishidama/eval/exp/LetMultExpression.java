@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * æZ‘ã“ü‰‰ZqƒNƒ‰ƒX.
+ * ä¹—ç®—ä»£å…¥æ¼”ç®—å­ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  */
 public class LetMultExpression extends MultExpression {
 

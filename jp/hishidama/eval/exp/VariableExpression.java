@@ -4,11 +4,11 @@ import jp.hishidama.eval.EvalException;
 import jp.hishidama.eval.lex.Lex;
 
 /**
- * •Ï”ƒNƒ‰ƒX.
+ * å¤‰æ•°ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @version 2007.02.15
  */
 public class VariableExpression extends WordExpression {
@@ -21,13 +21,13 @@ public class VariableExpression extends WordExpression {
 	}
 
 	/**
-	 * ®ƒCƒ“ƒXƒ^ƒ“ƒX¶¬i¯•Êq—pj.
+	 * å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ç”Ÿæˆï¼ˆè­˜åˆ¥å­ç”¨ï¼‰
 	 * 
 	 * @param lex
-	 *            ‰ğß’†ˆÊ’u
+	 *            è§£é‡ˆä¸­ä½ç½®
 	 * @param prio
-	 *            —Dæ‡ˆÊ
-	 * @return ®ƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            å„ªå…ˆé †ä½
+	 * @return å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 */
 	public static AbstractExpression create(Lex lex, int prio) {
 		AbstractExpression exp = new VariableExpression(lex.getWord());
@@ -80,11 +80,11 @@ public class VariableExpression extends WordExpression {
 	}
 
 	/**
-	 * •Ï”’læ“¾.
+	 * ï¿½Ïï¿½ï¿½lï¿½æ“¾.
 	 * 
-	 * @return •Ï”’li•K‚¸nullˆÈŠOj
+	 * @return ï¿½Ïï¿½ï¿½lï¿½iï¿½Kï¿½ï¿½nullï¿½ÈŠOï¿½j
 	 * @throws EvalException
-	 *             •Ï”‚ª–³‚¢‚Æ‚«
+	 *             ï¿½Ïï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½
 	 * @version 2007.02.09
 	 */
 	private Object getVarValue() {

@@ -6,11 +6,11 @@ import java.util.List;
 import jp.hishidama.eval.EvalException;
 
 /**
- * ŠÖ”ƒNƒ‰ƒX.
+ * é–¢æ•°ã‚¯ãƒ©ã‚¹
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @version 2010.02.15
  */
 public class FunctionExpression extends Col1Expression {
@@ -23,15 +23,15 @@ public class FunctionExpression extends Col1Expression {
 	}
 
 	/**
-	 * ŠÖ”ƒCƒ“ƒXƒ^ƒ“ƒX¶¬.
+	 * é–¢æ•°ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ç”Ÿæˆ
 	 *
 	 * @param x
-	 *            ŠÖ”–¼A‚ ‚é‚¢‚ÍƒIƒuƒWƒFƒNƒg.ŠÖ”–¼
+	 *            é–¢æ•°åã€ã‚ã‚‹ã„ã¯ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ.é–¢æ•°å
 	 * @param args
-	 *            ˆø”
+	 *            å¼•æ•°
 	 * @param prio
-	 *            —Dæ‡ˆÊ
-	 * @return ®ƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            å„ªå…ˆé †ä½
+	 * @return å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 */
 	public static AbstractExpression create(AbstractExpression x,
 			AbstractExpression args, int prio, ShareExpValue share) {
@@ -56,16 +56,16 @@ public class FunctionExpression extends Col1Expression {
 	}
 
 	/**
-	 * ƒƒ\ƒbƒh‚Ì‘®‚µ‚Ä‚¢‚éƒIƒuƒWƒFƒNƒg.
+	 * ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Ì‘ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½g.
 	 * <p>
-	 * –³‚¢ê‡‚ÍnullB
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ê‡ï¿½ï¿½nullï¿½B
 	 * </p>
 	 *
 	 * @since 2007.02.15
 	 */
 	protected AbstractExpression target;
 
-	/** ŠÖ”–¼. */
+	/** ï¿½Öï¿½ï¿½ï¿½. */
 	String name;
 
 	public FunctionExpression() {
@@ -74,12 +74,12 @@ public class FunctionExpression extends Col1Expression {
 	}
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param obj
-	 *            ƒIƒuƒWƒFƒNƒg
+	 *            ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 * @param word
-	 *            ŠÖ”–¼
+	 *            é–¢æ•°å
 	 */
 	public FunctionExpression(AbstractExpression obj, String word) {
 		this();

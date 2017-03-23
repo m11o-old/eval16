@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * ğŒ‰‰ZqƒNƒ‰ƒX.
+ * æ¡ä»¶æ¼”ç®—å­ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  */
 public class IfExpression extends Col3Expression {
 

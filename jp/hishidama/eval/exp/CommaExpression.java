@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * カンマ演算子クラス.
+ * 繧ｫ繝ｳ繝樊ｼ皮ｮ怜ｭ舌け繝ｩ繧ｹ
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >ひしだま</a>
+ *         >縺ｲ縺励□縺ｾ</a>
  */
 public class CommaExpression extends Col2OpeExpression {
 

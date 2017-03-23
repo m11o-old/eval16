@@ -1,11 +1,11 @@
 package jp.hishidama.eval.exp;
 
 /**
- * œZ‘ã“ü‰‰ZqƒNƒ‰ƒX.
+ * é™¤ç®—ä»£å…¥æ¼”ç®—å­ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  */
 public class LetDivExpression extends DivExpression {
 

@@ -4,11 +4,11 @@ import jp.hishidama.eval.EvalException;
 import jp.hishidama.eval.lex.Lex;
 
 /**
- * ”’lƒNƒ‰ƒX.
+ * æ•°å€¤ã‚¯ãƒ©ã‚¹
  * 
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  */
 public class NumberExpression extends WordExpression {
 
@@ -20,13 +20,13 @@ public class NumberExpression extends WordExpression {
 	}
 
 	/**
-	 * ®ƒCƒ“ƒXƒ^ƒ“ƒX¶¬i”’l—pj.
+	 * å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ç”Ÿæˆï¼ˆæ•°å€¤ç”¨ï¼‰
 	 * 
 	 * @param lex
-	 *            ‰ğß’†ˆÊ’u
+	 *            è§£é‡ˆä¸­ä½ç½®
 	 * @param prio
-	 *            —Dæ‡ˆÊ
-	 * @return ®ƒCƒ“ƒXƒ^ƒ“ƒX
+	 *            å„ªå…ˆé †ä½
+	 * @return å¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 * @since 2007.02.15
 	 */
 	public static AbstractExpression create(Lex lex, int prio) {
