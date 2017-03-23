@@ -1,13 +1,13 @@
 package jp.hishidama.eval.ref;
 
 /**
- * リファクタリングアダプタークラス.
+ * 繝ｪ繝輔ぃ繧ｯ繧ｿ繝ｪ繝ｳ繧ｰ繧｢繝繝励ち繝ｼ繧ｯ繝ｩ繧ｹ
  * <p>
- * 空実装されたリファクタリングインターフェース。
+ * 遨ｺ螳溯｣�縺輔ｌ縺溘Μ繝輔ぃ繧ｯ繧ｿ繝ｪ繝ｳ繧ｰ繧､繝ｳ繧ｿ繝ｼ繝輔ぉ繝ｼ繧ｹ
  * </p>
  * 
  * @author <a target="hishidama"
- *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">ひしだま</a>
+ *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">縺ｲ縺励□縺ｾ</a>
  * @since 2007.02.19
  */
 public class RefactorAdapter implements Refactor {

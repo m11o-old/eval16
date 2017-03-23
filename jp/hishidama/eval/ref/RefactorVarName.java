@@ -1,11 +1,11 @@
 package jp.hishidama.eval.ref;
 
 /**
- * 変数名変更リファクタリングクラス.
+ * 螟画焚蜷榊､画峩繝ｪ繝輔ぃ繧ｯ繧ｿ繝ｪ繝ｳ繧ｰ繧ｯ繝ｩ繧ｹ
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >ひしだま</a>
+ *         >縺ｲ縺励□縺ｾ</a>
  * @since 2007.02.19
  */
 public class RefactorVarName extends RefactorAdapter {
