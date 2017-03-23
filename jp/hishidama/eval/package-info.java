@@ -1,7 +1,7 @@
 /**
- * Žl‘¥‰‰ŽZƒpƒbƒP[ƒW.
+ * å››å‰‡æ¼”ç®—ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸
  * <p>
- * •¶Žš—ñ“à‚É•ÛŽ‚µ‚Ä‚¢‚éŒvŽZŽ®‚ð‰ðŽß‚µAŒvŽZ‚ðŽÀs‚·‚éƒNƒ‰ƒXŒQ‚Å‚·B
+ * æ–‡å­—åˆ—å†…ã«ä¿æŒã—ã¦ã„ã‚‹è¨ˆç®—å¼ã‚’è§£é‡ˆã—ã€è¨ˆç®—ã‚’å®Ÿè¡Œã™ã‚‹ã‚¯ãƒ©ã‚¹ç¾¤ã§ã™
  * </p>
  * <pre>import jp.hishidama.eval.*;
  *
@@ -10,9 +10,9 @@
  * 	long n = exp.evalLong();</pre>
  *
  * <p>
- * ¨<a target="hishidama" href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">‚»‚Ì‘¼‚ÌŽg—p—á</a>
+ * ï¿½ï¿½<a target="hishidama" href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html">ãã®ä»–ã®ä½¿ç”¨ä¾‹</a>
  * </p>
- * @author <a target="hishidama" href="http://www.ne.jp/asahi/hishidama/home/tech/soft/index.html">‚Ð‚µ‚¾‚Ü</a>
+ * @author <a target="hishidama" href="http://www.ne.jp/asahi/hishidama/home/tech/soft/index.html">ã²ã—ã ã¾</a>
  */
 package jp.hishidama.eval;
 
