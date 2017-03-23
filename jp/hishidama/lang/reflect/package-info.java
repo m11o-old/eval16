@@ -1,7 +1,7 @@
 /**
- * リフレクションパッケージ.
+ * 繝ｪ繝輔Ξ繧ｯ繧ｷ繝ｧ繝ｳ繝代ャ繧ｱ繝ｼ繧ｸ
  *
- * @author <a target="hishidama" href="http://www.ne.jp/asahi/hishidama/home/tech/soft/index.html">ひしだま</a>
+ * @author <a target="hishidama" href="http://www.ne.jp/asahi/hishidama/home/tech/soft/index.html">縺ｲ縺励□縺ｾ</a>
  * @since 2010.02.16
  */
 package jp.hishidama.lang.reflect;

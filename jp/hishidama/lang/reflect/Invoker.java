@@ -8,14 +8,14 @@ import jp.hishidama.lang.reflect.conv.TypeConverter;
 import jp.hishidama.lang.reflect.conv.TypeConverterManager;
 
 /**
- * ƒƒ\ƒbƒhŒÄ‚Ño‚µƒNƒ‰ƒX.
+ * ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ã‚¯ãƒ©ã‚¹
  * <p>
- * ˆø”‚ÌŒ^‚ğ“–ŠYƒƒ\ƒbƒh—p‚É•ÏŠ·‚µ‚Äƒƒ\ƒbƒh‚ğŒÄ‚Ño‚·B
+ * å¼•æ•°ã®å‹ã‚’å½“è©²ãƒ¡ã‚½ãƒƒãƒ‰ç”¨ã«å¤‰æ›ã—ã¦ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³å‡ºã™
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2010.02.16
  */
 public class Invoker {
@@ -29,16 +29,16 @@ public class Invoker {
 	protected TypeConverter[] convs;
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param name
-	 *            –¼‘O
+	 *            åå‰
 	 * @param clazz
-	 *            ŒÄ‚Ño‚µ‘ÎÛƒNƒ‰ƒX
+	 *            å‘¼ã³å‡ºã—å¯¾è±¡ã‚¯ãƒ©ã‚¹
 	 * @param method
-	 *            ŒÄ‚Ño‚µ‘ÎÛƒƒ\ƒbƒh
+	 *            å‘¼ã³å‡ºã—å¯¾è±¡ãƒ¡ã‚½ãƒƒãƒ‰
 	 * @param manager
-	 *            Œ^•ÏŠ·ŠÇ—ƒNƒ‰ƒX
+	 *            å‹å¤‰æ›ç®¡ç†ã‚¯ãƒ©ã‚¹
 	 */
 	public Invoker(String name, Class<?> clazz, Method method,
 			TypeConverterManager manager) {
@@ -77,40 +77,40 @@ public class Invoker {
 	}
 
 	/**
-	 * –¼‘Oæ“¾.
+	 * åå‰å–å¾—
 	 *
-	 * @return –¼‘O
+	 * @return åå‰
 	 */
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * ˆø”‚ÌŒ^•ÏŠ·ƒIƒuƒWƒFƒNƒgæ“¾.
+	 * å¼•æ•°ã®å‹å¤‰æ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå–å¾—
 	 *
-	 * @return Œ^•ÏŠ·ƒIƒuƒWƒFƒNƒg
+	 * @return å‹å¤‰æ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 */
 	public TypeConverter[] getTypeConverter() {
 		return convs;
 	}
 
 	/**
-	 * ƒƒ\ƒbƒhŒÄ‚Ño‚µ.
+	 * ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—
 	 * <p>
-	 * “–ŠYƒIƒuƒWƒFƒNƒg‚ÅŠÇ—‚³‚ê‚Ä‚¢‚éƒƒ\ƒbƒh‚ğŒÄ‚Ño‚·B<br>
-	 * ‘ÎÛƒIƒuƒWƒFƒNƒg‚ÍA“–ŠYƒIƒuƒWƒFƒNƒg‚ÌƒNƒ‰ƒX‚É•ÏŠ·‚·‚éB<br>
-	 * Šeˆø”‚àA“–ŠYƒƒ\ƒbƒh‚Ìˆø”‚ÌŒ^‚É•ÏŠ·‚·‚éB
+	 * å½“è©²ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ç®¡ç†ã•ã‚Œã¦ã„ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³å‡ºã™<br>
+	 * å¯¾è±¡ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯ã€å½“è©²ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚¯ãƒ©ã‚¹ã«å¤‰æ›ã™ã‚‹<br>
+	 * å„å¼•æ•°ã‚‚ã€å½“è©²ãƒ¡ã‚½ãƒƒãƒ‰ã®å¼•æ•°ã®å‹ã«å¤‰æ›ã™ã‚‹
 	 * </p>
 	 *
 	 * @param obj
-	 *            ‘€ì‘ÎÛƒIƒuƒWƒFƒNƒg
+	 *            æ“ä½œå¯¾è±¡ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 * @param args
-	 *            ƒƒ\ƒbƒh‚Ìˆø”
-	 * @return ŒÄ‚Ño‚µ‚½’l
+	 *            ãƒ¡ã‚½ãƒƒãƒ‰ã®å¼•æ•°
+	 * @return å‘¼ã³å‡ºã—ãŸå€¤
 	 * @throws IllegalArgumentLengthException
-	 *             ˆø”‚ÌŒÂ”‚ª“–ŠYƒƒ\ƒbƒh‚ÌŒÂ”‚Æˆê’v‚µ‚È‚¢ê‡
+	 *             å¼•æ•°ã®å€‹æ•°ãŒå½“è©²ãƒ¡ã‚½ãƒƒãƒ‰ã®å€‹æ•°ã¨ä¸€è‡´ã—ãªã„å ´åˆ
 	 * @throws Exception
-	 *             ƒƒ\ƒbƒhŒÄ‚Ño‚µ‚Ì—áŠO
+	 *             ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—æ™‚ã®ä¾‹å¤–
 	 */
 	public Object invoke(Object obj, Object... args) throws Exception {
 		checkArgs(args);

@@ -13,23 +13,23 @@ import jp.hishidama.lang.reflect.conv.TypeConverter;
 import jp.hishidama.lang.reflect.conv.TypeConverterManager;
 
 /**
- * ƒƒ\ƒbƒhŒÄ‚Ño‚µƒ†[ƒeƒBƒŠƒeƒB[.
+ * ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ãƒ¼
  * <p>
- * w’è‚³‚ê‚½–¼‘O‚Ìƒƒ\ƒbƒh‚ğŒÄ‚Ño‚·ƒ†[ƒeƒBƒŠƒeƒB[B
+ * æŒ‡å®šã•ã‚ŒãŸåå‰ã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³å‡ºã™ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ãƒ¼
  * </p>
  * <p>
- * ‚Ü‚¸AŒÄ‚Ño‚µ‚½‚¢ƒNƒ‰ƒX‚Ìƒƒ\ƒbƒh‚ğŠÇ——p‚Ì–¼‘O‚ğ•t‚¯‚Ä“o˜^‚·‚éB<br>
- * ‚»‚µ‚ÄA‚»‚ÌŠÇ——p‚Ì–¼‘O‚Åƒƒ\ƒbƒh‚ğŒÄ‚Ño‚·B<br>
- * ‚±‚Ì‚Æ‚«AƒIƒuƒWƒFƒNƒg‚âˆø”‚ÌŒ^‚ÍŒÄ‚Ño‚·ƒƒ\ƒbƒh‚É‡’v‚·‚éŒ^‚É•ÏŠ·‚·‚éB
+ * ã¾ãšã€å‘¼ã³å‡ºã—ãŸã„ã‚¯ãƒ©ã‚¹ã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚’ç®¡ç†ç”¨ã®åå‰ã‚’ä»˜ã‘ã¦ç™»éŒ²ã™ã‚‹<br>
+ * ãã—ã¦ã€ãã®ç®¡ç†ç”¨ã®åå‰ã§ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³å‡ºã™<br>
+ * ã“ã®ã¨ãã€ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚„å¼•æ•°ã®å‹ã¯å‘¼ã³å‡ºã™ãƒ¡ã‚½ãƒƒãƒ‰ã«åˆè‡´ã™ã‚‹å‹ã«å¤‰æ›ã™ã‚‹
  * </p>
  * <p>
- * ƒI[ƒo[ƒ[ƒh‚³‚ê‚Ä‚¢‚éƒƒ\ƒbƒh‚Ìê‡Aˆø”‚ÌŒÂ”‚ªˆê’v‚µ‚Ä‚¢‚éƒƒ\ƒbƒh‚ª1‚Â‚¾‚¯‚ ‚ê‚ÎA‚»‚ê‚ğŒÄ‚Ño‚·B<br>
- * •¡”‚ ‚éê‡A‚È‚é‚×‚­Œ^‚ªˆê’v‚µ‚Ä‚¢‚éƒƒ\ƒbƒh‚ğŒÄ‚Ño‚·i‚©‚È‚è“K“–‚Éƒ}ƒbƒ`‚³‚¹‚Ä‚¢‚é‚Ì‚ÅA‚»‚ñ‚È‚ÉŒµ–§‚Å‚Í‚È‚¢cjB
+ * ã‚ªãƒ¼ãƒãƒ¼ãƒ­ãƒ¼ãƒ‰ã•ã‚Œã¦ã„ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã®å ´åˆã€å¼•æ•°ã®å€‹æ•°ãŒä¸€è‡´ã—ã¦ã„ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ãŒ1ã¤ã ã‘ã‚ã‚Œã°ã€ãã‚Œã‚’å‘¼ã³å‡ºã™<br>
+ * è¤‡æ•°ã‚ã‚‹å ´åˆã€ãªã‚‹ã¹ãå‹ãŒä¸€è‡´ã—ã¦ã„ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³å‡ºã™ï¼ˆã‹ãªã‚Šé©å½“ã«ãƒãƒƒãƒã•ã›ã¦ã„ã‚‹ã®ã§ã€ãã‚“ãªã«å³å¯†ã§ã¯ãªã„â€¦ï¼‰
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2010.02.16
  */
 public class InvokeUtil {
@@ -39,42 +39,42 @@ public class InvokeUtil {
 	protected Map<String, Methods> MAP = new HashMap<String, Methods>();
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 */
 	public InvokeUtil() {
 		this(new TypeConverterManager());
 	}
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[.
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 *
 	 * @param manager
-	 *            Œ^•ÏŠ·ƒIƒuƒWƒFƒNƒgŠÇ—ƒNƒ‰ƒX
+	 *            å‹å¤‰æ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç®¡ç†ã‚¯ãƒ©ã‚¹
 	 */
 	public InvokeUtil(TypeConverterManager manager) {
 		this.manager = manager;
 	}
 
 	/**
-	 * Œ^•ÏŠ·ƒIƒuƒWƒFƒNƒgŠÇ—ƒNƒ‰ƒXæ“¾.
+	 * å‹å¤‰æ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç®¡ç†ã‚¯ãƒ©ã‚¹å–å¾—
 	 *
-	 * @return Œ^•ÏŠ·ƒIƒuƒWƒFƒNƒgŠÇ—ƒNƒ‰ƒX
+	 * @return å‹å¤‰æ›ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç®¡ç†ã‚¯ãƒ©ã‚¹
 	 */
 	public TypeConverterManager getConverterManager() {
 		return manager;
 	}
 
 	/**
-	 * ƒƒ\ƒbƒh“o˜^.
+	 * ãƒ¡ã‚½ãƒƒãƒ‰ç™»éŒ²
 	 * <p>
-	 * w’è‚³‚ê‚½ƒNƒ‰ƒX‚Ì‘Sƒƒ\ƒbƒh‚ğŠÇ—‘ÎÛ‚É’Ç‰Á‚·‚éB<br>
-	 * ŠÇ——p‚Ì–¼‘O‚É‚ÍAƒƒ\ƒbƒh–¼‚Ì‘O‚Éw’è‚³‚ê‚½Ú“ª«‚ğ•t‰Á‚·‚éB
+	 * æŒ‡å®šã•ã‚ŒãŸã‚¯ãƒ©ã‚¹ã®å…¨ãƒ¡ã‚½ãƒƒãƒ‰ã‚’ç®¡ç†å¯¾è±¡ã«è¿½åŠ ã™ã‚‹<br>
+	 * ç®¡ç†ç”¨ã®åå‰ã«ã¯ã€ãƒ¡ã‚½ãƒƒãƒ‰åã®å‰ã«æŒ‡å®šã•ã‚ŒãŸæ¥é ­è¾ã‚’ä»˜åŠ ã™ã‚‹
 	 * </p>
 	 *
 	 * @param clazz
-	 *            ƒNƒ‰ƒX
+	 *            ã‚¯ãƒ©ã‚¹
 	 * @param prefix
-	 *            –¼‘O‚ÌÚ“ª«
+	 *            åå‰ã®æ¥é ­è¾
 	 * @see #addMethod(Class, String, Method)
 	 */
 	public void addMethods(Class<?> clazz, String prefix) {
@@ -84,14 +84,14 @@ public class InvokeUtil {
 	}
 
 	/**
-	 * ƒƒ\ƒbƒh“o˜^.
+	 * ãƒ¡ã‚½ãƒƒãƒ‰ç™»éŒ²
 	 *
 	 * @param clazz
-	 *            ‘ÎÛƒNƒ‰ƒX
+	 *            å¯¾è±¡ã‚¯ãƒ©ã‚¹
 	 * @param name
-	 *            ŠÇ——p‚Ì–¼‘O
+	 *            ç®¡ç†ç”¨ã®åå‰
 	 * @param method
-	 *            ƒƒ\ƒbƒh
+	 *            ãƒ¡ã‚½ãƒƒãƒ‰
 	 * @see #addInvoker(String, Invoker)
 	 */
 	public void addMethod(Class<?> clazz, String name, Method method) {
@@ -99,12 +99,12 @@ public class InvokeUtil {
 	}
 
 	/**
-	 * ƒƒ\ƒbƒhŒÄ‚Ño‚µƒNƒ‰ƒX“o˜^.
+	 * ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ã‚¯ãƒ©ã‚¹ç™»éŒ²
 	 *
 	 * @param name
-	 *            ŠÇ——p‚Ì–¼‘O
+	 *            ç®¡ç†ç”¨ã®åå‰
 	 * @param invoker
-	 *            ƒƒ\ƒbƒhŒÄ‚Ño‚µƒNƒ‰ƒX
+	 *            ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ã‚¯ãƒ©ã‚¹
 	 */
 	public void addInvoker(String name, Invoker invoker) {
 		Methods mm = MAP.get(name);
@@ -120,19 +120,19 @@ public class InvokeUtil {
 	}
 
 	/**
-	 * ƒƒ\ƒbƒhŒÄ‚Ño‚µ.
+	 * ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—
 	 *
 	 * @param name
-	 *            ŠÇ——p‚Ì–¼‘O
+	 *            ç®¡ç†ç”¨ã®åå‰
 	 * @param obj
-	 *            ‘ÎÛƒIƒuƒWƒFƒNƒg
+	 *            å¯¾è±¡ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 	 * @param args
-	 *            ˆø”
-	 * @return ƒƒ\ƒbƒh‚Ì–ß‚è’l
+	 *            å¼•æ•°
+	 * @return ãƒ¡ã‚½ãƒƒãƒ‰ã®æˆ»ã‚Šå€¤
 	 * @throws UnsupportedOperationException
-	 *             ŠÇ—‘ÎÛŠO‚Ì–¼‘O‚Ìê‡
+	 *             ç®¡ç†å¯¾è±¡å¤–ã®åå‰ã®å ´åˆ
 	 * @throws RuntimeException
-	 *             ƒƒ\ƒbƒhŒÄ‚Ño‚µ‚É”­¶‚µ‚½—áŠO
+	 *             ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—æ™‚ã«ç™ºç”Ÿã—ãŸä¾‹å¤–
 	 */
 	public Object invoke(String name, Object obj, Object... args) {
 		Methods mm = MAP.get(name);
@@ -150,15 +150,15 @@ public class InvokeUtil {
 	}
 
 	/**
-	 * ƒCƒ“ƒXƒ^ƒ“ƒXƒƒ\ƒbƒhŒÄ‚Ño‚µƒNƒ‰ƒXæ“¾.
+	 * ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ã‚¯ãƒ©ã‚¹å–å¾—
 	 *
 	 * @param name
-	 *            ŠÇ——p‚Ì–¼‘O
+	 *            ç®¡ç†ç”¨ã®åå‰
 	 * @param args
-	 *            ˆø”
-	 * @return ƒƒ\ƒbƒhŒÄ‚Ño‚µƒNƒ‰ƒXiŒ©‚Â‚©‚ç‚È‚¢ê‡Anullj
+	 *            å¼•æ•°
+	 * @return ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ã‚¯ãƒ©ã‚¹ï¼ˆè¦‹ã¤ã‹ã‚‰ãªã„å ´åˆã€nullï¼‰
 	 * @throws UnsupportedOperationException
-	 *             ŠÇ—‘ÎÛŠO‚Ì–¼‘O‚Ìê‡
+	 *             ç®¡ç†å¯¾è±¡å¤–ã®åå‰ã®å ´åˆ
 	 */
 	public Invoker getInstanceInvoker(String name, Object... args) {
 		Methods mm = MAP.get(name);
@@ -169,15 +169,15 @@ public class InvokeUtil {
 	}
 
 	/**
-	 * ƒNƒ‰ƒXƒƒ\ƒbƒhŒÄ‚Ño‚µƒNƒ‰ƒXæ“¾.
+	 * ã‚¯ãƒ©ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ã‚¯ãƒ©ã‚¹å–å¾—
 	 *
 	 * @param name
-	 *            ŠÇ——p‚Ì–¼‘O
+	 *            ç®¡ç†ç”¨ã®åå‰
 	 * @param args
-	 *            ˆø”
-	 * @return ƒƒ\ƒbƒhŒÄ‚Ño‚µƒNƒ‰ƒXiŒ©‚Â‚©‚ç‚È‚¢ê‡Anullj
+	 *            å¼•æ•°
+	 * @return ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ã‚¯ãƒ©ã‚¹ï¼ˆè¦‹ã¤ã‹ã‚‰ãªã„å ´åˆã€nullï¼‰
 	 * @throws UnsupportedOperationException
-	 *             ŠÇ—‘ÎÛŠO‚Ì–¼‘O‚Ìê‡
+	 *             ç®¡ç†å¯¾è±¡å¤–ã®åå‰ã®å ´åˆ
 	 */
 	public Invoker getStaticInvoker(String name, Object... args) {
 		Methods mm = MAP.get(name);
@@ -192,8 +192,8 @@ public class InvokeUtil {
 	protected static final int STATIC = 2;
 
 	/**
-	 * ƒƒ\ƒbƒh‚ğŠÇ—‚·‚éƒNƒ‰ƒXB<br>
-	 * “¯ˆê‚Ì–¼‘O‚Ìƒƒ\ƒbƒhA‚·‚È‚í‚¿ƒI[ƒo[ƒ[ƒh‚³‚ê‚½ƒƒ\ƒbƒh‚ğŠÇ—‚·‚éB
+	 * ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½ï¿½ï¿½Ç—ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½Xï¿½B<br>
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ì–ï¿½ï¿½Oï¿½Ìƒï¿½ï¿½\ï¿½bï¿½hï¿½Aï¿½ï¿½ï¿½È‚í‚¿ï¿½Iï¿½[ï¿½oï¿½[ï¿½ï¿½ï¿½[ï¿½hï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½ï¿½ï¿½Ç—ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
 	 */
 	protected static class Methods {
 
@@ -207,7 +207,7 @@ public class InvokeUtil {
 		protected static final Comparator<Invoker> COMP = new Comparator<Invoker>() {
 			@Override
 			public int compare(Invoker o1, Invoker o2) {
-				// ˆø”‚ÌŒÂ”‚ª­‚È‚¢•û‚ğ—Dæ
+				// ï¿½ï¿½ï¿½ï¿½ï¿½ÌŒÂï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Dï¿½ï¿½
 				return o1.getTypeConverter().length
 						- o2.getTypeConverter().length;
 			}
@@ -228,22 +228,22 @@ public class InvokeUtil {
 		}
 
 		protected Invoker resolve(Object[] args, int ds, boolean search) {
-			// ˆø”‚ÌŒÂ”‚ªˆê’v‚µ‚Ä‚¢‚é‚à‚Ì‚ğ’T‚·
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ÌŒÂï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½ï¿½Tï¿½ï¿½
 			Index index = getInvokerEqualsLength(args, ds);
 			if (index.min == index.max) {
-				// 1‚Â‚¾‚¯Œ©‚Â‚©‚Á‚½
+				// 1ï¿½Â‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½ï¿½ï¿½
 				return list.get(index.min);
 			}
 			if (index.min < index.max) {
-				// •¡”Œó•â‚ ‚è
+				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â‚ ï¿½ï¿½
 				Invoker r = getInvokerMatchType(index, args, ds);
 				if (r == null) {
-					r = list.get(index.min); // Œ©‚Â‚©‚ç‚È‚©‚Á‚½‚çæ“ª‚Ì‚à‚Ì‚ğg—p
+					r = list.get(index.min); // ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ“ªï¿½Ì‚ï¿½ï¿½Ì‚ï¿½ï¿½gï¿½p
 				}
 				return r;
 			}
 
-			// TODO+++args.length‚ª‘å‚«‚¢‚Æ‚«F‰Â•Ï’·ˆø”‚Æ‚©
+			// TODO+++args.lengthï¿½ï¿½ï¿½å‚«ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½Fï¿½Â•Ï’ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½
 
 			if (search) {
 				return null;
