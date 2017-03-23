@@ -9,14 +9,14 @@ import jp.hishidama.eval.rule.*;
 import jp.hishidama.eval.var.Variable;
 
 /**
- * ƒ‹[ƒ‹ƒtƒ@ƒNƒgƒŠ[ƒNƒ‰ƒX.
+ * ãƒ«ãƒ¼ãƒ«ãƒ•ã‚¡ã‚¯ãƒˆãƒªãƒ¼ã‚¯ãƒ©ã‚¹
  * <p>
- * ƒ‹[ƒ‹‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğ¶¬‚·‚éB
+ * ãƒ«ãƒ¼ãƒ«ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã™ã‚‹
  * </p>
  *
  * @author <a target="hishidama"
  *         href="http://www.ne.jp/asahi/hishidama/home/tech/soft/java/eval16.html"
- *         >‚Ğ‚µ‚¾‚Ü</a>
+ *         >ã²ã—ã ã¾</a>
  * @since 2007.02.16
  * @version eval16
  */
@@ -25,12 +25,12 @@ public class ExpRuleFactory {
 	private static ExpRuleFactory me;
 
 	/**
-	 * ƒ‹[ƒ‹ƒtƒ@ƒNƒgƒŠ[æ“¾.
+	 * ãƒ«ãƒ¼ãƒ«ãƒ•ã‚¡ã‚¯ãƒˆãƒªãƒ¼å–å¾—
 	 * <p>
-	 * ƒfƒtƒHƒ‹ƒg‚Ìƒtƒ@ƒNƒgƒŠ[ƒCƒ“ƒXƒ^ƒ“ƒX‚ğ•Ô‚·B
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ãƒ•ã‚¡ã‚¯ãƒˆãƒªãƒ¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’è¿”ã™
 	 * </p>
 	 *
-	 * @return ƒ‹[ƒ‹ƒtƒ@ƒNƒgƒŠ[
+	 * @return ãƒ«ãƒ¼ãƒ«ãƒ•ã‚¡ã‚¯ãƒˆãƒªãƒ¼
 	 */
 	public static ExpRuleFactory getInstance() {
 		if (me == null) {
@@ -40,24 +40,24 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ƒfƒtƒHƒ‹ƒgƒ‹[ƒ‹æ“¾.
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒ«ãƒ¼ãƒ«å–å¾—
 	 * <p>
-	 * ƒfƒtƒHƒ‹ƒg‚Ìƒ‹[ƒ‹ƒCƒ“ƒXƒ^ƒ“ƒX‚ğ•Ô‚·B
+	 * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ãƒ«ãƒ¼ãƒ«ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’è¿”ã™
 	 * </p>
 	 *
-	 * @return ƒ‹[ƒ‹
+	 * @return ãƒ«ãƒ¼ãƒ«
 	 */
 	public static Rule getDefaultRule() {
 		return getInstance().getRule();
 	}
 
 	/**
-	 * Javaƒ‹[ƒ‹æ“¾.
+	 * Javaãƒ«ãƒ¼ãƒ«å–å¾—
 	 * <p>
-	 * Javaƒ‹[ƒ‹‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğ•Ô‚·B
+	 * Javaãƒ«ãƒ¼ãƒ«ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’è¿”ã™
 	 * </p>
 	 *
-	 * @return ƒ‹[ƒ‹
+	 * @return ãƒ«ãƒ¼ãƒ«
 	 * @since 2007.02.21
 	 */
 	public static Rule getJavaRule() {
@@ -67,18 +67,18 @@ public class ExpRuleFactory {
 	private Rule cachedRule;
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^[
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼
 	 */
 	public ExpRuleFactory() {
 	}
 
 	/**
-	 * ƒ‹[ƒ‹æ“¾.
+	 * ãƒ«ãƒ¼ãƒ«å–å¾—
 	 * <p>
-	 * ˆê“x‚¾‚¯ƒ‹[ƒ‹‚ğì¬‚µ‚ÄƒLƒƒƒbƒVƒ…‚µAí‚É‚»‚Ìƒ‹[ƒ‹‚ğ•Ô‚·B
+	 * ä¸€åº¦ã ã‘ãƒ«ãƒ¼ãƒ«ã‚’ä½œæˆã—ã¦ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã—ã€å¸¸ã«ãã®ãƒ«ãƒ¼ãƒ«ã‚’è¿”ã™
 	 * </p>
 	 *
-	 * @return ƒ‹[ƒ‹
+	 * @return ãƒ«ãƒ¼ãƒ«
 	 */
 	public Rule getRule() {
 		if (cachedRule == null) {
@@ -88,26 +88,26 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ƒ‹[ƒ‹¶¬.
+	 * ãƒ«ãƒ¼ãƒ«ã‚’ä½œæˆ
 	 *
-	 * @return ƒ‹[ƒ‹
+	 * @return ãƒ«ãƒ¼ãƒ«
 	 */
 	protected Rule createRule() {
 		return createRule(null, null, null, null);
 	}
 
 	/**
-	 * ƒ‹[ƒ‹¶¬.
+	 * ãƒ«ãƒ¼ãƒ«ã‚’ä½œæˆ
 	 *
 	 * @param var
-	 *            ƒfƒtƒHƒ‹ƒg•Ï”ŒQ
+	 *            ï¿½fï¿½tï¿½Hï¿½ï¿½ï¿½gï¿½Ïï¿½ï¿½Q
 	 * @param func
-	 *            ƒfƒtƒHƒ‹ƒgŠÖ”ŒQ
+	 *            ï¿½fï¿½tï¿½Hï¿½ï¿½ï¿½gï¿½Öï¿½ï¿½Q
 	 * @param oper
-	 *            ƒfƒtƒHƒ‹ƒg‰‰Z
+	 *            ï¿½fï¿½tï¿½Hï¿½ï¿½ï¿½gï¿½ï¿½ï¿½Z
 	 * @param log
-	 *            ƒfƒtƒHƒ‹ƒgƒƒOo—ÍƒIƒuƒWƒFƒNƒg
-	 * @return ƒ‹[ƒ‹
+	 *            ï¿½fï¿½tï¿½Hï¿½ï¿½ï¿½gï¿½ï¿½ï¿½Oï¿½oï¿½ÍƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½g
+	 * @return ãƒ«ãƒ¼ãƒ«
 	 * @since eval16
 	 */
 	protected Rule createRule(Variable var, Function func, Operator oper,
@@ -125,18 +125,18 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * init()“à‚Åg—p‚·‚éAˆê“I‚ÈƒOƒ[ƒoƒ‹•Ï”
+	 * init()ï¿½ï¿½ï¿½Ågï¿½pï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½êï¿½Iï¿½ÈƒOï¿½ï¿½ï¿½[ï¿½oï¿½ï¿½ï¿½Ïï¿½
 	 */
 	protected AbstractRule topRule;
 
 	/**
-	 * ƒ‹[ƒ‹\’z.
+	 * ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½\ï¿½z.
 	 * <p>
-	 * ƒ‹[ƒ‹‚ğ—Dæ“x‡‚É\’z‚·‚éB
+	 * ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Dï¿½ï¿½ï¿½xï¿½ï¿½ï¿½É\ï¿½zï¿½ï¿½ï¿½ï¿½ï¿½B
 	 * </p>
 	 * <p>
-	 * “à•”‚ÅŒÄ‚ñ‚Å‚¢‚écreateXXX()‚ÍAƒI[ƒo[ƒ‰ƒCƒh‚·‚é‚±‚Æ‚É‚æ‚Á‚Ä“Æ©ƒ‹[ƒ‹‚ğì‚ê‚éB<br>
-	 * createXXX()‚ªnull‚ğ•Ô‚µ‚½ê‡A‚»‚Ìƒ‹[ƒ‹i‚ ‚é‚¢‚Í‰‰Zqj‚Íg‚í‚ê‚È‚¢B
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ÅŒÄ‚ï¿½ï¿½Å‚ï¿½ï¿½ï¿½createXXX()ï¿½ÍAï¿½Iï¿½[ï¿½oï¿½[ï¿½ï¿½ï¿½Cï¿½hï¿½ï¿½ï¿½é‚±ï¿½Æ‚É‚ï¿½ï¿½ï¿½ï¿½Ä“Æï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B<br>
+	 * createXXX()ï¿½ï¿½nullï¿½ï¿½ï¿½Ô‚ï¿½ï¿½ï¿½ï¿½ê‡ï¿½Aï¿½ï¿½ï¿½Ìƒï¿½ï¿½[ï¿½ï¿½ï¿½iï¿½ï¿½ï¿½é‚¢ï¿½Í‰ï¿½ï¿½Zï¿½qï¿½jï¿½Ígï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½B
 	 * </p>
 	 *
 	 * @see jp.hishidama.eval.sample.FactorySample
@@ -144,26 +144,26 @@ public class ExpRuleFactory {
 	protected void init(ShareRuleValue share) {
 		topRule = null;
 
-		// ƒ‹[ƒ‹–{‘Ì‚ğì¬
+		// ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½{ï¿½Ì‚ï¿½ï¿½ì¬
 		initMainRule(null, share);
 		topRule.initPriority(1);
 		share.topRule = topRule;
 
-		// ŠÖ”ˆø”ƒ‹[ƒ‹‚ğì¬
+		// ï¿½Öï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ì¬
 		initFuncArgRule(share);
 
 		topRule = null;
 	}
 
 	/**
-	 * ƒ‹[ƒ‹–{‘Ì\’z
+	 * ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½{ï¿½Ì\ï¿½z
 	 *
 	 * @param rule
-	 *            ’¼‘O‚Ìƒ‹[ƒ‹
+	 *            ï¿½ï¿½ï¿½Oï¿½Ìƒï¿½ï¿½[ï¿½ï¿½
 	 * @param share
 	 */
 	protected AbstractRule initMainRule(AbstractRule rule, ShareRuleValue share) {
-		// —Dæ‡ˆÊ‚Ì’á‚¢•û‚©‚ç¶¬‚·‚é
+		// ï¿½Dï¿½æ‡ï¿½Ê‚Ì’á‚¢ï¿½ï¿½ï¿½ï¿½ï¿½ç¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		rule = add(rule, createCommaRule(share));
 		rule = add(rule, createLetRule(share));
 		rule = add(rule, createIfRule(share));
@@ -185,7 +185,7 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ŠÖ”ˆø”ƒ‹[ƒ‹\’z
+	 * ï¿½Öï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½\ï¿½z
 	 *
 	 * @param share
 	 */
@@ -205,23 +205,23 @@ public class ExpRuleFactory {
 			}
 		}
 		if (match) {
-			// “¯‚¶‰‰Zq‚ğ‚Âê‡‚ÍAŸ—Dæ“x‚Ìƒ‹[ƒ‹‚ğƒZƒbƒg
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½qï¿½ï¿½ï¿½ï¿½ï¿½Âê‡ï¿½ÍAï¿½ï¿½ï¿½Dï¿½ï¿½ï¿½xï¿½Ìƒï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½bï¿½g
 			argRule.nextRule = topRule.nextRule;
 		} else {
-			// ‰‰Zq‚ªˆÙ‚È‚éê‡‚ÍAÅãˆÊƒ‹[ƒ‹‚ğƒZƒbƒg
+			// ï¿½ï¿½ï¿½Zï¿½qï¿½ï¿½ï¿½Ù‚È‚ï¿½ï¿½ê‡ï¿½ÍAï¿½Åï¿½ï¿½Êƒï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½bï¿½g
 			argRule.nextRule = topRule;
 		}
 		argRule.prio = topRule.prio;
 	}
 
 	/**
-	 * ƒ‹[ƒ‹—Dæ“xŠÖ˜A•t‚¯
+	 * ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Dï¿½ï¿½ï¿½xï¿½Ö˜Aï¿½tï¿½ï¿½
 	 *
 	 * @param rule
-	 *            ‘Oƒ‹[ƒ‹
+	 *            ï¿½Oï¿½ï¿½ï¿½[ï¿½ï¿½
 	 * @param r
-	 *            Vƒ‹[ƒ‹
-	 * @return Ÿƒ‹[ƒ‹
+	 *            ï¿½Vï¿½ï¿½ï¿½[ï¿½ï¿½
+	 * @return ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected final AbstractRule add(AbstractRule rule, AbstractRule r) {
 		if (r == null) {
@@ -237,10 +237,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ƒJƒ“ƒ}ƒ‹[ƒ‹ì¬
+	 * ï¿½Jï¿½ï¿½ï¿½}ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createCommaRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
@@ -253,10 +253,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ‘ã“üƒ‹[ƒ‹ì¬
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createLetRule(ShareRuleValue share) {
 		AbstractRule me = new Col2RightJoinRule(share);
@@ -329,10 +329,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ğŒ‰‰Zƒ‹[ƒ‹ì¬
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createIfRule(ShareRuleValue share) {
 		Col3Rule me = new Col3Rule(share);
@@ -345,10 +345,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ˜_—˜aƒ‹[ƒ‹ì¬
+	 * ï¿½_ï¿½ï¿½ï¿½aï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createOrRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
@@ -361,10 +361,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ˜_—Ïƒ‹[ƒ‹ì¬
+	 * ï¿½_ï¿½ï¿½ï¿½Ïƒï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createAndRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
@@ -377,10 +377,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ƒrƒbƒg˜_—˜aƒ‹[ƒ‹ì¬
+	 * ï¿½rï¿½bï¿½gï¿½_ï¿½ï¿½ï¿½aï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createBitOrRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
@@ -393,10 +393,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ƒrƒbƒg”r‘¼“I˜_—˜aƒ‹[ƒ‹ì¬
+	 * ï¿½rï¿½bï¿½gï¿½rï¿½ï¿½ï¿½Iï¿½_ï¿½ï¿½ï¿½aï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createBitXorRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
@@ -409,10 +409,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ƒrƒbƒg˜_—Ïƒ‹[ƒ‹ì¬
+	 * ï¿½rï¿½bï¿½gï¿½_ï¿½ï¿½ï¿½Ïƒï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createBitAndRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
@@ -425,10 +425,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * “™†ƒ‹[ƒ‹ì¬
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createEqualRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
@@ -446,10 +446,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ”äŠrƒ‹[ƒ‹ì¬
+	 * ï¿½ï¿½ï¿½rï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createGreaterRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
@@ -477,10 +477,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ƒVƒtƒgƒ‹[ƒ‹ì¬
+	 * ï¿½Vï¿½tï¿½gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createShiftRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
@@ -503,10 +503,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ‰ÁŒ¸Zƒ‹[ƒ‹ì¬
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createPlusRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
@@ -524,10 +524,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * æœZƒ‹[ƒ‹ì¬
+	 * ï¿½æœï¿½Zï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createMultRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
@@ -550,10 +550,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ‘O’u’P€‰‰Zqƒ‹[ƒ‹ì¬
+	 * ï¿½Oï¿½uï¿½Pï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½qï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createSignRule(ShareRuleValue share) {
 		AbstractRule me = new Col1BeforeRule(share);
@@ -591,10 +591,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * —İæƒ‹[ƒ‹ì¬
+	 * ï¿½İæƒ‹ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createPowerRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
@@ -607,10 +607,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * Œã’u’P€‰‰Zqƒ‹[ƒ‹ì¬
+	 * ï¿½ï¿½ï¿½uï¿½Pï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½qï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createCol1AfterRule(ShareRuleValue share) {
 		Col1AfterRule me = new Col1AfterRule(share);
@@ -643,10 +643,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * Šî–{ƒ‹[ƒ‹ì¬
+	 * ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createPrimaryRule(ShareRuleValue share) {
 		AbstractRule me = new PrimaryRule(share);
@@ -661,10 +661,10 @@ public class ExpRuleFactory {
 	}
 
 	/**
-	 * ŠÖ”ˆø”ƒ‹[ƒ‹ì¬
+	 * ï¿½Öï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ì¬
 	 *
 	 * @param share
-	 * @return ƒ‹[ƒ‹
+	 * @return ï¿½ï¿½ï¿½[ï¿½ï¿½
 	 */
 	protected AbstractRule createFuncArgRule(ShareRuleValue share) {
 		AbstractRule me = new Col2Rule(share);
